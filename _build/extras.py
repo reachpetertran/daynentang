@@ -13,6 +13,8 @@ page('/cong-cu/', 'Công cụ', 'Công cụ in miễn phí cho gia đình: bản
 <a class="card" href="/cong-cu/bien-ban-hop-gia-dinh/"><span class="tag">Có thể in</span><h3>Biên bản họp gia đình</h3><p>Năm phần của buổi họp 15 phút mỗi tuần.</p></a>
 <a class="card" href="/cong-cu/bang-thu-chi/"><span class="tag">Có thể in</span><h3>Bảng thu chi</h3><p>Ghi chi 7 ngày, bảng tháng, quỹ khẩn cấp, danh sách nợ. Cho khóa Tiền nhà mình.</p></a>
 <a class="card" href="/cong-cu/hu-ba-ngan/"><span class="tag">Có thể in</span><h3>Hũ ba ngăn</h3><p>Nhãn hũ, thanh mục tiêu, tranh cần – muốn cho con.</p></a>
+<a class="card" href="/cong-cu/phieu-ra-soat-nha/"><span class="tag">Có thể in</span><h3>Phiếu rà soát nhà</h3><p>An toàn từng phòng, phòng cháy, bảo trì. Cho khóa Nhà gọn, nhà an toàn.</p></a>
+<a class="card" href="/cong-cu/so-tay-cong-dong/"><span class="tag">Có thể in</span><h3>Sổ tay cộng đồng</h3><p>Phỏng vấn ông bà, người có thể nhờ, kế hoạch màn hình. Cho khóa Gia đình và cộng đồng.</p></a>
 <a class="card" href="/cong-cu/so-tay-vo-chong/"><span class="tag">Có thể in</span><h3>Sổ tay vợ chồng</h3><p>Mở lời nhẹ, tạm dừng, họp vợ chồng. Cho khóa Vợ chồng đồng lòng.</p></a>
 <a class="card" href="/cong-cu/thoa-thuan-gia-dinh/"><span class="tag">Có thể in</span><h3>Thỏa thuận gia đình</h3><p>Thỏa thuận, kế hoạch thiết bị, mật mã gọi đón. Cho khóa Gia đình có con 10–14.</p></a>
 <a class="card" href="/cong-cu/nhat-ky-giao-dap/"><span class="tag">Có thể in</span><h3>Nhật ký giao và đáp</h3><p>5 phút mỗi ngày, kế hoạch khi con khóc. Cho khóa Gia đình 0–2 tuổi.</p></a>
@@ -120,6 +122,15 @@ EV = [
  ('Luật Phòng, chống bạo lực gia đình 13/2022/QH15 (hiệu lực 01/07/2023): các nhóm hành vi bạo lực gia đình','Đã xác nhận','https://luatvietnam.vn/hon-nhan-gia-dinh/luat-phong-chong-bao-luc-gia-dinh-so-13-2022-qh15-238397-d1.html','LuatVietnam'),
  ('62,9% phụ nữ Việt Nam từng chịu ít nhất một hình thức bạo lực hoặc hành vi kiểm soát từ chồng; khoảng một nửa chưa từng kể với ai','Đã xác nhận','https://www.sggp.org.vn/gan-63-phu-nu-o-nuoc-ta-tung-chiu-bao-luc-50-khong-ke-voi-ai-post620554.html','Nghiên cứu quốc gia 2019 (Bộ LĐ-TB&XH, TCTK, UNFPA)'),
  ('Tổng đài 117 về phòng, chống bạo lực gia đình hoạt động 24/7 toàn quốc từ 9/2026; có miễn phí hay không','Cần kiểm chứng','https://thuonghieucongluan.com.vn/tong-dai-117-hoat-dong-24-7-tiep-nhan-tin-bao-bao-luc-gia-dinh-tren-toan-quoc-a333505.html','Báo Thương hiệu và Công luận'),
+ ('Mỗi năm khoảng 2.000 trẻ em Việt Nam tử vong do đuối nước','Đã xác nhận','https://www.who.int/vietnam/vi/news/feature-stories/item/in-viet-nam--low-cost-water-safety-actions-help-reduce-child-drowning-deaths','WHO Việt Nam, 12/2023'),
+ ('Tivi, đồ đạc đổ: tại Mỹ trung bình khoảng 2 tuần có 1 trẻ tử vong; nên bắt vít vào tường','Đã xác nhận','https://www.cpsc.gov/Newsroom/News-Releases/2015/Anchor-It-CPSC-Launches-Nations-Largest-Campaign-to-Prevent-Furniture-and-TV-Tip-Over-Deaths-and-Injuries','CPSC 2015'),
+ ('Luật PCCC và CNCH 55/2024/QH15 (hiệu lực 01/07/2025): trách nhiệm chủ hộ tự kiểm tra, khắc phục nguy cơ cháy nổ','Đã xác nhận','https://luatvietnam.vn/dat-dai/luat-phong-chay-chua-chay-va-cuu-nan-cuu-ho-2024-so-55-2024-qh15-379071-d1.html','LuatVietnam'),
+ ('Sạc xe điện: không sạc qua đêm, dùng sạc chính hãng, không độ chế, không sạc gần đồ dễ cháy','Đã xác nhận','https://lsvn.vn/canh-bao-4-nguyen-nhan-chu-yeu-gay-chay-no-xe-dien-gia-tang-a165609.html','Cảnh sát PCCC Phú Thọ, 11/2025'),
+ ('Năm chìa khóa an toàn thực phẩm','Đã xác nhận','https://www.paho.org/en/news/21-12-2015-pahowho-recommends-five-keys-safer-food-healthy-holiday-season','PAHO/WHO'),
+ ('Sơ cứu bỏng: nước mát đang chảy 20 phút; không đá, kem, kem đánh răng','Đã xác nhận','https://www.schn.health.nsw.gov.au/kids-health-hub/safety-and-injury-prevention/burns-and-fire/first-aid-burns','Sydney Children\'s Hospitals Network'),
+ ('Quan hệ xã hội mạnh gắn với khả năng sống sót cao hơn (148 nghiên cứu, OR 1,50; quan sát)','Đã xác nhận','https://www.rti.org/publication/social-relationships-mortality-risk-meta-analytic-review','Holt-Lunstad et al. 2010'),
+ ('Trẻ biết nhiều chuyện gia đình có lòng tự trọng cao hơn (40 gia đình; liên hệ)','Đã xác nhận','https://www.medicalnewstoday.com/releases/31955','Fivush & Duke, Emory'),
+ ('Kế hoạch màn hình gia đình: chỗ không màn hình, chọn nội dung, tắt tự phát, bố mẹ làm gương','Đã xác nhận','https://healthychildren.org/English/family-life/Media/Pages/How-to-Make-a-Family-Media-Use-Plan.aspx','AAP (cập nhật 1/2026)'),
  ('Mẹo "không lọt lõi giấy vệ sinh" để loại vật nhỏ','Đánh giá chuyên môn','',''),
  ('Lịch 12 tuần và các hoạt động của khóa Gia đình 2–8','Đánh giá chuyên môn','',''),
 ]

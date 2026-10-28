@@ -61,6 +61,16 @@ page('/', 'Dạy Nền Tảng – nền tảng làm người, tự học miễn 
   <h3>Vợ chồng đồng lòng</h3>
   <p>6 tuần: hai người một đội khi nuôi con, cảm ơn nhau, mở lời nhẹ khi bất đồng, tạm dừng khi giận, không kéo con vào.</p>
 </a>
+<a class="card" href="/khoa-hoc/nha-gon-nha-an-toan/">
+  <span class="tag">Đang thử nghiệm · đủ 4 tuần</span>
+  <h3>Nhà gọn, nhà an toàn</h3>
+  <p>4 tuần: rà soát an toàn từng phòng, phòng cháy và sạc xe điện, nhà gọn và bữa ăn an toàn, lịch bảo trì, sơ cứu bỏng.</p>
+</a>
+<a class="card" href="/khoa-hoc/gia-dinh-va-cong-dong/">
+  <span class="tag">Đang thử nghiệm · đủ 4 tuần</span>
+  <h3>Gia đình và cộng đồng</h3>
+  <p>4 tuần: ông bà và chuyện gia đình, mạng lưới giúp nhau, kế hoạch màn hình gia đình, cả nhà làm việc tốt.</p>
+</a>
 
 <h2>Bốn trụ cột</h2>
 <div class="grid">
@@ -86,8 +96,8 @@ FAMILY = [
  ('G2','Gia đình 0–2 tuổi','Tương tác "giao và đáp" 5 phút mỗi ngày để xây gắn bó và ngôn ngữ.','8 tuần','/khoa-hoc/gia-dinh-0-2/',True),
  ('G4','Gia đình có con 10–14','Đồng hành tuổi dậy thì: trò chuyện, ranh giới, tự lập.','7 tuần','/khoa-hoc/gia-dinh-10-14/',True),
  ('G5','Vợ chồng đồng lòng','Cùng một đội khi nuôi con; nói chuyện khi bất đồng.','6 tuần','/khoa-hoc/vo-chong-dong-long/',True),
- ('G8','Nhà gọn, nhà an toàn','Rà soát an toàn nhà, thực đơn tuần, lịch bảo trì.','4 tuần',None,False),
- ('G9','Gia đình và cộng đồng','Ông bà, họ hàng, hàng xóm, quy tắc màn hình gia đình.','4 tuần',None,False),
+ ('G8','Nhà gọn, nhà an toàn','Rà soát an toàn nhà, thực đơn tuần, lịch bảo trì.','4 tuần','/khoa-hoc/nha-gon-nha-an-toan/',True),
+ ('G9','Gia đình và cộng đồng','Ông bà, họ hàng, hàng xóm, quy tắc màn hình gia đình.','4 tuần','/khoa-hoc/gia-dinh-va-cong-dong/',True),
 ]
 cards = ''
 for code,name,desc,dur,href,live in FAMILY:
@@ -203,6 +213,7 @@ Tài liệu của tổ chức khác thuộc quyền của họ; chúng tôi ch�
 
 <h2>Nhật ký sửa đổi</h2>
 <ul>
+<li>28/10/2026: Mở khóa Nhà gọn, nhà an toàn và khóa Gia đình và cộng đồng (mỗi khóa 4 tuần, bản chưa dạy thử) kèm 20 hình, Phiếu rà soát nhà và Sổ tay cộng đồng. Đủ 9 khóa Gia đình.</li>
 <li>28/10/2026: Mở khóa Vợ chồng đồng lòng (6 tuần, 6 bài, bản chưa dạy thử) kèm 14 hình và Sổ tay vợ chồng. Thêm Tổng đài 117 vào trang Cần giúp ngay.</li>
 <li>28/10/2026: Mở khóa Gia đình có con 10–14 (7 tuần, 7 bài, bản chưa dạy thử) kèm 16 hình và Thỏa thuận gia đình.</li>
 <li>28/10/2026: Mở khóa Gia đình 0–2 tuổi – Giao và Đáp (8 tuần, 8 bài, bản chưa dạy thử) kèm 18 hình và Nhật ký giao và đáp.</li>

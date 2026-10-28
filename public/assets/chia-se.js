@@ -86,7 +86,15 @@
     'g5-3': 'Vợ chồng đồng lòng · Bài 3 Nói khi bất đồng',
     'g5-4': 'Vợ chồng đồng lòng · Bài 4 Khi nóng giận',
     'g5-5': 'Vợ chồng đồng lòng · Bài 5 Trước mặt con',
-    'g5-6': 'Vợ chồng đồng lòng · Bài 6 Họp vợ chồng'
+    'g5-6': 'Vợ chồng đồng lòng · Bài 6 Họp vợ chồng',
+    'g8-1': 'Nhà gọn, nhà an toàn · Bài 1 Rà soát an toàn',
+    'g8-2': 'Nhà gọn, nhà an toàn · Bài 2 Phòng cháy, thoát nạn',
+    'g8-3': 'Nhà gọn, nhà an toàn · Bài 3 Nhà gọn, bữa an toàn',
+    'g8-4': 'Nhà gọn, nhà an toàn · Bài 4 Bảo trì, sơ cứu',
+    'g9-1': 'Gia đình và cộng đồng · Bài 1 Ông bà, chuyện gia đình',
+    'g9-2': 'Gia đình và cộng đồng · Bài 2 Họ hàng, hàng xóm',
+    'g9-3': 'Gia đình và cộng đồng · Bài 3 Kế hoạch màn hình',
+    'g9-4': 'Gia đình và cộng đồng · Bài 4 Giúp cộng đồng'
   };
   var KINDS = { 'kho-khan': 'Khó khăn', 'y-tuong': 'Ý tưởng sáng tạo', 'ket-qua': 'Kết quả', 'gop-y': 'Góp ý cho bài' };
 
