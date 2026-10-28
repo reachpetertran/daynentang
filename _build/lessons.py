@@ -1,4 +1,5 @@
 from common import page, HELP_BOX, PRINT_ROW
+from illus import figure_block
 
 BASE = '/khoa-hoc/gia-dinh-2-8/tuan-1/'
 JOURNAL = '''<div class="table-wrap journal"><table><tbody>
@@ -19,13 +20,16 @@ def lesson(slug, code, title, strand, desc, meta, sections, prev=None, nxt=None,
             'Nếu bạn dùng thử, hãy <a href="/chia-se/?bai=' + key + '#gui">chia sẻ</a> điều bạn gặp để chúng tôi sửa bài.</p></div>') if draft else ''
     share = (f'<div class="box share-cta no-print"><h3>Bạn đã thử bài này?</h3><p>Chia sẻ khó khăn, ý tưởng hay kết quả. Ẩn danh hoặc công khai, tùy bạn.</p>'
              f'<p><a class="btn primary" href="/chia-se/?bai={key}#gui">Chia sẻ về bài {code}</a></p></div>')
+    figs = figure_block(code)
     body = f'''<div class="lesson">
 <p class="eyebrow no-print"><a href="/khoa-hoc/gia-dinh-2-8/">Gia đình 2–8 tuổi</a> · Tuần {week} · {code}</p>
 <h1>{title}</h1>
 <div class="lesson-meta">{''.join(f'<span>{m}</span>' for m in meta)}</div>
 {note}
 {PRINT_ROW}
-{''.join(sections)}
+{''.join(sections[:3])}
+{figs}
+{''.join(sections[3:])}
 {share}
 <p class="print-only small">daynentang.com · CC BY-NC-SA 4.0 · Cập nhật 28/10/2026</p>
 <nav class="lesson-nav no-print" aria-label="Bài trước, bài sau">{navl}{navr}</nav>

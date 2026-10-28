@@ -136,3 +136,11 @@ blockquote.story{margin:12px 0;padding:14px 18px;border-left:4px solid var(--ora
 .post-body{white-space:pre-wrap}
 .reply{border-left:3px solid var(--green);padding-left:10px;font-size:15px}
 .share-cta{margin-top:26px}
+
+/* Hình minh họa */
+.figs{display:grid;grid-template-columns:1fr;gap:12px;margin:18px 0 6px}
+@media(min-width:620px){.figs{grid-template-columns:repeat(3,1fr)}}
+.figs figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:8px}
+.figs img{display:block;width:100%;height:auto;border-radius:10px}
+.figs figcaption{font-size:14px;color:var(--muted);padding:6px 4px 2px;line-height:1.45}
+@media print{.figs{grid-template-columns:repeat(3,1fr);gap:8px}.figs figcaption{font-size:9pt}.figs figure{break-inside:avoid}}
