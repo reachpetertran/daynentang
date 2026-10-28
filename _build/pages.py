@@ -31,6 +31,11 @@ page('/', 'Dạy Nền Tảng – nền tảng làm người, tự học miễn 
   <h3>Gia đình 2–8 tuổi: Bàn tay nền tảng</h3>
   <p>12 tuần, 3 buổi mỗi tuần, 30 phút mỗi buổi. Bố mẹ dạy con thói quen tự chủ, tư duy khám phá và giá trị tử tế bằng đồ có sẵn trong nhà. Trẻ không cần màn hình.</p>
 </a>
+<a class="card" href="/khoa-hoc/gia-tri-nha-minh/">
+  <span class="tag">Đang thử nghiệm · đủ 4 tuần</span>
+  <h3>Giá trị nhà mình</h3>
+  <p>4 tuần, mỗi tuần 1 buổi bố mẹ và 1 buổi cả nhà. Chọn 3–5 giá trị, biến thành việc làm, đặt nội quy và họp gia đình 15 phút mỗi tuần.</p>
+</a>
 
 <h2>Bốn trụ cột</h2>
 <div class="grid">
@@ -50,7 +55,7 @@ page('/', 'Dạy Nền Tảng – nền tảng làm người, tự học miễn 
 # ---------------- Gia đình ----------------
 FAMILY = [
  ('G3','Gia đình 2–8 tuổi','Thói quen tự chủ, khám phá khoa học, giá trị tử tế qua 30 phút chơi.','12 tuần','/khoa-hoc/gia-dinh-2-8/',True),
- ('G1','Giá trị nhà mình','Cả nhà thống nhất 3–5 giá trị và nội quy; họp gia đình 15 phút mỗi tuần.','4 tuần',None,False),
+ ('G1','Giá trị nhà mình','Cả nhà thống nhất 3–5 giá trị và nội quy; họp gia đình 15 phút mỗi tuần.','4 tuần','/khoa-hoc/gia-tri-nha-minh/',True),
  ('G6','Tiền nhà mình','Bảng thu chi tháng, quỹ khẩn cấp, dạy con làm – tiết kiệm – chi.','6 tuần',None,False),
  ('G7','Việc nhà chia đều','Phân công việc nhà công bằng; bảng việc nhà theo tuổi cho con.','4 tuần',None,False),
  ('G2','Gia đình 0–2 tuổi','Tương tác "giao và đáp" 5 phút mỗi ngày để xây gắn bó và ngôn ngữ.','8 tuần',None,False),
@@ -172,6 +177,7 @@ Tài liệu của tổ chức khác thuộc quyền của họ; chúng tôi ch�
 
 <h2>Nhật ký sửa đổi</h2>
 <ul>
+<li>28/10/2026: Mở khóa Giá trị nhà mình (4 tuần, 8 bài, bản chưa dạy thử) kèm 26 hình, Phiếu giá trị và Biên bản họp gia đình.</li>
 <li>28/10/2026: Thêm bài tuần 9–12 (bản chưa dạy thử) kèm 36 hình; khóa Gia đình 2–8 đủ 12 tuần.</li>
 <li>28/10/2026: Thêm bài tuần 5–8 (bản chưa dạy thử) kèm 36 hình, có sơ đồ quy trình và sơ đồ nguyên lý; thêm 3 sơ đồ ở trang khóa học.</li>
 <li>28/10/2026: Thêm 36 hình minh họa tự vẽ cho 12 bài học (cùng giấy phép CC BY-NC-SA 4.0; nhân vật là con vật tự sáng tác, không dùng ảnh trẻ em).</li>

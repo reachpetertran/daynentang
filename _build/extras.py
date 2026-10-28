@@ -2,13 +2,15 @@ import os
 from common import page, HELP_BOX, PRINT_ROW, ROOT, SITE
 
 # ---------- Công cụ ----------
-page('/cong-cu/', 'Công cụ', 'Công cụ in miễn phí cho gia đình: bảng quan sát tiến bộ của con, bảng thói quen 7 ngày.',
+page('/cong-cu/', 'Công cụ', 'Công cụ in miễn phí cho gia đình: bảng quan sát tiến bộ của con, bảng thói quen 7 ngày, phiếu giá trị, biên bản họp gia đình.',
 '''
 <h1>Công cụ</h1>
 <p class="lead">Công cụ in được, dùng ngay. Không cần tài khoản, không lưu dữ liệu của bạn.</p>
 <div class="grid">
 <a class="card" href="/cong-cu/bang-quan-sat/"><span class="tag">Có thể in</span><h3>Bảng quan sát 0–1–2</h3><p>Theo dõi tiến bộ của con ở tuần 0, 6 và 12 của khóa Gia đình 2–8.</p></a>
 <a class="card" href="/cong-cu/bang-thoi-quen/"><span class="tag">Có thể in</span><h3>Bảng thói quen 7 ngày</h3><p>Con tự đánh dấu việc mình tự làm mỗi ngày.</p></a>
+<a class="card" href="/cong-cu/phieu-gia-tri/"><span class="tag">Có thể in</span><h3>Phiếu giá trị</h3><p>20 thẻ giá trị, bảng việc làm, nội quy, tự đánh giá. Cho khóa Giá trị nhà mình.</p></a>
+<a class="card" href="/cong-cu/bien-ban-hop-gia-dinh/"><span class="tag">Có thể in</span><h3>Biên bản họp gia đình</h3><p>Năm phần của buổi họp 15 phút mỗi tuần.</p></a>
 <div class="card"><span class="tag soon">Đang soạn</span><h3>Bảng thu chi gia đình</h3><p>Cho khóa Tiền nhà mình.</p></div>
 <div class="card"><span class="tag soon">Đang soạn</span><h3>Bảng việc nhà theo tuổi</h3><p>Cho khóa Việc nhà chia đều.</p></div>
 </div>
@@ -77,6 +79,13 @@ EV = [
  ('Chuẩn thiết kế kỹ thuật cho lớp mẫu giáo – lớp 2: xác định vấn đề, vẽ mô hình, so sánh dữ liệu thử của hai thiết kế','Đã xác nhận','https://www.nextgenscience.org/node/1116','NGSS K-2-ETS1'),
  ('Tự trắc ẩn cao gắn với ít lo âu, trầm cảm, căng thẳng ở thanh thiếu niên 10–19 tuổi (r = −0,55; tương quan)','Đã xác nhận','https://pmc.ncbi.nlm.nih.gov/articles/PMC6061226','Marsh, Chan & MacBeth 2018'),
  ('Hướng dẫn vận động, ít ngồi và giấc ngủ cho trẻ dưới 5 tuổi','Đã xác nhận','https://www.who.int/publications/i/item/9789241550536','WHO 2019'),
+ ('Với trẻ 2–4 tuổi: giữ 2–3 luật một lúc, nói rõ hành vi muốn thấy, mọi người chăm con dùng cùng luật, khen cụ thể, dán bảng luật có hình','Đã xác nhận','https://www.cdc.gov/parenting-toddlers/structure-rules/rules.html','CDC – Essentials for Parenting'),
+ ('Đánh đòn gây hại cho trẻ, làm hành vi xấu tăng theo thời gian và không có kết quả tích cực','Đã xác nhận','https://www.who.int/news-room/fact-sheets/detail/corporal-punishment-and-health','WHO, tờ thông tin 2026'),
+ ('Mô hình lý thuyết: con tiếp nhận giá trị khi hiểu đúng thông điệp của bố mẹ và chấp nhận nó','Đã xác nhận','','Grusec & Goodnow 1994, Developmental Psychology 30(1):4–19'),
+ ('Lập kế hoạch "Nếu… thì…" giúp đạt mục tiêu tốt hơn (94 thử nghiệm, d = 0,65; chủ yếu người lớn)','Đã xác nhận','https://kops.uni-konstanz.de/entities/publication/2e749bfb-8533-437c-8203-7e788c910c5f','Gollwitzer & Sheeran 2006'),
+ ('Nếp sinh hoạt và nghi thức gia đình gắn với năng lực nuôi dạy, sự thích nghi của trẻ, hài lòng hôn nhân (tổng quan 32 công trình; liên hệ)','Đã xác nhận','https://pubmed.ncbi.nlm.nih.gov/12561283/','Fiese et al. 2002'),
+ ('Bố mẹ nên xem lại giá trị mình thực sự truyền cho con; cho con thực hành quan tâm người khác','Đã xác nhận','https://mcc.gse.harvard.edu/reports/children-mean-raise','Making Caring Common, Harvard 2014'),
+ ('Họp gia đình 15 phút, Mái nhà giá trị, Phiếu giá trị của khóa Giá trị nhà mình','Đánh giá chuyên môn','',''),
  ('Mẹo "không lọt lõi giấy vệ sinh" để loại vật nhỏ','Đánh giá chuyên môn','',''),
  ('Lịch 12 tuần và các hoạt động của khóa Gia đình 2–8','Đánh giá chuyên môn','',''),
 ]

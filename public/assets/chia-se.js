@@ -37,7 +37,15 @@
     'g3-g11': 'Gia đình 2–8 · G11 Tử tế với chính mình',
     'g3-t12': 'Gia đình 2–8 · T12 Lễ Bàn tay nền tảng',
     'g3-k12': 'Gia đình 2–8 · K12 Triển lãm khoa học gia đình',
-    'g3-g12': 'Gia đình 2–8 · G12 Ôn giá trị và ước nguyện'
+    'g3-g12': 'Gia đình 2–8 · G12 Ôn giá trị và ước nguyện',
+    'g1-1a': 'Giá trị nhà mình · 1A Bố mẹ chọn giá trị',
+    'g1-1b': 'Giá trị nhà mình · 1B Mái nhà giá trị',
+    'g1-2a': 'Giá trị nhà mình · 2A Giá trị thành việc làm',
+    'g1-2b': 'Giá trị nhà mình · 2B Thám tử giá trị',
+    'g1-3a': 'Giá trị nhà mình · 3A Soạn nội quy nhà mình',
+    'g1-3b': 'Giá trị nhà mình · 3B Cả nhà thông qua nội quy',
+    'g1-4a': 'Giá trị nhà mình · 4A Thiết kế buổi họp 15 phút',
+    'g1-4b': 'Giá trị nhà mình · 4B Họp gia đình đầu tiên'
   };
   var KINDS = { 'kho-khan': 'Khó khăn', 'y-tuong': 'Ý tưởng sáng tạo', 'ket-qua': 'Kết quả', 'gop-y': 'Góp ý cho bài' };
 
