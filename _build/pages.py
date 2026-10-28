@@ -56,6 +56,11 @@ page('/', 'Dạy Nền Tảng – nền tảng làm người, tự học miễn 
   <h3>Gia đình có con 10–14</h3>
   <p>7 tuần: thời gian riêng, lắng nghe để con muốn kể, thỏa thuận nhà mình, điện thoại và mạng xã hội, áp lực bạn bè, cảm xúc.</p>
 </a>
+<a class="card" href="/khoa-hoc/vo-chong-dong-long/">
+  <span class="tag">Đang thử nghiệm · đủ 6 tuần</span>
+  <h3>Vợ chồng đồng lòng</h3>
+  <p>6 tuần: hai người một đội khi nuôi con, cảm ơn nhau, mở lời nhẹ khi bất đồng, tạm dừng khi giận, không kéo con vào.</p>
+</a>
 
 <h2>Bốn trụ cột</h2>
 <div class="grid">
@@ -80,7 +85,7 @@ FAMILY = [
  ('G7','Việc nhà chia đều','Phân công việc nhà công bằng; bảng việc nhà theo tuổi cho con.','4 tuần','/khoa-hoc/viec-nha-chia-deu/',True),
  ('G2','Gia đình 0–2 tuổi','Tương tác "giao và đáp" 5 phút mỗi ngày để xây gắn bó và ngôn ngữ.','8 tuần','/khoa-hoc/gia-dinh-0-2/',True),
  ('G4','Gia đình có con 10–14','Đồng hành tuổi dậy thì: trò chuyện, ranh giới, tự lập.','7 tuần','/khoa-hoc/gia-dinh-10-14/',True),
- ('G5','Vợ chồng đồng lòng','Cùng một đội khi nuôi con; nói chuyện khi bất đồng.','6 tuần',None,False),
+ ('G5','Vợ chồng đồng lòng','Cùng một đội khi nuôi con; nói chuyện khi bất đồng.','6 tuần','/khoa-hoc/vo-chong-dong-long/',True),
  ('G8','Nhà gọn, nhà an toàn','Rà soát an toàn nhà, thực đơn tuần, lịch bảo trì.','4 tuần',None,False),
  ('G9','Gia đình và cộng đồng','Ông bà, họ hàng, hàng xóm, quy tắc màn hình gia đình.','4 tuần',None,False),
 ]
@@ -127,6 +132,7 @@ page('/can-giup-ngay/', 'Cần giúp ngay', 'Số điện thoại hỗ trợ kh�
 <tr><td><strong>115</strong></td><td>Cấp cứu y tế</td><td>24/7</td></tr>
 <tr><td><strong>111</strong></td><td>Tổng đài quốc gia bảo vệ trẻ em: trẻ bị xâm hại, bạo lực, bỏ rơi hoặc cần tư vấn</td><td>24/7, miễn phí</td></tr>
 <tr><td><strong>096 306 1414</strong></td><td>Đường dây nóng Ngày Mai: người đang trầm cảm, có ý nghĩ tự hại, và người thân</td><td>13:00–20:30, thứ Tư đến Chủ nhật</td></tr>
+<tr><td><strong>117</strong></td><td>Tổng đài quốc gia về phòng, chống bạo lực gia đình: tư vấn, hỗ trợ, kết nối dịch vụ (vận hành từ 9/2026)</td><td>24/7</td></tr>
 <tr><td><strong>112</strong></td><td>Tìm kiếm, cứu nạn</td><td>24/7</td></tr>
 <tr><td><strong>113 / 114</strong></td><td>Công an / Cứu hỏa</td><td>24/7</td></tr>
 </tbody></table></div>
@@ -197,6 +203,7 @@ Tài liệu của tổ chức khác thuộc quyền của họ; chúng tôi ch�
 
 <h2>Nhật ký sửa đổi</h2>
 <ul>
+<li>28/10/2026: Mở khóa Vợ chồng đồng lòng (6 tuần, 6 bài, bản chưa dạy thử) kèm 14 hình và Sổ tay vợ chồng. Thêm Tổng đài 117 vào trang Cần giúp ngay.</li>
 <li>28/10/2026: Mở khóa Gia đình có con 10–14 (7 tuần, 7 bài, bản chưa dạy thử) kèm 16 hình và Thỏa thuận gia đình.</li>
 <li>28/10/2026: Mở khóa Gia đình 0–2 tuổi – Giao và Đáp (8 tuần, 8 bài, bản chưa dạy thử) kèm 18 hình và Nhật ký giao và đáp.</li>
 <li>28/10/2026: Mở khóa Việc nhà chia đều (4 tuần, 8 bài, bản chưa dạy thử) kèm 18 hình và Bảng việc nhà.</li>

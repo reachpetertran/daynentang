@@ -13,6 +13,7 @@ page('/cong-cu/', 'Công cụ', 'Công cụ in miễn phí cho gia đình: bản
 <a class="card" href="/cong-cu/bien-ban-hop-gia-dinh/"><span class="tag">Có thể in</span><h3>Biên bản họp gia đình</h3><p>Năm phần của buổi họp 15 phút mỗi tuần.</p></a>
 <a class="card" href="/cong-cu/bang-thu-chi/"><span class="tag">Có thể in</span><h3>Bảng thu chi</h3><p>Ghi chi 7 ngày, bảng tháng, quỹ khẩn cấp, danh sách nợ. Cho khóa Tiền nhà mình.</p></a>
 <a class="card" href="/cong-cu/hu-ba-ngan/"><span class="tag">Có thể in</span><h3>Hũ ba ngăn</h3><p>Nhãn hũ, thanh mục tiêu, tranh cần – muốn cho con.</p></a>
+<a class="card" href="/cong-cu/so-tay-vo-chong/"><span class="tag">Có thể in</span><h3>Sổ tay vợ chồng</h3><p>Mở lời nhẹ, tạm dừng, họp vợ chồng. Cho khóa Vợ chồng đồng lòng.</p></a>
 <a class="card" href="/cong-cu/thoa-thuan-gia-dinh/"><span class="tag">Có thể in</span><h3>Thỏa thuận gia đình</h3><p>Thỏa thuận, kế hoạch thiết bị, mật mã gọi đón. Cho khóa Gia đình có con 10–14.</p></a>
 <a class="card" href="/cong-cu/nhat-ky-giao-dap/"><span class="tag">Có thể in</span><h3>Nhật ký giao và đáp</h3><p>5 phút mỗi ngày, kế hoạch khi con khóc. Cho khóa Gia đình 0–2 tuổi.</p></a>
 <a class="card" href="/cong-cu/bang-viec-nha/"><span class="tag">Có thể in</span><h3>Bảng việc nhà</h3><p>Danh sách việc có phần nghĩ, Ai lo việc gì, bảng việc của con. Cho khóa Việc nhà chia đều.</p></a>
@@ -112,6 +113,13 @@ EV = [
  ('Cấm bán, cung cấp, khuyến mại rượu bia cho người chưa đủ 18 tuổi','Đã xác nhận','https://luatvietnam.vn/an-ninh-trat-tu/luat-phong-chong-tac-hai-cua-ruou-bia-2019-so-44-2019-qh14-175006-d1.html','Luật 44/2019/QH14, Điều 5 khoản 3 (hiệu lực 01/01/2020)'),
  ('Cấm thuốc lá điện tử, thuốc lá nung nóng từ năm 2025 (Quốc hội thông qua 30/11/2024)','Đã xác nhận','https://baovanhoa.vn/thoi-su/quoc-hoi-ra-nghi-quyet-ve-cam-thuoc-la-dien-tu-thuoc-la-nung-nong-tu-nam-2025-113542.html','Báo Văn hóa'),
  ('Số hiệu nghị quyết cấm thuốc lá điện tử và mức xử phạt','Cần kiểm chứng','',''),
+ ('Lớp 8 buổi về đồng nuôi dạy cho cặp sắp có con đầu lòng (169 cặp, thử nghiệm ngẫu nhiên): tăng ủng hộ nhau, giảm trầm cảm và lo âu ở mẹ','Đã xác nhận','https://pure.psu.edu/en/publications/establishing-family-foundations-intervention-effects-on-coparenti/','Feinberg & Kan 2008, J Fam Psychol 22(2)'),
+ ('Đồng nuôi dạy liên hệ yếu với vấn đề hành vi, cảm xúc ở trẻ (93 nghiên cứu, r khoảng 0,16–0,20; tương quan)','Đã xác nhận','https://pmc.ncbi.nlm.nih.gov/articles/PMC9407961','Zhao et al. 2022, IJERPH'),
+ ('Xung đột giữa bố mẹ ảnh hưởng đến con; cách thể hiện và xử lý xung đột là điều quan trọng','Đã xác nhận','https://pubmed.ncbi.nlm.nih.gov/29574737/','Harold & Sellers 2018'),
+ ('Cặp mới cưới về sau ly hôn có nhiều biểu hiện tiêu cực hơn trong 3 phút đầu cuộc bàn bất đồng (124 cặp, 17 ly hôn)','Đã xác nhận','https://washington.edu/news/1999/09/27/first-three-minutes-of-discussion-about-on-going-area-of-marital-conflict-are-predictive-of-divorce-for-newlyweds','Carrère & Gottman 1999'),
+ ('Luật Phòng, chống bạo lực gia đình 13/2022/QH15 (hiệu lực 01/07/2023): các nhóm hành vi bạo lực gia đình','Đã xác nhận','https://luatvietnam.vn/hon-nhan-gia-dinh/luat-phong-chong-bao-luc-gia-dinh-so-13-2022-qh15-238397-d1.html','LuatVietnam'),
+ ('62,9% phụ nữ Việt Nam từng chịu ít nhất một hình thức bạo lực hoặc hành vi kiểm soát từ chồng; khoảng một nửa chưa từng kể với ai','Đã xác nhận','https://www.sggp.org.vn/gan-63-phu-nu-o-nuoc-ta-tung-chiu-bao-luc-50-khong-ke-voi-ai-post620554.html','Nghiên cứu quốc gia 2019 (Bộ LĐ-TB&XH, TCTK, UNFPA)'),
+ ('Tổng đài 117 về phòng, chống bạo lực gia đình hoạt động 24/7 toàn quốc từ 9/2026; có miễn phí hay không','Cần kiểm chứng','https://thuonghieucongluan.com.vn/tong-dai-117-hoat-dong-24-7-tiep-nhan-tin-bao-bao-luc-gia-dinh-tren-toan-quoc-a333505.html','Báo Thương hiệu và Công luận'),
  ('Mẹo "không lọt lõi giấy vệ sinh" để loại vật nhỏ','Đánh giá chuyên môn','',''),
  ('Lịch 12 tuần và các hoạt động của khóa Gia đình 2–8','Đánh giá chuyên môn','',''),
 ]

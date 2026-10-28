@@ -80,7 +80,13 @@
     'g4-4': 'Gia đình 10–14 · Bài 4 Giải quyết vấn đề',
     'g4-5': 'Gia đình 10–14 · Bài 5 Điện thoại, mạng xã hội',
     'g4-6': 'Gia đình 10–14 · Bài 6 Bạn bè, rượu bia',
-    'g4-7': 'Gia đình 10–14 · Bài 7 Cảm xúc, tương lai'
+    'g4-7': 'Gia đình 10–14 · Bài 7 Cảm xúc, tương lai',
+    'g5-1': 'Vợ chồng đồng lòng · Bài 1 Hai người, một đội',
+    'g5-2': 'Vợ chồng đồng lòng · Bài 2 Cảm ơn và đáp lại',
+    'g5-3': 'Vợ chồng đồng lòng · Bài 3 Nói khi bất đồng',
+    'g5-4': 'Vợ chồng đồng lòng · Bài 4 Khi nóng giận',
+    'g5-5': 'Vợ chồng đồng lòng · Bài 5 Trước mặt con',
+    'g5-6': 'Vợ chồng đồng lòng · Bài 6 Họp vợ chồng'
   };
   var KINDS = { 'kho-khan': 'Khó khăn', 'y-tuong': 'Ý tưởng sáng tạo', 'ket-qua': 'Kết quả', 'gop-y': 'Góp ý cho bài' };
 
