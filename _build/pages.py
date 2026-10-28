@@ -51,6 +51,11 @@ page('/', 'Dạy Nền Tảng – nền tảng làm người, tự học miễn 
   <h3>Gia đình 0–2 tuổi – Giao và Đáp</h3>
   <p>8 tuần, 5 phút mỗi ngày: nhận ra và đáp lại lời "giao" của em bé, đọc sách từ sớm, vận động, ngủ an toàn, kế hoạch khi con khóc.</p>
 </a>
+<a class="card" href="/khoa-hoc/gia-dinh-10-14/">
+  <span class="tag">Đang thử nghiệm · đủ 7 tuần</span>
+  <h3>Gia đình có con 10–14</h3>
+  <p>7 tuần: thời gian riêng, lắng nghe để con muốn kể, thỏa thuận nhà mình, điện thoại và mạng xã hội, áp lực bạn bè, cảm xúc.</p>
+</a>
 
 <h2>Bốn trụ cột</h2>
 <div class="grid">
@@ -74,7 +79,7 @@ FAMILY = [
  ('G6','Tiền nhà mình','Bảng thu chi tháng, quỹ khẩn cấp, dạy con làm – tiết kiệm – chi.','6 tuần','/khoa-hoc/tien-nha-minh/',True),
  ('G7','Việc nhà chia đều','Phân công việc nhà công bằng; bảng việc nhà theo tuổi cho con.','4 tuần','/khoa-hoc/viec-nha-chia-deu/',True),
  ('G2','Gia đình 0–2 tuổi','Tương tác "giao và đáp" 5 phút mỗi ngày để xây gắn bó và ngôn ngữ.','8 tuần','/khoa-hoc/gia-dinh-0-2/',True),
- ('G4','Gia đình có con 10–14','Đồng hành tuổi dậy thì: trò chuyện, ranh giới, tự lập.','7 tuần',None,False),
+ ('G4','Gia đình có con 10–14','Đồng hành tuổi dậy thì: trò chuyện, ranh giới, tự lập.','7 tuần','/khoa-hoc/gia-dinh-10-14/',True),
  ('G5','Vợ chồng đồng lòng','Cùng một đội khi nuôi con; nói chuyện khi bất đồng.','6 tuần',None,False),
  ('G8','Nhà gọn, nhà an toàn','Rà soát an toàn nhà, thực đơn tuần, lịch bảo trì.','4 tuần',None,False),
  ('G9','Gia đình và cộng đồng','Ông bà, họ hàng, hàng xóm, quy tắc màn hình gia đình.','4 tuần',None,False),
@@ -192,6 +197,7 @@ Tài liệu của tổ chức khác thuộc quyền của họ; chúng tôi ch�
 
 <h2>Nhật ký sửa đổi</h2>
 <ul>
+<li>28/10/2026: Mở khóa Gia đình có con 10–14 (7 tuần, 7 bài, bản chưa dạy thử) kèm 16 hình và Thỏa thuận gia đình.</li>
 <li>28/10/2026: Mở khóa Gia đình 0–2 tuổi – Giao và Đáp (8 tuần, 8 bài, bản chưa dạy thử) kèm 18 hình và Nhật ký giao và đáp.</li>
 <li>28/10/2026: Mở khóa Việc nhà chia đều (4 tuần, 8 bài, bản chưa dạy thử) kèm 18 hình và Bảng việc nhà.</li>
 <li>28/10/2026: Mở khóa Tiền nhà mình (6 tuần, 12 bài, bản chưa dạy thử) kèm 26 hình, Bảng thu chi và Hũ ba ngăn.</li>

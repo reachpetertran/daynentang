@@ -13,6 +13,7 @@ page('/cong-cu/', 'Công cụ', 'Công cụ in miễn phí cho gia đình: bản
 <a class="card" href="/cong-cu/bien-ban-hop-gia-dinh/"><span class="tag">Có thể in</span><h3>Biên bản họp gia đình</h3><p>Năm phần của buổi họp 15 phút mỗi tuần.</p></a>
 <a class="card" href="/cong-cu/bang-thu-chi/"><span class="tag">Có thể in</span><h3>Bảng thu chi</h3><p>Ghi chi 7 ngày, bảng tháng, quỹ khẩn cấp, danh sách nợ. Cho khóa Tiền nhà mình.</p></a>
 <a class="card" href="/cong-cu/hu-ba-ngan/"><span class="tag">Có thể in</span><h3>Hũ ba ngăn</h3><p>Nhãn hũ, thanh mục tiêu, tranh cần – muốn cho con.</p></a>
+<a class="card" href="/cong-cu/thoa-thuan-gia-dinh/"><span class="tag">Có thể in</span><h3>Thỏa thuận gia đình</h3><p>Thỏa thuận, kế hoạch thiết bị, mật mã gọi đón. Cho khóa Gia đình có con 10–14.</p></a>
 <a class="card" href="/cong-cu/nhat-ky-giao-dap/"><span class="tag">Có thể in</span><h3>Nhật ký giao và đáp</h3><p>5 phút mỗi ngày, kế hoạch khi con khóc. Cho khóa Gia đình 0–2 tuổi.</p></a>
 <a class="card" href="/cong-cu/bang-viec-nha/"><span class="tag">Có thể in</span><h3>Bảng việc nhà</h3><p>Danh sách việc có phần nghĩ, Ai lo việc gì, bảng việc của con. Cho khóa Việc nhà chia đều.</p></a>
 </div>
@@ -104,6 +105,13 @@ EV = [
  ('Đọc to cho con bắt đầu từ lúc mới sinh','Đã xác nhận','https://www.physiciansweekly.com/aap-why-literacy-promotion-is-crucial-during-clinical-visits/','AAP 2024, Pediatrics'),
  ('Khóc là nguyên nhân chính dẫn đến lắc trẻ; đặt trẻ chỗ an toàn, tạm rời đi khi bực, gọi người giúp; không bao giờ lắc','Đã xác nhận','https://webarchive.library.unt.edu/web/20201221232327/https://www.cdc.gov/violenceprevention/childabuseandneglect/Abusive-Head-Trauma.html','CDC (bản lưu trữ)'),
  ('Danh sách mốc phát triển CDC 2022 dùng ngưỡng 75% trẻ cùng tuổi','Đã xác nhận','https://www.disabilityscoop.com/2022/02/10/cdc-revises-developmental-milestones-for-young-kids/29698/','CDC, qua Disability Scoop'),
+ ('Strengthening Families 10–14: mức bằng chứng 3; thử nghiệm Mỹ 446 gia đình: con ít bắt đầu uống rượu hơn; thử nghiệm châu Âu chưa rõ ràng','Đã xác nhận','https://foundations.org.uk/toolkit/guidebook/strengthening-families-programme-10-14','Foundations (Anh)'),
+ ('PLH cho thanh thiếu niên ở Nam Phi (552 gia đình): bố mẹ báo cáo bạo hành giảm, nuôi dạy tích cực tăng; con báo cáo giám sát tốt hơn nhưng không giảm bạo hành','Đã xác nhận','https://www.research.ed.ac.uk/en/publications/parenting-for-lifelong-health-a-pragmatic-cluster-randomised-cont/','Cluver et al. 2018, BMJ Global Health'),
+ ('Hiểu biết của bố mẹ gắn với việc con tự kể nhiều hơn là theo dõi; cảm giác bị kiểm soát gắn với thích nghi kém (nghiên cứu liên hệ)','Đã xác nhận','https://pubmed.ncbi.nlm.nih.gov/10830980','Kerr & Stattin 2000, Child Development'),
+ ('Kế hoạch dùng thiết bị gia đình, giờ và chỗ không máy, bố mẹ làm gương','Đã xác nhận','https://www.ksat.com/business/2023/05/23/the-us-surgeon-general-has-some-tips-for-parents-and-teens-on-social-media-use/','Tổng Y sĩ Hoa Kỳ 2023 (qua AP)'),
+ ('Cấm bán, cung cấp, khuyến mại rượu bia cho người chưa đủ 18 tuổi','Đã xác nhận','https://luatvietnam.vn/an-ninh-trat-tu/luat-phong-chong-tac-hai-cua-ruou-bia-2019-so-44-2019-qh14-175006-d1.html','Luật 44/2019/QH14, Điều 5 khoản 3 (hiệu lực 01/01/2020)'),
+ ('Cấm thuốc lá điện tử, thuốc lá nung nóng từ năm 2025 (Quốc hội thông qua 30/11/2024)','Đã xác nhận','https://baovanhoa.vn/thoi-su/quoc-hoi-ra-nghi-quyet-ve-cam-thuoc-la-dien-tu-thuoc-la-nung-nong-tu-nam-2025-113542.html','Báo Văn hóa'),
+ ('Số hiệu nghị quyết cấm thuốc lá điện tử và mức xử phạt','Cần kiểm chứng','',''),
  ('Mẹo "không lọt lõi giấy vệ sinh" để loại vật nhỏ','Đánh giá chuyên môn','',''),
  ('Lịch 12 tuần và các hoạt động của khóa Gia đình 2–8','Đánh giá chuyên môn','',''),
 ]

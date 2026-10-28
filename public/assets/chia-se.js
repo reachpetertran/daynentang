@@ -73,7 +73,14 @@
     'g2-5': 'Gia đình 0–2 · Bài 5 Kết thúc và bắt đầu',
     'g2-6': 'Gia đình 0–2 · Bài 6 Đọc sách, hát, kể chuyện',
     'g2-7': 'Gia đình 0–2 · Bài 7 Vận động và đồ chơi tự làm',
-    'g2-8': 'Gia đình 0–2 · Bài 8 Khi con khóc, khi bố mẹ mệt'
+    'g2-8': 'Gia đình 0–2 · Bài 8 Khi con khóc, khi bố mẹ mệt',
+    'g4-1': 'Gia đình 10–14 · Bài 1 Hiểu tuổi 10–14',
+    'g4-2': 'Gia đình 10–14 · Bài 2 Lắng nghe',
+    'g4-3': 'Gia đình 10–14 · Bài 3 Thỏa thuận nhà mình',
+    'g4-4': 'Gia đình 10–14 · Bài 4 Giải quyết vấn đề',
+    'g4-5': 'Gia đình 10–14 · Bài 5 Điện thoại, mạng xã hội',
+    'g4-6': 'Gia đình 10–14 · Bài 6 Bạn bè, rượu bia',
+    'g4-7': 'Gia đình 10–14 · Bài 7 Cảm xúc, tương lai'
   };
   var KINDS = { 'kho-khan': 'Khó khăn', 'y-tuong': 'Ý tưởng sáng tạo', 'ket-qua': 'Kết quả', 'gop-y': 'Góp ý cho bài' };
 
