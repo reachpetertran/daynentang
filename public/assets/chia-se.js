@@ -13,7 +13,19 @@
     'g3-g3': 'Gia đình 2–8 · G3 Việc tốt bí mật',
     'g3-t4': 'Gia đình 2–8 · T4 Trước – Trong – Sau',
     'g3-k4': 'Gia đình 2–8 · K4 Mầm cao bao nhiêu?',
-    'g3-g4': 'Gia đình 2–8 · G4 Dừng – Thở – Nói'
+    'g3-g4': 'Gia đình 2–8 · G4 Dừng – Thở – Nói',
+    'g3-t5': 'Gia đình 2–8 · T5 Việc quan trọng làm trước',
+    'g3-k5': 'Gia đình 2–8 · K5 Ánh sáng và bóng',
+    'g3-g5': 'Gia đình 2–8 · G5 Việc nhà của con',
+    'g3-t6': 'Gia đình 2–8 · T6 Đèn đỏ – Đèn xanh',
+    'g3-k6': 'Gia đình 2–8 · K6 Dốc và lực',
+    'g3-g6': 'Gia đình 2–8 · G6 Nhận lỗi và sửa lỗi',
+    'g3-t7': 'Gia đình 2–8 · T7 Gậy nói chuyện',
+    'g3-k7': 'Gia đình 2–8 · K7 Túi bí ẩn',
+    'g3-g7': 'Gia đình 2–8 · G7 Thám tử cảm xúc',
+    'g3-t8': 'Gia đình 2–8 · T8 Anh hướng dẫn em',
+    'g3-k8': 'Gia đình 2–8 · K8 Thời tiết quanh nhà',
+    'g3-g8': 'Gia đình 2–8 · G8 Cảm ơn người lao động'
   };
   var KINDS = { 'kho-khan': 'Khó khăn', 'y-tuong': 'Ý tưởng sáng tạo', 'ket-qua': 'Kết quả', 'gop-y': 'Góp ý cho bài' };
 

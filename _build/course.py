@@ -1,4 +1,6 @@
 from common import page, HELP_BOX, PRINT_ROW
+import illus2  # noqa: F401
+from illus import figure_block
 
 BASE = '/khoa-hoc/gia-dinh-2-8/'
 
@@ -7,10 +9,10 @@ WEEKS = [
  ('2','<a href="tuan-2/t2-thu-sai-thu-lai/">Thử – sai – thử lại</a>','<a href="tuan-2/k2-nuoc-rot-dong-tham/">Nước: rót, đong, thấm</a>','<a href="tuan-2/g2-ba-dieu-cam-on/">Ba điều cảm ơn</a>','7t: nói "con thử cách khác". 2t: tự rót nước từ bình nhỏ'),
  ('3','<a href="tuan-3/t3-nhin-dich-roi-di/">Nhìn đích rồi đi</a>','<a href="tuan-3/k3-hat-dau-nay-mam/">Hạt đậu nảy mầm</a>','<a href="tuan-3/g3-viec-tot-bi-mat/">Việc tốt bí mật</a>','7t: tự đặt 1 mục tiêu và tự kiểm. 2t: chọn 1 trong 2 tranh việc'),
  ('4','<a href="tuan-4/t4-truoc-trong-sau/">Trước – Trong – Sau</a>','<a href="tuan-4/k4-mam-cao-bao-nhieu/">Mầm cao bao nhiêu?</a>','<a href="tuan-4/g4-dung-tho-noi/">Dừng – Thở – Nói</a>','7t: vẽ kế hoạch 3 bước. 2t: chỉ đúng 2 gương mặt cảm xúc'),
- ('5','Việc quan trọng làm trước','Ánh sáng và bóng','Trách nhiệm: việc nhà của con','7t: làm việc chính trước ≥4/7 ngày. 2t: cất đồ khi có bài hát'),
- ('6','Chờ lượt: Đèn đỏ – Đèn xanh','Dốc và lực: lăn xe trên ván nghiêng','Trung thực 2: nhận lỗi và sửa lỗi','7t: dừng đúng tín hiệu ≥8/10. 2t: ≥5/10'),
- ('7','Lắng nghe: gậy nói chuyện','Giác quan: túi bí ẩn (đồ to)','Tử tế 2: đoán cảm xúc người khác','7t: nhắc lại ý người khác. 2t: chờ lượt nói 1 lần'),
- ('8','Cùng vui: anh hướng dẫn em','Thời tiết: bảng mây, mưa, nắng','Biết ơn 2: cảm ơn người lao động quanh nhà','7t: hướng dẫn em 1 việc. 2t: làm theo anh 1 bước'),
+ ('5','<a href="tuan-5/t5-viec-quan-trong-lam-truoc/">Việc quan trọng làm trước</a>','<a href="tuan-5/k5-anh-sang-va-bong/">Ánh sáng và bóng</a>','<a href="tuan-5/g5-viec-nha-cua-con/">Việc nhà của con</a>','7t: làm việc chính trước ≥4/7 ngày. 2t: cất đồ khi có bài hát'),
+ ('6','<a href="tuan-6/t6-den-do-den-xanh/">Đèn đỏ – Đèn xanh</a>','<a href="tuan-6/k6-doc-va-luc/">Dốc và lực</a>','<a href="tuan-6/g6-nhan-loi-va-sua-loi/">Nhận lỗi và sửa lỗi</a>','7t: dừng đúng tín hiệu ≥8/10. 2t: ≥5/10'),
+ ('7','<a href="tuan-7/t7-gay-noi-chuyen/">Gậy nói chuyện</a>','<a href="tuan-7/k7-tui-bi-an/">Túi bí ẩn</a>','<a href="tuan-7/g7-tham-tu-cam-xuc/">Thám tử cảm xúc</a>','7t: nhắc lại ý người khác. 2t: chờ lượt nói 1 lần'),
+ ('8','<a href="tuan-8/t8-anh-huong-dan-em/">Anh hướng dẫn em</a>','<a href="tuan-8/k8-thoi-tiet/">Thời tiết quanh nhà</a>','<a href="tuan-8/g8-cam-on-nguoi-lao-dong/">Cảm ơn người lao động</a>','7t: hướng dẫn em 1 việc. 2t: làm theo anh 1 bước'),
  ('9','Chăm cây của mình: ngủ, ăn, vận động','Khủng long và hóa thạch: in dấu trên đất nặn','Chánh niệm: đi chậm, ăn chậm','Giờ ngủ đều ≥5/7 ngày (cả hai bé)'),
  ('10','Góc bình tĩnh khi giận','Thiết kế thuyền chở nhiều đồ nhất','Trách nhiệm 2: giữ lời hứa nhỏ','7t: tự dùng góc bình tĩnh 1 lần. 2t: chấp nhận ôm hoặc thở cùng'),
  ('11','Cả bàn tay: chậu rau gia đình','Con hỏi – con thử','Tử tế với chính mình','7t: tự đặt câu hỏi và dự đoán. 2t: gọi tên 3 bộ phận cây'),
@@ -31,7 +33,7 @@ thói quen tự chủ, tư duy khám phá và giá trị tử tế. Đồng th�
 <tr><th>Dành cho</th><td>Bố mẹ, ông bà, người chăm sóc trẻ 2–8 tuổi</td></tr>
 <tr><th>Thời lượng</th><td>12 tuần × 3 buổi × 30 phút. Bố mẹ chuẩn bị khoảng 30 phút mỗi tuần</td></tr>
 <tr><th>Cần có</th><td>Đồ có sẵn trong nhà, giấy, bút sáp to. Trẻ không cần màn hình</td></tr>
-<tr><th>Tình trạng</th><td>Tuần 1–4 đã có (tuần 2–4 là bản chưa dạy thử). Các tuần sau đăng dần</td></tr>
+<tr><th>Tình trạng</th><td>Tuần 1–8 đã có (tuần 2–8 là bản chưa dạy thử). Tuần 9–12 đăng dần</td></tr>
 </tbody></table></div>
 
 <div class="two">
@@ -43,6 +45,7 @@ thói quen tự chủ, tư duy khám phá và giá trị tử tế. Đồng th�
 
 <h2>Bàn tay nền tảng</h2>
 <p>Năm ngón tay là năm thói quen. Con nhìn bàn tay mình là nhớ.</p>
+{figure_block('KHOA')}
 <div class="table-wrap"><table>
 <thead><tr><th>Ngón</th><th>Thói quen</th></tr></thead>
 <tbody>

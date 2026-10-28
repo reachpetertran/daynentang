@@ -24,7 +24,7 @@ def link(k):
 def nav(k):
     i = ORDER.index(k)
     prev = link(ORDER[i-1]) if i > 0 else (U + 'tuan-1/g1-noi-that-long-nhe/', 'G1 – Nói thật, lòng nhẹ')
-    nxt = link(ORDER[i+1]) if i < len(ORDER)-1 else (U, 'Về trang khóa học')
+    nxt = link(ORDER[i+1]) if i < len(ORDER)-1 else (U + 'tuan-5/t5-viec-quan-trong-lam-truoc/', 'Tuần 5: T5 – Việc quan trọng làm trước')
     return prev, nxt
 def make(k, desc, meta, sections):
     w, slug, code, title = L[k]; prev, nxt = nav(k)

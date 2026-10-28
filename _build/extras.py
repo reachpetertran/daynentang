@@ -69,10 +69,13 @@ EV = [
  ('Lòng biết ơn gắn với hạnh phúc ở 80 trẻ khoảng 5 tuổi (tương quan)','Đã xác nhận','https://ideas.repec.org/a/spr/jhappi/v21y2020i8d10.1007_s10902-019-00188-6.html','Nguyen & Gordon 2020'),
  ('Thưởng vật chất làm trẻ 20 tháng giúp đỡ ít hơn về sau','Đã xác nhận','https://scholars.duke.edu/publication/1458228','Warneken & Tomasello 2008'),
  ('Bố mẹ làm mẫu, đáp lại, chỉ dạy về cảm xúc gắn với kỹ năng cảm xúc của trẻ mầm non; mức liên hệ nhỏ, chủ yếu tương quan','Đã xác nhận','https://figshare.com/articles/journal_contribution/Parents_socialization_of_preschool-aged_children_s_emotion_skills_A_meta-analysis_using_an_emotion-focused_parenting_practices_framework/14515686','Zinsser, Gordon & Jiang 2021'),
+ ('Anh chị em 4 và 6 tuổi dạy nhau tự nhiên, thường xuyên (quan sát 39 gia đình)','Đã xác nhận','https://www.sciencedaily.com/releases/2014/07/140709115505.htm','Howe et al., Journal of Cognition and Development'),
+ ('Đèn càng gần vật, bóng càng to; mặt trời thấp thì bóng dài (nội dung K–2 trong NGSS)','Đã xác nhận','https://www.nsta.org/sites/default/files/journal-articles/supplemental-resources/3-27-2020%20-%20Lesson%20Plan%20-%20%20Daily%20Do%20-%20Why%20Is%20My%20Shadow%20Always%20Changing.pdf','NSTA'),
+ ('Cách "đầu tiên… rồi…" dựa trên nguyên tắc Premack; mức bằng chứng khi dùng ở nhà chưa kiểm tra','Cần kiểm chứng','','Chưa đọc được nguồn tổng quan toàn văn'),
  ('Mẹo "không lọt lõi giấy vệ sinh" để loại vật nhỏ','Đánh giá chuyên môn','',''),
  ('Lịch 12 tuần và các hoạt động của khóa Gia đình 2–8','Đánh giá chuyên môn','',''),
 ]
-def _src(u,s): return f'<a href="{u}">{s}</a>' if u else 'Thiết kế của daynentang.com'
+def _src(u,s): return f'<a href="{u}">{s}</a>' if u else (s or 'Thiết kế hoặc đánh giá của daynentang.com')
 erows = ''.join(f'<tr><td>{c}</td><td><span class="label">[{l}]</span></td><td>{_src(u,s)}</td></tr>' for c,l,u,s in EV)
 page('/bang-chung/', 'Bằng chứng và nguồn', 'Bảng kiểm chứng: các nhận định trên daynentang.com, nhãn mức độ chắc chắn và nguồn gốc.',
 f'''
