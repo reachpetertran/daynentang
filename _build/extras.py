@@ -72,6 +72,11 @@ EV = [
  ('Anh chị em 4 và 6 tuổi dạy nhau tự nhiên, thường xuyên (quan sát 39 gia đình)','Đã xác nhận','https://www.sciencedaily.com/releases/2014/07/140709115505.htm','Howe et al., Journal of Cognition and Development'),
  ('Đèn càng gần vật, bóng càng to; mặt trời thấp thì bóng dài (nội dung K–2 trong NGSS)','Đã xác nhận','https://www.nsta.org/sites/default/files/journal-articles/supplemental-resources/3-27-2020%20-%20Lesson%20Plan%20-%20%20Daily%20Do%20-%20Why%20Is%20My%20Shadow%20Always%20Changing.pdf','NSTA'),
  ('Cách "đầu tiên… rồi…" dựa trên nguyên tắc Premack; mức bằng chứng khi dùng ở nhà chưa kiểm tra','Cần kiểm chứng','','Chưa đọc được nguồn tổng quan toàn văn'),
+ ('Giờ ngủ khuyến nghị trong 24 giờ: 1–2 tuổi 11–14 giờ; 3–5 tuổi 10–13 giờ; 6–12 tuổi 9–12 giờ','Đã xác nhận','https://www.sciencedaily.com/releases/2016/06/160613122419.htm','AASM 2016, J Clin Sleep Med'),
+ ('Trẻ 3,5–6 tuổi chờ khoảng 12 phút khi người lớn giữ lời, khoảng 3 phút khi người lớn thất hứa (28 trẻ, phòng thí nghiệm)','Đã xác nhận','https://pmc.ncbi.nlm.nih.gov/articles/PMC3730121/','Kidd, Palmeri & Aslin 2013'),
+ ('Chuẩn thiết kế kỹ thuật cho lớp mẫu giáo – lớp 2: xác định vấn đề, vẽ mô hình, so sánh dữ liệu thử của hai thiết kế','Đã xác nhận','https://www.nextgenscience.org/node/1116','NGSS K-2-ETS1'),
+ ('Tự trắc ẩn cao gắn với ít lo âu, trầm cảm, căng thẳng ở thanh thiếu niên 10–19 tuổi (r = −0,55; tương quan)','Đã xác nhận','https://pmc.ncbi.nlm.nih.gov/articles/PMC6061226','Marsh, Chan & MacBeth 2018'),
+ ('Hướng dẫn vận động, ít ngồi và giấc ngủ cho trẻ dưới 5 tuổi','Đã xác nhận','https://www.who.int/publications/i/item/9789241550536','WHO 2019'),
  ('Mẹo "không lọt lõi giấy vệ sinh" để loại vật nhỏ','Đánh giá chuyên môn','',''),
  ('Lịch 12 tuần và các hoạt động của khóa Gia đình 2–8','Đánh giá chuyên môn','',''),
 ]

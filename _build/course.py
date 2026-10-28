@@ -13,10 +13,10 @@ WEEKS = [
  ('6','<a href="tuan-6/t6-den-do-den-xanh/">Đèn đỏ – Đèn xanh</a>','<a href="tuan-6/k6-doc-va-luc/">Dốc và lực</a>','<a href="tuan-6/g6-nhan-loi-va-sua-loi/">Nhận lỗi và sửa lỗi</a>','7t: dừng đúng tín hiệu ≥8/10. 2t: ≥5/10'),
  ('7','<a href="tuan-7/t7-gay-noi-chuyen/">Gậy nói chuyện</a>','<a href="tuan-7/k7-tui-bi-an/">Túi bí ẩn</a>','<a href="tuan-7/g7-tham-tu-cam-xuc/">Thám tử cảm xúc</a>','7t: nhắc lại ý người khác. 2t: chờ lượt nói 1 lần'),
  ('8','<a href="tuan-8/t8-anh-huong-dan-em/">Anh hướng dẫn em</a>','<a href="tuan-8/k8-thoi-tiet/">Thời tiết quanh nhà</a>','<a href="tuan-8/g8-cam-on-nguoi-lao-dong/">Cảm ơn người lao động</a>','7t: hướng dẫn em 1 việc. 2t: làm theo anh 1 bước'),
- ('9','Chăm cây của mình: ngủ, ăn, vận động','Khủng long và hóa thạch: in dấu trên đất nặn','Chánh niệm: đi chậm, ăn chậm','Giờ ngủ đều ≥5/7 ngày (cả hai bé)'),
- ('10','Góc bình tĩnh khi giận','Thiết kế thuyền chở nhiều đồ nhất','Trách nhiệm 2: giữ lời hứa nhỏ','7t: tự dùng góc bình tĩnh 1 lần. 2t: chấp nhận ôm hoặc thở cùng'),
- ('11','Cả bàn tay: chậu rau gia đình','Con hỏi – con thử','Tử tế với chính mình','7t: tự đặt câu hỏi và dự đoán. 2t: gọi tên 3 bộ phận cây'),
- ('12','Lễ Bàn tay nền tảng: con kể 5 ngón','Triển lãm khoa học gia đình','Ôn 4 giá trị, vẽ ước nguyện','Đánh giá cuối khóa'),
+ ('9','<a href="tuan-9/t9-cham-cay-cua-minh/">Chăm cây của mình: ngủ, ăn, vận động</a>','<a href="tuan-9/k9-khung-long-va-hoa-thach/">Khủng long và hóa thạch</a>','<a href="tuan-9/g9-di-cham-an-cham/">Đi chậm, ăn chậm</a>','Giờ ngủ đều ≥5/7 ngày (cả hai bé)'),
+ ('10','<a href="tuan-10/t10-goc-binh-tinh/">Góc bình tĩnh khi giận</a>','<a href="tuan-10/k10-thiet-ke-thuyen/">Thiết kế thuyền chở nhiều đồ nhất</a>','<a href="tuan-10/g10-giu-loi-hua/">Giữ lời hứa nhỏ</a>','7t: tự dùng góc bình tĩnh 1 lần. 2t: chấp nhận ôm hoặc thở cùng'),
+ ('11','<a href="tuan-11/t11-chau-rau-gia-dinh/">Cả bàn tay: chậu rau gia đình</a>','<a href="tuan-11/k11-con-hoi-con-thu/">Con hỏi – con thử</a>','<a href="tuan-11/g11-tu-te-voi-chinh-minh/">Tử tế với chính mình</a>','7t: tự đặt câu hỏi và dự đoán. 2t: gọi tên 3 bộ phận cây'),
+ ('12','<a href="tuan-12/t12-le-ban-tay-nen-tang/">Lễ Bàn tay nền tảng</a>','<a href="tuan-12/k12-trien-lam-khoa-hoc/">Triển lãm khoa học gia đình</a>','<a href="tuan-12/g12-on-gia-tri-va-uoc-nguyen/">Ôn 4 giá trị, vẽ ước nguyện</a>','Đánh giá cuối khóa'),
 ]
 rows = ''.join(f'<tr><td>{w}</td><td>{t}</td><td>{k}</td><td>{g}</td><td>{m}</td></tr>' for w,t,k,g,m in WEEKS)
 
@@ -33,7 +33,7 @@ thói quen tự chủ, tư duy khám phá và giá trị tử tế. Đồng th�
 <tr><th>Dành cho</th><td>Bố mẹ, ông bà, người chăm sóc trẻ 2–8 tuổi</td></tr>
 <tr><th>Thời lượng</th><td>12 tuần × 3 buổi × 30 phút. Bố mẹ chuẩn bị khoảng 30 phút mỗi tuần</td></tr>
 <tr><th>Cần có</th><td>Đồ có sẵn trong nhà, giấy, bút sáp to. Trẻ không cần màn hình</td></tr>
-<tr><th>Tình trạng</th><td>Tuần 1–8 đã có (tuần 2–8 là bản chưa dạy thử). Tuần 9–12 đăng dần</td></tr>
+<tr><th>Tình trạng</th><td>Đủ 12 tuần (tuần 2–12 là bản chưa dạy thử, sẽ sửa theo nhật ký dạy thật)</td></tr>
 </tbody></table></div>
 
 <div class="two">

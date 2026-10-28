@@ -27,7 +27,7 @@ page('/', 'Dạy Nền Tảng – nền tảng làm người, tự học miễn 
 
 <h2>Khóa đang mở</h2>
 <a class="card" href="/khoa-hoc/gia-dinh-2-8/">
-  <span class="tag">Đang thử nghiệm · tuần 1–8 đã có</span>
+  <span class="tag">Đang thử nghiệm · đủ 12 tuần</span>
   <h3>Gia đình 2–8 tuổi: Bàn tay nền tảng</h3>
   <p>12 tuần, 3 buổi mỗi tuần, 30 phút mỗi buổi. Bố mẹ dạy con thói quen tự chủ, tư duy khám phá và giá trị tử tế bằng đồ có sẵn trong nhà. Trẻ không cần màn hình.</p>
 </a>
@@ -172,6 +172,7 @@ Tài liệu của tổ chức khác thuộc quyền của họ; chúng tôi ch�
 
 <h2>Nhật ký sửa đổi</h2>
 <ul>
+<li>28/10/2026: Thêm bài tuần 9–12 (bản chưa dạy thử) kèm 36 hình; khóa Gia đình 2–8 đủ 12 tuần.</li>
 <li>28/10/2026: Thêm bài tuần 5–8 (bản chưa dạy thử) kèm 36 hình, có sơ đồ quy trình và sơ đồ nguyên lý; thêm 3 sơ đồ ở trang khóa học.</li>
 <li>28/10/2026: Thêm 36 hình minh họa tự vẽ cho 12 bài học (cùng giấy phép CC BY-NC-SA 4.0; nhân vật là con vật tự sáng tác, không dùng ảnh trẻ em).</li>
 <li>28/10/2026: Thêm trang Chia sẻ (ẩn danh hoặc công khai, duyệt trước khi đăng). Thêm bài tuần 2–4 của khóa Gia đình 2–8 (bản chưa dạy thử).</li>

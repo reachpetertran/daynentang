@@ -25,7 +25,19 @@
     'g3-g7': 'Gia đình 2–8 · G7 Thám tử cảm xúc',
     'g3-t8': 'Gia đình 2–8 · T8 Anh hướng dẫn em',
     'g3-k8': 'Gia đình 2–8 · K8 Thời tiết quanh nhà',
-    'g3-g8': 'Gia đình 2–8 · G8 Cảm ơn người lao động'
+    'g3-g8': 'Gia đình 2–8 · G8 Cảm ơn người lao động',
+    'g3-t9': 'Gia đình 2–8 · T9 Chăm cây của mình',
+    'g3-k9': 'Gia đình 2–8 · K9 Khủng long và hóa thạch',
+    'g3-g9': 'Gia đình 2–8 · G9 Đi chậm, ăn chậm',
+    'g3-t10': 'Gia đình 2–8 · T10 Góc bình tĩnh',
+    'g3-k10': 'Gia đình 2–8 · K10 Thiết kế thuyền',
+    'g3-g10': 'Gia đình 2–8 · G10 Giữ lời hứa nhỏ',
+    'g3-t11': 'Gia đình 2–8 · T11 Chậu rau gia đình',
+    'g3-k11': 'Gia đình 2–8 · K11 Con hỏi – con thử',
+    'g3-g11': 'Gia đình 2–8 · G11 Tử tế với chính mình',
+    'g3-t12': 'Gia đình 2–8 · T12 Lễ Bàn tay nền tảng',
+    'g3-k12': 'Gia đình 2–8 · K12 Triển lãm khoa học gia đình',
+    'g3-g12': 'Gia đình 2–8 · G12 Ôn giá trị và ước nguyện'
   };
   var KINDS = { 'kho-khan': 'Khó khăn', 'y-tuong': 'Ý tưởng sáng tạo', 'ket-qua': 'Kết quả', 'gop-y': 'Góp ý cho bài' };
 

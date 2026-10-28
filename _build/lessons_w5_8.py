@@ -27,7 +27,7 @@ def link(k):
 def make(k, desc, meta, sections):
     w, slug, code, title = L[k]; i = ORDER.index(k)
     prev = link(ORDER[i-1]) if i else (U + 'tuan-4/g4-dung-tho-noi/', 'G4 – Dừng – Thở – Nói')
-    nxt = link(ORDER[i+1]) if i < len(ORDER)-1 else (U, 'Về trang khóa học')
+    nxt = link(ORDER[i+1]) if i < len(ORDER)-1 else (U + 'tuan-9/t9-cham-cay-cua-minh/', 'T9 – Chăm cây của mình')
     lesson(slug, code, title, '', desc, meta, sections, prev=prev, nxt=nxt, week=w, draft=True)
 def mom(need, steps, notes):
     li = ''.join(f'<li><strong>{a}</strong> {b}</li>' for a, b in steps)
