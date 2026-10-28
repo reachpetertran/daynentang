@@ -57,7 +57,15 @@
     'g6-5a': 'Tiền nhà mình · 5A Đi chợ có kế hoạch',
     'g6-5b': 'Tiền nhà mình · 5B Con đi chợ cùng bố mẹ',
     'g6-6a': 'Tiền nhà mình · 6A Họp tiền hằng tháng',
-    'g6-6b': 'Tiền nhà mình · 6B Ngăn Chia sẻ'
+    'g6-6b': 'Tiền nhà mình · 6B Ngăn Chia sẻ',
+    'g7-1a': 'Việc nhà chia đều · 1A Nhìn thấy mọi việc',
+    'g7-1b': 'Việc nhà chia đều · 1B Săn việc nhà',
+    'g7-2a': 'Việc nhà chia đều · 2A Chia lại cho công bằng',
+    'g7-2b': 'Việc nhà chia đều · 2B Bảng việc của con',
+    'g7-3a': 'Việc nhà chia đều · 3A Dạy con làm việc nhà',
+    'g7-3b': 'Việc nhà chia đều · 3B Mười phút dọn nhà',
+    'g7-4a': 'Việc nhà chia đều · 4A Xem lại phân công',
+    'g7-4b': 'Việc nhà chia đều · 4B Ngày cảm ơn việc nhà'
   };
   var KINDS = { 'kho-khan': 'Khó khăn', 'y-tuong': 'Ý tưởng sáng tạo', 'ket-qua': 'Kết quả', 'gop-y': 'Góp ý cho bài' };
 

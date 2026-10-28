@@ -13,7 +13,7 @@ page('/cong-cu/', 'Công cụ', 'Công cụ in miễn phí cho gia đình: bản
 <a class="card" href="/cong-cu/bien-ban-hop-gia-dinh/"><span class="tag">Có thể in</span><h3>Biên bản họp gia đình</h3><p>Năm phần của buổi họp 15 phút mỗi tuần.</p></a>
 <a class="card" href="/cong-cu/bang-thu-chi/"><span class="tag">Có thể in</span><h3>Bảng thu chi</h3><p>Ghi chi 7 ngày, bảng tháng, quỹ khẩn cấp, danh sách nợ. Cho khóa Tiền nhà mình.</p></a>
 <a class="card" href="/cong-cu/hu-ba-ngan/"><span class="tag">Có thể in</span><h3>Hũ ba ngăn</h3><p>Nhãn hũ, thanh mục tiêu, tranh cần – muốn cho con.</p></a>
-<div class="card"><span class="tag soon">Đang soạn</span><h3>Bảng việc nhà theo tuổi</h3><p>Cho khóa Việc nhà chia đều.</p></div>
+<a class="card" href="/cong-cu/bang-viec-nha/"><span class="tag">Có thể in</span><h3>Bảng việc nhà</h3><p>Danh sách việc có phần nghĩ, Ai lo việc gì, bảng việc của con. Cho khóa Việc nhà chia đều.</p></a>
 </div>
 ''', current='/cong-cu/')
 
@@ -92,6 +92,10 @@ EV = [
  ('Lãi suất vay thỏa thuận không vượt 20%/năm, trừ khi luật khác quy định khác; phần vượt không có hiệu lực','Đã xác nhận','https://div.gov.vn/can-hieu-dung-ve-tran-lai-suat-cho-vay-20-nam','Bộ luật Dân sự 2015 (91/2015/QH13), Điều 468'),
  ('Cho vay lãi suất gấp 5 lần mức cao nhất của Bộ luật Dân sự có thể bị xử lý hình sự','Đã xác nhận','https://tapchitoaan.vn/huong-dan-ap-dung-dieu-201-cua-blhs-va-viec-xet-xu-vu-an-cho-vay-lai-nang','Bộ luật Hình sự 2015, Điều 201'),
  ('Luật 86/2025/QH15 (hiệu lực 01/07/2025) có sửa mức phạt Điều 201 hay không','Cần kiểm chứng','',''),
+ ('Phụ nữ làm 76,2% tổng số giờ việc chăm sóc không lương trên thế giới, gấp hơn 3 lần nam giới','Đã xác nhận','https://www.ilo.org/resource/news/ilo-calls-urgent-action-prevent-looming-global-care-crisis','ILO 2018, Care work and care jobs'),
+ ('"Việc nghĩ" trong nhà gồm dự đoán, nghĩ cách, quyết định, theo dõi; phụ nữ làm nhiều hơn phần dự đoán và theo dõi (35 cặp)','Đã xác nhận','https://inequality.hks.harvard.edu/publications/cognitive-dimension-household-labor','Daminger 2019, American Sociological Review 84(4)'),
+ ('Việc nhà theo tuổi 5–12, bảng việc, thêm từng việc một, khen cố gắng hơn kết quả','Đã xác nhận','https://www.healthychildren.org/English/family-life/family-dynamics/communication-discipline/Pages/Chores-and-Responsibility.aspx','AAP – HealthyChildren.org (2024)'),
+ ('Việc tự chăm sóc và chăm sóc gia đình gắn với trí nhớ làm việc, kiềm chế tốt hơn ở trẻ 5–13 tuổi (207 phụ huynh; tương quan)','Đã xác nhận','https://neurosciencenews.com/child-chores-brain-function-20827/','Tepper et al. 2022'),
  ('Mẹo "không lọt lõi giấy vệ sinh" để loại vật nhỏ','Đánh giá chuyên môn','',''),
  ('Lịch 12 tuần và các hoạt động của khóa Gia đình 2–8','Đánh giá chuyên môn','',''),
 ]

@@ -41,6 +41,11 @@ page('/', 'Dạy Nền Tảng – nền tảng làm người, tự học miễn 
   <h3>Tiền nhà mình</h3>
   <p>6 tuần: ghi thu chi, bảng tháng, quỹ khẩn cấp, tránh tín dụng đen, đi chợ có kế hoạch. Con học cần – muốn và hũ ba ngăn.</p>
 </a>
+<a class="card" href="/khoa-hoc/viec-nha-chia-deu/">
+  <span class="tag">Đang thử nghiệm · đủ 4 tuần</span>
+  <h3>Việc nhà chia đều</h3>
+  <p>4 tuần: nhìn thấy mọi việc nhà kể cả phần nghĩ, chia lại cho công bằng, dạy con làm việc theo tuổi, dọn nhà 10 phút mỗi ngày.</p>
+</a>
 
 <h2>Bốn trụ cột</h2>
 <div class="grid">
@@ -62,7 +67,7 @@ FAMILY = [
  ('G3','Gia đình 2–8 tuổi','Thói quen tự chủ, khám phá khoa học, giá trị tử tế qua 30 phút chơi.','12 tuần','/khoa-hoc/gia-dinh-2-8/',True),
  ('G1','Giá trị nhà mình','Cả nhà thống nhất 3–5 giá trị và nội quy; họp gia đình 15 phút mỗi tuần.','4 tuần','/khoa-hoc/gia-tri-nha-minh/',True),
  ('G6','Tiền nhà mình','Bảng thu chi tháng, quỹ khẩn cấp, dạy con làm – tiết kiệm – chi.','6 tuần','/khoa-hoc/tien-nha-minh/',True),
- ('G7','Việc nhà chia đều','Phân công việc nhà công bằng; bảng việc nhà theo tuổi cho con.','4 tuần',None,False),
+ ('G7','Việc nhà chia đều','Phân công việc nhà công bằng; bảng việc nhà theo tuổi cho con.','4 tuần','/khoa-hoc/viec-nha-chia-deu/',True),
  ('G2','Gia đình 0–2 tuổi','Tương tác "giao và đáp" 5 phút mỗi ngày để xây gắn bó và ngôn ngữ.','8 tuần',None,False),
  ('G4','Gia đình có con 10–14','Đồng hành tuổi dậy thì: trò chuyện, ranh giới, tự lập.','7 tuần',None,False),
  ('G5','Vợ chồng đồng lòng','Cùng một đội khi nuôi con; nói chuyện khi bất đồng.','6 tuần',None,False),
@@ -182,6 +187,7 @@ Tài liệu của tổ chức khác thuộc quyền của họ; chúng tôi ch�
 
 <h2>Nhật ký sửa đổi</h2>
 <ul>
+<li>28/10/2026: Mở khóa Việc nhà chia đều (4 tuần, 8 bài, bản chưa dạy thử) kèm 18 hình và Bảng việc nhà.</li>
 <li>28/10/2026: Mở khóa Tiền nhà mình (6 tuần, 12 bài, bản chưa dạy thử) kèm 26 hình, Bảng thu chi và Hũ ba ngăn.</li>
 <li>28/10/2026: Mở khóa Giá trị nhà mình (4 tuần, 8 bài, bản chưa dạy thử) kèm 26 hình, Phiếu giá trị và Biên bản họp gia đình.</li>
 <li>28/10/2026: Thêm bài tuần 9–12 (bản chưa dạy thử) kèm 36 hình; khóa Gia đình 2–8 đủ 12 tuần.</li>
