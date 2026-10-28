@@ -13,6 +13,7 @@ page('/cong-cu/', 'Công cụ', 'Công cụ in miễn phí cho gia đình: bản
 <a class="card" href="/cong-cu/bien-ban-hop-gia-dinh/"><span class="tag">Có thể in</span><h3>Biên bản họp gia đình</h3><p>Năm phần của buổi họp 15 phút mỗi tuần.</p></a>
 <a class="card" href="/cong-cu/bang-thu-chi/"><span class="tag">Có thể in</span><h3>Bảng thu chi</h3><p>Ghi chi 7 ngày, bảng tháng, quỹ khẩn cấp, danh sách nợ. Cho khóa Tiền nhà mình.</p></a>
 <a class="card" href="/cong-cu/hu-ba-ngan/"><span class="tag">Có thể in</span><h3>Hũ ba ngăn</h3><p>Nhãn hũ, thanh mục tiêu, tranh cần – muốn cho con.</p></a>
+<a class="card" href="/cong-cu/nhat-ky-giao-dap/"><span class="tag">Có thể in</span><h3>Nhật ký giao và đáp</h3><p>5 phút mỗi ngày, kế hoạch khi con khóc. Cho khóa Gia đình 0–2 tuổi.</p></a>
 <a class="card" href="/cong-cu/bang-viec-nha/"><span class="tag">Có thể in</span><h3>Bảng việc nhà</h3><p>Danh sách việc có phần nghĩ, Ai lo việc gì, bảng việc của con. Cho khóa Việc nhà chia đều.</p></a>
 </div>
 ''', current='/cong-cu/')
@@ -96,6 +97,13 @@ EV = [
  ('"Việc nghĩ" trong nhà gồm dự đoán, nghĩ cách, quyết định, theo dõi; phụ nữ làm nhiều hơn phần dự đoán và theo dõi (35 cặp)','Đã xác nhận','https://inequality.hks.harvard.edu/publications/cognitive-dimension-household-labor','Daminger 2019, American Sociological Review 84(4)'),
  ('Việc nhà theo tuổi 5–12, bảng việc, thêm từng việc một, khen cố gắng hơn kết quả','Đã xác nhận','https://www.healthychildren.org/English/family-life/family-dynamics/communication-discipline/Pages/Chores-and-Responsibility.aspx','AAP – HealthyChildren.org (2024)'),
  ('Việc tự chăm sóc và chăm sóc gia đình gắn với trí nhớ làm việc, kiềm chế tốt hơn ở trẻ 5–13 tuổi (207 phụ huynh; tương quan)','Đã xác nhận','https://neurosciencenews.com/child-chores-brain-function-20827/','Tepper et al. 2022'),
+ ('Năm bước giao và đáp: nhận ra lời giao, đáp lại, gọi tên, thay phiên và chờ, kết thúc và bắt đầu','Đã xác nhận','https://bettercarenetwork.org/sites/default/files/HCDC_ServeReturn_for_Parents_Caregivers_2019.pdf','Harvard Center on the Developing Child (2019)'),
+ ('Thăm nhà hằng tuần dạy mẹ chơi, nói chuyện với con ở Jamaica: sau khoảng 20 năm, thu nhập cao hơn 25% (105 người theo dõi)','Đã xác nhận','https://sciencedaily.com/releases/2014/05/140529142354.htm','Gertler et al. 2014, Science'),
+ ('Ngủ an toàn: nằm ngửa, mặt phẳng cứng, không đồ mềm, cùng phòng không chung giường ít nhất 6 tháng đầu','Đã xác nhận','https://aap.org/en/news-room/news-releases/aap/2022/american-academy-of-pediatrics-updates-safe-sleep-recommendations-back-is-best','AAP 2022'),
+ ('Trẻ dưới 1 tuổi: ≥30 phút nằm sấp khi thức; 1–2 tuổi: ≥180 phút vận động; không ngồi ghế, xe đẩy quá 1 giờ liền; không màn hình dưới 2 tuổi (2 tuổi ≤1 giờ)','Đã xác nhận','https://new.chconline.org/new-who-guidelines-on-physical-activity-sedentary-behaviour-and-sleep-for-children-under-5-years-of-age','WHO 2019'),
+ ('Đọc to cho con bắt đầu từ lúc mới sinh','Đã xác nhận','https://www.physiciansweekly.com/aap-why-literacy-promotion-is-crucial-during-clinical-visits/','AAP 2024, Pediatrics'),
+ ('Khóc là nguyên nhân chính dẫn đến lắc trẻ; đặt trẻ chỗ an toàn, tạm rời đi khi bực, gọi người giúp; không bao giờ lắc','Đã xác nhận','https://webarchive.library.unt.edu/web/20201221232327/https://www.cdc.gov/violenceprevention/childabuseandneglect/Abusive-Head-Trauma.html','CDC (bản lưu trữ)'),
+ ('Danh sách mốc phát triển CDC 2022 dùng ngưỡng 75% trẻ cùng tuổi','Đã xác nhận','https://www.disabilityscoop.com/2022/02/10/cdc-revises-developmental-milestones-for-young-kids/29698/','CDC, qua Disability Scoop'),
  ('Mẹo "không lọt lõi giấy vệ sinh" để loại vật nhỏ','Đánh giá chuyên môn','',''),
  ('Lịch 12 tuần và các hoạt động của khóa Gia đình 2–8','Đánh giá chuyên môn','',''),
 ]

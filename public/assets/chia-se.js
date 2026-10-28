@@ -65,7 +65,15 @@
     'g7-3a': 'Việc nhà chia đều · 3A Dạy con làm việc nhà',
     'g7-3b': 'Việc nhà chia đều · 3B Mười phút dọn nhà',
     'g7-4a': 'Việc nhà chia đều · 4A Xem lại phân công',
-    'g7-4b': 'Việc nhà chia đều · 4B Ngày cảm ơn việc nhà'
+    'g7-4b': 'Việc nhà chia đều · 4B Ngày cảm ơn việc nhà',
+    'g2-1': 'Gia đình 0–2 · Bài 1 Nhận ra lời giao',
+    'g2-2': 'Gia đình 0–2 · Bài 2 Đáp lại',
+    'g2-3': 'Gia đình 0–2 · Bài 3 Gọi tên',
+    'g2-4': 'Gia đình 0–2 · Bài 4 Thay phiên và chờ',
+    'g2-5': 'Gia đình 0–2 · Bài 5 Kết thúc và bắt đầu',
+    'g2-6': 'Gia đình 0–2 · Bài 6 Đọc sách, hát, kể chuyện',
+    'g2-7': 'Gia đình 0–2 · Bài 7 Vận động và đồ chơi tự làm',
+    'g2-8': 'Gia đình 0–2 · Bài 8 Khi con khóc, khi bố mẹ mệt'
   };
   var KINDS = { 'kho-khan': 'Khó khăn', 'y-tuong': 'Ý tưởng sáng tạo', 'ket-qua': 'Kết quả', 'gop-y': 'Góp ý cho bài' };
 
