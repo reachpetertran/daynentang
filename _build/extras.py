@@ -65,6 +65,10 @@ EV = [
  ('Tổng đài 111 bảo vệ trẻ em: miễn phí, 24/7','Đã xác nhận','https://tongdai111.vn/','tongdai111.vn'),
  ('Đường dây Ngày Mai 096 306 1414: 13:00–20:30, thứ Tư đến Chủ nhật','Đã xác nhận','https://duongdaynongngaymai.vn/','duongdaynongngaymai.vn'),
  ('113 công an, 114 cứu hỏa, 115 cấp cứu; Bộ Y tế đề xuất gộp thành một số khẩn cấp, chưa có hiệu lực','Đã xác nhận (tra 28/10/2026)','https://thuvienphapluat.vn/hoi-dap-phap-luat/111-113-114-115-la-so-dien-thoai-gi-138013545.html','Thư viện Pháp luật; LuatVietnam'),
+ ('Đếm điều may mắn: thử nghiệm 221 học sinh đầu tuổi thiếu niên, tăng biết ơn, lạc quan, hài lòng cuộc sống','Đã xác nhận','https://proofpositive.org/bc-science/counting-blessings-in-early-adolescents-an-experimental-study-of-gratitude-and-subjective-wellbeing/','Froh, Sefick & Emmons 2008'),
+ ('Lòng biết ơn gắn với hạnh phúc ở 80 trẻ khoảng 5 tuổi (tương quan)','Đã xác nhận','https://ideas.repec.org/a/spr/jhappi/v21y2020i8d10.1007_s10902-019-00188-6.html','Nguyen & Gordon 2020'),
+ ('Thưởng vật chất làm trẻ 20 tháng giúp đỡ ít hơn về sau','Đã xác nhận','https://scholars.duke.edu/publication/1458228','Warneken & Tomasello 2008'),
+ ('Bố mẹ làm mẫu, đáp lại, chỉ dạy về cảm xúc gắn với kỹ năng cảm xúc của trẻ mầm non; mức liên hệ nhỏ, chủ yếu tương quan','Đã xác nhận','https://figshare.com/articles/journal_contribution/Parents_socialization_of_preschool-aged_children_s_emotion_skills_A_meta-analysis_using_an_emotion-focused_parenting_practices_framework/14515686','Zinsser, Gordon & Jiang 2021'),
  ('Mẹo "không lọt lõi giấy vệ sinh" để loại vật nhỏ','Đánh giá chuyên môn','',''),
  ('Lịch 12 tuần và các hoạt động của khóa Gia đình 2–8','Đánh giá chuyên môn','',''),
 ]

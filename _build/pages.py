@@ -27,7 +27,7 @@ page('/', 'Dạy Nền Tảng – nền tảng làm người, tự học miễn 
 
 <h2>Khóa đang mở</h2>
 <a class="card" href="/khoa-hoc/gia-dinh-2-8/">
-  <span class="tag">Đang thử nghiệm · tuần 1 đã có</span>
+  <span class="tag">Đang thử nghiệm · tuần 1–4 đã có</span>
   <h3>Gia đình 2–8 tuổi: Bàn tay nền tảng</h3>
   <p>12 tuần, 3 buổi mỗi tuần, 30 phút mỗi buổi. Bố mẹ dạy con thói quen tự chủ, tư duy khám phá và giá trị tử tế bằng đồ có sẵn trong nhà. Trẻ không cần màn hình.</p>
 </a>
@@ -139,10 +139,22 @@ Kết quả dạy thử trong một gia đình chưa phải bằng chứng khoa 
 
 <h2 id="rieng-tu">Quyền riêng tư</h2>
 <ul>
-<li>Trang không dùng cookie, không có công cụ theo dõi, không có quảng cáo, không có biểu mẫu.</li>
+<li>Trang không dùng cookie, không có công cụ theo dõi, không có quảng cáo.</li>
 <li>Trang không tải phông chữ hay mã từ bên ngoài.</li>
 <li>Các công cụ trên trang (nếu có) chỉ lưu dữ liệu trên máy của bạn, không gửi đi đâu.</li>
 <li>Nhà cung cấp hạ tầng (Cloudflare) có thể ghi nhật ký kỹ thuật cơ bản để vận hành và chống tấn công.</li>
+</ul>
+
+<h2 id="chia-se">Dữ liệu ở trang Chia sẻ</h2>
+<ul>
+<li><strong>Chúng tôi lưu:</strong> nội dung bạn viết, loại chia sẻ, bài học liên quan, chế độ hiển thị, ngày gửi; và nếu bạn tự điền: tên hiển thị, tỉnh/thành, tuổi con.</li>
+<li><strong>Chúng tôi không lưu:</strong> địa chỉ IP, email, số điện thoại, tài khoản hay cookie của bạn.</li>
+<li><strong>Duyệt trước khi đăng:</strong> mọi bài được người quản lý trang đọc trước. Bài có thông tin nhận diện trẻ em, quảng cáo, xúc phạm hoặc nội dung nguy hại sẽ bị sửa bỏ phần đó hoặc không đăng.</li>
+<li><strong>Riêng tư:</strong> bài chọn "Riêng tư" chỉ người quản lý trang đọc, dùng để sửa bài học, không bao giờ đăng.</li>
+<li><strong>Dùng để làm gì:</strong> sửa và cải thiện bài học; tổng hợp ẩn danh (ví dụ: "12 gia đình gặp khó ở bước 3") cho trang web, video và ứng dụng sau này. Không bán, không chia sẻ cho bên thứ ba.</li>
+<li><strong>Lưu trữ:</strong> dữ liệu nằm trên dịch vụ cơ sở dữ liệu Cloudflare D1.</li>
+<li><strong>Xin xóa bài:</strong> gửi một chia sẻ loại "Góp ý cho bài", ghi "Xin xóa bài #mã" (mã hiện ra sau khi bạn gửi). Chúng tôi xóa khi nhận được.</li>
+<li>Chỉ người từ 18 tuổi được gửi chia sẻ.</li>
 </ul>
 
 <h2 id="giay-phep">Giấy phép</h2>
@@ -160,6 +172,7 @@ Tài liệu của tổ chức khác thuộc quyền của họ; chúng tôi ch�
 
 <h2>Nhật ký sửa đổi</h2>
 <ul>
+<li>28/10/2026: Thêm trang Chia sẻ (ẩn danh hoặc công khai, duyệt trước khi đăng). Thêm bài tuần 2–4 của khóa Gia đình 2–8 (bản chưa dạy thử).</li>
 <li>28/10/2026: Ra mắt trang. Mở khóa Gia đình 2–8 tuổi, tuần 1.</li>
 </ul>
 ''', current='/gioi-thieu/')

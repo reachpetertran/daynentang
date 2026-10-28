@@ -10,19 +10,27 @@ JOURNAL = '''<div class="table-wrap journal"><table><tbody>
 def sec(n, title, body):
     return f'<section class="sec"><h2><span class="n">{n}.</span>{title}</h2>{body}</section>'
 
-def lesson(slug, code, title, strand, desc, meta, sections, prev=None, nxt=None):
+def lesson(slug, code, title, strand, desc, meta, sections, prev=None, nxt=None, week=1, draft=False):
+    base = f'/khoa-hoc/gia-dinh-2-8/tuan-{week}/'
     navl = f'<a href="{prev[0]}">← {prev[1]}</a>' if prev else '<span></span>'
     navr = f'<a href="{nxt[0]}">{nxt[1]} →</a>' if nxt else '<span></span>'
+    key = 'g3-' + code.lower()
+    note = ('<div class="box warn no-print"><p><strong>Bản chưa dạy thử.</strong> Bài này đã soạn theo khung của khóa nhưng chưa được dạy thử trong gia đình. '
+            'Nếu bạn dùng thử, hãy <a href="/chia-se/?bai=' + key + '#gui">chia sẻ</a> điều bạn gặp để chúng tôi sửa bài.</p></div>') if draft else ''
+    share = (f'<div class="box share-cta no-print"><h3>Bạn đã thử bài này?</h3><p>Chia sẻ khó khăn, ý tưởng hay kết quả. Ẩn danh hoặc công khai, tùy bạn.</p>'
+             f'<p><a class="btn primary" href="/chia-se/?bai={key}#gui">Chia sẻ về bài {code}</a></p></div>')
     body = f'''<div class="lesson">
-<p class="eyebrow no-print"><a href="/khoa-hoc/gia-dinh-2-8/">Gia đình 2–8 tuổi</a> · Tuần 1 · {code}</p>
+<p class="eyebrow no-print"><a href="/khoa-hoc/gia-dinh-2-8/">Gia đình 2–8 tuổi</a> · Tuần {week} · {code}</p>
 <h1>{title}</h1>
 <div class="lesson-meta">{''.join(f'<span>{m}</span>' for m in meta)}</div>
+{note}
 {PRINT_ROW}
 {''.join(sections)}
+{share}
 <p class="print-only small">daynentang.com · CC BY-NC-SA 4.0 · Cập nhật 28/10/2026</p>
 <nav class="lesson-nav no-print" aria-label="Bài trước, bài sau">{navl}{navr}</nav>
 </div>'''
-    page(BASE + slug + '/', f'{code} – {title}', desc, body, current='/gia-dinh/')
+    page(base + slug + '/', f'{code} – {title}', desc, body, current='/gia-dinh/')
 
 T1 = BASE + 't1-minh-tu-lam-duoc/'
 K1 = BASE + 'k1-noi-hay-chim/'
@@ -200,4 +208,4 @@ lesson('g1-noi-that-long-nhe', 'G1', 'Nói thật, lòng nhẹ', 'Giá trị',
 <li><span class="label">[Đã xác nhận]</span> Khi đổi kết thúc truyện thành tiêu cực, hiệu quả biến mất; hiệu quả lâu dài chưa được kiểm chứng (cùng nguồn).</li>
 <li><span class="label">[Suy luận]</span> "Cảm ơn trước, sửa sau" là cách áp dụng phát hiện trên vào gia đình; nghiên cứu không thử trực tiếp cách này.</li>
 <li><span class="label">[Đánh giá chuyên môn]</span> Truyện "Khủng long Tí" viết mới hoàn toàn, chỉ mượn ý tưởng "khen người nói thật".</li></ul>'''),
- ], prev=(K1,'K1 – Nổi hay chìm?'), nxt=('/khoa-hoc/gia-dinh-2-8/','Về trang khóa học'))
+ ], prev=(K1,'K1 – Nổi hay chìm?'), nxt=('/khoa-hoc/gia-dinh-2-8/tuan-2/t2-thu-sai-thu-lai/','Tuần 2: T2 – Thử – sai – thử lại'))

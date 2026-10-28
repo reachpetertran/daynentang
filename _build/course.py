@@ -4,9 +4,9 @@ BASE = '/khoa-hoc/gia-dinh-2-8/'
 
 WEEKS = [
  ('1','<a href="tuan-1/t1-minh-tu-lam-duoc/">Mình tự làm được</a>','<a href="tuan-1/k1-noi-hay-chim/">Nổi hay chìm?</a>','<a href="tuan-1/g1-noi-that-long-nhe/">Nói thật, lòng nhẹ</a>','7t: tự làm việc đã chọn ≥4/7 ngày. 2t: cất 3 món đồ chơi khi nhắc'),
- ('2','Thử – sai – thử lại','Nước: rót, đong, thấm','Biết ơn: 3 điều cảm ơn trước ngủ','7t: nói "con thử cách khác". 2t: tự rót nước từ bình nhỏ'),
- ('3','Nhìn đích rồi đi','Gieo hạt đậu xanh, nhật ký mầm','Tử tế: việc tốt bí mật','7t: tự đặt 1 mục tiêu và tự kiểm. 2t: chọn 1 trong 2 tranh việc'),
- ('4','Kế hoạch Trước – Trong – Sau','Đo mầm bằng que, vẽ nhật ký','Dừng – Thở – Nói: gọi tên cảm xúc','7t: vẽ kế hoạch 3 bước. 2t: chỉ đúng 2 gương mặt cảm xúc'),
+ ('2','<a href="tuan-2/t2-thu-sai-thu-lai/">Thử – sai – thử lại</a>','<a href="tuan-2/k2-nuoc-rot-dong-tham/">Nước: rót, đong, thấm</a>','<a href="tuan-2/g2-ba-dieu-cam-on/">Ba điều cảm ơn</a>','7t: nói "con thử cách khác". 2t: tự rót nước từ bình nhỏ'),
+ ('3','<a href="tuan-3/t3-nhin-dich-roi-di/">Nhìn đích rồi đi</a>','<a href="tuan-3/k3-hat-dau-nay-mam/">Hạt đậu nảy mầm</a>','<a href="tuan-3/g3-viec-tot-bi-mat/">Việc tốt bí mật</a>','7t: tự đặt 1 mục tiêu và tự kiểm. 2t: chọn 1 trong 2 tranh việc'),
+ ('4','<a href="tuan-4/t4-truoc-trong-sau/">Trước – Trong – Sau</a>','<a href="tuan-4/k4-mam-cao-bao-nhieu/">Mầm cao bao nhiêu?</a>','<a href="tuan-4/g4-dung-tho-noi/">Dừng – Thở – Nói</a>','7t: vẽ kế hoạch 3 bước. 2t: chỉ đúng 2 gương mặt cảm xúc'),
  ('5','Việc quan trọng làm trước','Ánh sáng và bóng','Trách nhiệm: việc nhà của con','7t: làm việc chính trước ≥4/7 ngày. 2t: cất đồ khi có bài hát'),
  ('6','Chờ lượt: Đèn đỏ – Đèn xanh','Dốc và lực: lăn xe trên ván nghiêng','Trung thực 2: nhận lỗi và sửa lỗi','7t: dừng đúng tín hiệu ≥8/10. 2t: ≥5/10'),
  ('7','Lắng nghe: gậy nói chuyện','Giác quan: túi bí ẩn (đồ to)','Tử tế 2: đoán cảm xúc người khác','7t: nhắc lại ý người khác. 2t: chờ lượt nói 1 lần'),
@@ -31,7 +31,7 @@ thói quen tự chủ, tư duy khám phá và giá trị tử tế. Đồng th�
 <tr><th>Dành cho</th><td>Bố mẹ, ông bà, người chăm sóc trẻ 2–8 tuổi</td></tr>
 <tr><th>Thời lượng</th><td>12 tuần × 3 buổi × 30 phút. Bố mẹ chuẩn bị khoảng 30 phút mỗi tuần</td></tr>
 <tr><th>Cần có</th><td>Đồ có sẵn trong nhà, giấy, bút sáp to. Trẻ không cần màn hình</td></tr>
-<tr><th>Tình trạng</th><td>Tuần 1 đã có. Các tuần sau đăng dần sau khi dạy thử</td></tr>
+<tr><th>Tình trạng</th><td>Tuần 1–4 đã có (tuần 2–4 là bản chưa dạy thử). Các tuần sau đăng dần</td></tr>
 </tbody></table></div>
 
 <div class="two">
@@ -69,6 +69,9 @@ thói quen tự chủ, tư duy khám phá và giá trị tử tế. Đồng th�
 <li><strong>Mang vào đời sống</strong> (25–30'): chọn 1 việc làm trong tuần, dán sticker.</li>
 </ol>
 <p>Bé 2 tuổi tham gia 10–15 phút rồi chơi song song gần đó. Không ép ngồi đủ 30 phút.</p>
+
+<h2>Chia sẻ khi thực hành</h2>
+<p>Gặp khó khăn hay nghĩ ra cách hay? <a href="/chia-se/?bai=chung#gui">Chia sẻ</a> ẩn danh hoặc công khai. Chia sẻ của các gia đình giúp chúng tôi sửa bài sát thực tế hơn.</p>
 
 <h2>Theo dõi tiến bộ</h2>
 <p>Chấm <a href="/cong-cu/bang-quan-sat/">bảng quan sát</a> ở tuần 0, 6 và 12: 0 = chưa, 1 = cần nhắc, 2 = tự làm.

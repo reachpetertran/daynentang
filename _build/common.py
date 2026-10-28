@@ -1,5 +1,5 @@
 import os
-ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'public'))
 SITE = 'https://daynentang.com'
 UPDATED = '28/10/2026'
 
@@ -8,6 +8,7 @@ NAV = [
     ('/gia-dinh/', 'Gia đình'),
     ('/ca-nhan/', 'Cá nhân'),
     ('/cong-cu/', 'Công cụ'),
+    ('/chia-se/', 'Chia sẻ'),
     ('/gioi-thieu/', 'Giới thiệu'),
 ]
 
@@ -51,7 +52,7 @@ def page(path, title, desc, body, current=None):
     <div class="cols">
       <div>
         <p><strong>daynentang.com</strong> – nền tảng làm người, tự học miễn phí.</p>
-        <p>Không quảng cáo. Không cookie. Không thu thập dữ liệu.</p>
+        <p>Không quảng cáo. Không cookie. Không theo dõi người dùng.</p>
       </div>
       <div>
         <p><a href="/can-giup-ngay/">Cần giúp ngay</a> · <a href="/bang-chung/">Bằng chứng &amp; nguồn</a></p>
