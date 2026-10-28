@@ -45,7 +45,19 @@
     'g1-3a': 'Giá trị nhà mình · 3A Soạn nội quy nhà mình',
     'g1-3b': 'Giá trị nhà mình · 3B Cả nhà thông qua nội quy',
     'g1-4a': 'Giá trị nhà mình · 4A Thiết kế buổi họp 15 phút',
-    'g1-4b': 'Giá trị nhà mình · 4B Họp gia đình đầu tiên'
+    'g1-4b': 'Giá trị nhà mình · 4B Họp gia đình đầu tiên',
+    'g6-1a': 'Tiền nhà mình · 1A Tiền nhà mình đi đâu',
+    'g6-1b': 'Tiền nhà mình · 1B Tiền đổi lấy đồ',
+    'g6-2a': 'Tiền nhà mình · 2A Bảng thu chi tháng',
+    'g6-2b': 'Tiền nhà mình · 2B Cần hay muốn',
+    'g6-3a': 'Tiền nhà mình · 3A Quỹ khẩn cấp',
+    'g6-3b': 'Tiền nhà mình · 3B Hũ ba ngăn',
+    'g6-4a': 'Tiền nhà mình · 4A Vay an toàn',
+    'g6-4b': 'Tiền nhà mình · 4B Mượn rồi trả',
+    'g6-5a': 'Tiền nhà mình · 5A Đi chợ có kế hoạch',
+    'g6-5b': 'Tiền nhà mình · 5B Con đi chợ cùng bố mẹ',
+    'g6-6a': 'Tiền nhà mình · 6A Họp tiền hằng tháng',
+    'g6-6b': 'Tiền nhà mình · 6B Ngăn Chia sẻ'
   };
   var KINDS = { 'kho-khan': 'Khó khăn', 'y-tuong': 'Ý tưởng sáng tạo', 'ket-qua': 'Kết quả', 'gop-y': 'Góp ý cho bài' };
 

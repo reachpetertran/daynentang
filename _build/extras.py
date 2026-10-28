@@ -11,7 +11,8 @@ page('/cong-cu/', 'Công cụ', 'Công cụ in miễn phí cho gia đình: bản
 <a class="card" href="/cong-cu/bang-thoi-quen/"><span class="tag">Có thể in</span><h3>Bảng thói quen 7 ngày</h3><p>Con tự đánh dấu việc mình tự làm mỗi ngày.</p></a>
 <a class="card" href="/cong-cu/phieu-gia-tri/"><span class="tag">Có thể in</span><h3>Phiếu giá trị</h3><p>20 thẻ giá trị, bảng việc làm, nội quy, tự đánh giá. Cho khóa Giá trị nhà mình.</p></a>
 <a class="card" href="/cong-cu/bien-ban-hop-gia-dinh/"><span class="tag">Có thể in</span><h3>Biên bản họp gia đình</h3><p>Năm phần của buổi họp 15 phút mỗi tuần.</p></a>
-<div class="card"><span class="tag soon">Đang soạn</span><h3>Bảng thu chi gia đình</h3><p>Cho khóa Tiền nhà mình.</p></div>
+<a class="card" href="/cong-cu/bang-thu-chi/"><span class="tag">Có thể in</span><h3>Bảng thu chi</h3><p>Ghi chi 7 ngày, bảng tháng, quỹ khẩn cấp, danh sách nợ. Cho khóa Tiền nhà mình.</p></a>
+<a class="card" href="/cong-cu/hu-ba-ngan/"><span class="tag">Có thể in</span><h3>Hũ ba ngăn</h3><p>Nhãn hũ, thanh mục tiêu, tranh cần – muốn cho con.</p></a>
 <div class="card"><span class="tag soon">Đang soạn</span><h3>Bảng việc nhà theo tuổi</h3><p>Cho khóa Việc nhà chia đều.</p></div>
 </div>
 ''', current='/cong-cu/')
@@ -86,6 +87,11 @@ EV = [
  ('Nếp sinh hoạt và nghi thức gia đình gắn với năng lực nuôi dạy, sự thích nghi của trẻ, hài lòng hôn nhân (tổng quan 32 công trình; liên hệ)','Đã xác nhận','https://pubmed.ncbi.nlm.nih.gov/12561283/','Fiese et al. 2002'),
  ('Bố mẹ nên xem lại giá trị mình thực sự truyền cho con; cho con thực hành quan tâm người khác','Đã xác nhận','https://mcc.gse.harvard.edu/reports/children-mean-raise','Making Caring Common, Harvard 2014'),
  ('Họp gia đình 15 phút, Mái nhà giá trị, Phiếu giá trị của khóa Giá trị nhà mình','Đánh giá chuyên môn','',''),
+ ('Ba khối nền năng lực tài chính: chức năng điều hành (từ 3–5 tuổi), thói quen và chuẩn mực tiền (hình thành rõ ở 6–12 tuổi), kiến thức và ra quyết định (13–21 tuổi)','Đã xác nhận','https://www.consumerfinance.gov/consumer-tools/educator-tools/youth-financial-education/learn/','CFPB'),
+ ('Giáo dục tài chính cải thiện hiểu biết và hành vi tài chính (76 thử nghiệm ngẫu nhiên, hơn 160.000 người)','Đã xác nhận','https://repository.upenn.edu/prc_papers/676','Kaiser, Lusardi, Menkhoff & Urban (bản 2020)'),
+ ('Lãi suất vay thỏa thuận không vượt 20%/năm, trừ khi luật khác quy định khác; phần vượt không có hiệu lực','Đã xác nhận','https://div.gov.vn/can-hieu-dung-ve-tran-lai-suat-cho-vay-20-nam','Bộ luật Dân sự 2015 (91/2015/QH13), Điều 468'),
+ ('Cho vay lãi suất gấp 5 lần mức cao nhất của Bộ luật Dân sự có thể bị xử lý hình sự','Đã xác nhận','https://tapchitoaan.vn/huong-dan-ap-dung-dieu-201-cua-blhs-va-viec-xet-xu-vu-an-cho-vay-lai-nang','Bộ luật Hình sự 2015, Điều 201'),
+ ('Luật 86/2025/QH15 (hiệu lực 01/07/2025) có sửa mức phạt Điều 201 hay không','Cần kiểm chứng','',''),
  ('Mẹo "không lọt lõi giấy vệ sinh" để loại vật nhỏ','Đánh giá chuyên môn','',''),
  ('Lịch 12 tuần và các hoạt động của khóa Gia đình 2–8','Đánh giá chuyên môn','',''),
 ]

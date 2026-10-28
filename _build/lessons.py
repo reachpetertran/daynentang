@@ -84,7 +84,12 @@ lesson('t1-minh-tu-lam-duoc', 'T1', 'Mình tự làm được', 'Thói quen',
 <p><strong>Nhắn bố 1 câu:</strong> con chọn việc gì để tự làm.</p></div>'''),
  sec(8,'Ôn lại','''<ul>
 <li><strong>Sau 1 ngày:</strong> sáng hôm sau, chỉ vào bảng: "Hôm nay việc nào con tự làm?" Con tự đánh dấu.</li>
-<li><strong>Sau 1 tuần:</strong> đếm số ngày con tự làm việc đã chọn. Chọn tiếp việc thứ hai nếu con muốn.</li></ul>'''),
+<li><strong>Sau 1 tuần:</strong> đếm số ngày con tự làm việc đã chọn. Chọn tiếp việc thứ hai nếu con muốn.</li></ul>
+<div class="box"><h3>Từ buổi dạy thử (28/10/2026)</h3><ul>
+<li>Con lớn (7 tuổi) tự làm được 3/5 việc buổi sáng: đánh răng, mặc đồ, ăn sáng.</li>
+<li>Con chọn chuyển việc cất đồ chơi từ "bố mẹ phụ" sang "tự làm" trong tuần tới.</li>
+<li>Trò "Bố bảo" và "Người máy" được con rất thích.</li></ul>
+<p class="small muted">Nhật ký của gia đình người soạn, đã bỏ thông tin nhận diện. Một gia đình chưa đủ để kết luận về hiệu quả.</p></div>'''),
  sec(9,'Nhật ký sau buổi', JOURNAL),
  sec(10,'Nguồn và nhãn','''<ul>
 <li><span class="label">[Đã xác nhận]</span> Trò kiểu "Simon says" có trong gợi ý hoạt động cho trẻ 5–7 tuổi của <a href="https://developingchild.harvard.edu/resources/handouts-tools/activities-guide-enhancing-and-practicing-executive-function-skills/">Harvard Center on the Developing Child</a>.</li>
