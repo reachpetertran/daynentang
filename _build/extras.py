@@ -131,6 +131,8 @@ EV = [
  ('Quan hệ xã hội mạnh gắn với khả năng sống sót cao hơn (148 nghiên cứu, OR 1,50; quan sát)','Đã xác nhận','https://www.rti.org/publication/social-relationships-mortality-risk-meta-analytic-review','Holt-Lunstad et al. 2010'),
  ('Trẻ biết nhiều chuyện gia đình có lòng tự trọng cao hơn (40 gia đình; liên hệ)','Đã xác nhận','https://www.medicalnewstoday.com/releases/31955','Fivush & Duke, Emory'),
  ('Kế hoạch màn hình gia đình: chỗ không màn hình, chọn nội dung, tắt tự phát, bố mẹ làm gương','Đã xác nhận','https://healthychildren.org/English/family-life/Media/Pages/How-to-Make-a-Family-Media-Use-Plan.aspx','AAP (cập nhật 1/2026)'),
+ ('Chương trình dạy ở trường về phòng xâm hại tình dục trẻ em: 24 thử nghiệm, 5.802 trẻ; tăng hiểu biết, hành vi tự bảo vệ và việc kể ra; chưa rõ có giảm số vụ','Đã xác nhận','https://www.cochrane.org/news/teaching-children-schools-about-sexual-abuse-may-help-them-report-abuse','Walsh et al. 2015, Cochrane'),
+ ('Dậy thì thường bắt đầu 8–13 tuổi ở bạn gái, 9–14 tuổi ở bạn trai; sớm hay muộn hơn cũng có thể bình thường','Đã xác nhận','https://kidshealth.org/NortonChildrens/en/parents/understanding-puberty.html?view=ptr','Nemours KidsHealth (duyệt 5/2022)'),
  ('Mẹo "không lọt lõi giấy vệ sinh" để loại vật nhỏ','Đánh giá chuyên môn','',''),
  ('Lịch 12 tuần và các hoạt động của khóa Gia đình 2–8','Đánh giá chuyên môn','',''),
 ]
