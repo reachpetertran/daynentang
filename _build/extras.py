@@ -17,6 +17,7 @@ page('/cong-cu/', 'Công cụ', 'Công cụ in miễn phí cho gia đình: bản
 <a class="card" href="/cong-cu/so-tay-cong-dong/"><span class="tag">Có thể in</span><h3>Sổ tay cộng đồng</h3><p>Phỏng vấn ông bà, người có thể nhờ, kế hoạch màn hình. Cho khóa Gia đình và cộng đồng.</p></a>
 <a class="card" href="/cong-cu/so-tay-vo-chong/"><span class="tag">Có thể in</span><h3>Sổ tay vợ chồng</h3><p>Mở lời nhẹ, tạm dừng, họp vợ chồng. Cho khóa Vợ chồng đồng lòng.</p></a>
 <a class="card" href="/cong-cu/so-15-phut/"><span class="tag">Có thể in</span><h3>Sổ 15 phút</h3><p>Kế hoạch Nếu… thì…, giấc ngủ, nước, an toàn, chia lương, người có thể nhờ, theo dõi 30 ngày. Cho khóa 15 phút mỗi ngày.</p></a>
+<a class="card" href="/cong-cu/ke-hoach-an-toan/"><span class="tag">Có thể in</span><h3>Kế hoạch an toàn của tôi</h3><p>Câu ranh giới, cách thoát ra, ghi lại quấy rối, mật mã gọi đón, dấu hiệu kiểm soát, lời mời việc làm, quỹ dự phòng, số khẩn cấp. Cho khóa Tự tin – an toàn.</p></a>
 <a class="card" href="/cong-cu/so-tay-nghe/"><span class="tag">Có thể in</span><h3>Sổ tay nghề của tôi</h3><p>Bậc thang kỹ năng, nhật ký luyện, rà soát an toàn, chia lương, hồ sơ kỹ năng. Cho khóa Vững nghề.</p></a>
 <a class="card" href="/cong-cu/so-tu-quan-hoc-ky/"><span class="tag">Có thể in</span><h3>Sổ tự quản học kỳ</h3><p>Mục tiêu, lịch tuần, thẻ ôn, phân công nhóm, ôn thi, tiền tháng. Cho khóa Tự học – tự quản.</p></a>
 <a class="card" href="/cong-cu/ho-so-hieu-minh/"><span class="tag">Có thể in</span><h3>Hồ sơ hiểu mình</h3><p>Điểm mạnh, giá trị, cảm xúc, giấc ngủ, mục tiêu, người tin cậy. Cho khóa Hiểu mình (13–17).</p></a>
@@ -175,6 +176,13 @@ EV = [
  ('Nghỉ ngắn tăng sảng khoái (d = 0,36), giảm mệt (d = 0,35); hiệu suất chung chưa rõ (22 mẫu, 2.335 người)','Đã xác nhận','https://pubmed.ncbi.nlm.nih.gov/36044424/','Albulescu et al. 2022'),
  ('Mỗi lần trả lương, chỗ làm phải đưa bảng kê lương, làm thêm giờ, làm đêm, khấu trừ','Đã xác nhận','https://thuvienphapluat.vn/lao-dong-tien-luong/phieu-luong-la-gi-cong-ty-tra-luong-phai-co-phieu-luong-co-dung-khong-41331.html','BLLĐ 2019, Điều 95 khoản 3'),
  ('Quấy rối tình dục tại nơi làm việc là hành vi bị nghiêm cấm','Đã xác nhận','https://daibieunhandan.vn/nhung-hanh-vi-nao-bi-nghiem-cam-trong-linh-vuc-lao-dong-nam-2024-10338504.html','BLLĐ 2019, Điều 8'),
+ ('Chương trình 4 buổi × 3 giờ (nhận diện nguy cơ, tự vệ lời nói và thân thể) cho 893 nữ sinh viên: bị hiếp dâm sau 1 năm 5,2% so với 9,8%','Đã xác nhận','https://ojp.gov/ncjrs/virtual-library/abstracts/efficacy-sexual-assault-resistance-program-university-women','Senn et al. 2015, NEJM'),
+ ('Chương trình 12 giờ cho 2.406 nữ sinh Nairobi: tỷ lệ bị hiếp dâm trong nhóm học giảm sau khoảng 10 tháng; nhóm so sánh yếu','Đã xác nhận','https://med.stanford.edu/news/all-news/2014/04/empowerment-program-greatly-decreases-incidence-of-rape-study-finds.html','Sarnquist et al. 2014, Pediatrics'),
+ ('Thử nghiệm ngẫu nhiên theo trường, 3.263 nữ sinh 10–14 tuổi ở Nairobi: không thấy giảm hiếp dâm sau 24 tháng','Đã xác nhận','https://pmc.ncbi.nlm.nih.gov/articles/PMC11111490','Sarnquist et al. 2023, Prevention Science'),
+ ('Khoảng 1 trong 3 phụ nữ (31,6%) trên thế giới từng bị bạo lực thể chất hoặc tình dục','Đã xác nhận','https://www.who.int/news-room/fact-sheets/detail/violence-against-women','WHO, 18/6/2026'),
+ ('Luật Phòng, chống mua bán người 53/2024/QH15 hiệu lực 01/07/2025; Tổng đài 111 nhận tin báo mua bán người, 24 giờ','Đã xác nhận','https://baophapluat.vn/to-giac-bao-tin-ve-hanh-vi-mua-ban-nguoi-hay-goi-den-tong-dai-111.html','Báo Pháp luật Việt Nam, 2/7/2025'),
+ ('Take It Down: miễn phí, cho ảnh chụp khi dưới 18 tuổi, ảnh không rời máy; từ 18 tuổi dùng StopNCII','Đã xác nhận','https://takeitdown.ncmec.org/','NCMEC'),
+ ('Ba động tác thoát ra (giữ khoảng cách, thoát nắm cổ tay, hạ thấp người khi bị kéo) cho người tự học','Đánh giá chuyên môn','','Chưa có huấn luyện viên duyệt'),
 ]
 def _src(u,s): return f'<a href="{u}">{s}</a>' if u else (s or 'Thiết kế hoặc đánh giá của daynentang.com')
 erows = ''.join(f'<tr><td>{c}</td><td><span class="label">[{l}]</span></td><td>{_src(u,s)}</td></tr>' for c,l,u,s in EV)

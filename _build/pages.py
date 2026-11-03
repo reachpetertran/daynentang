@@ -121,7 +121,7 @@ PERSONAL = [
  ('Tự lập từng bước','Người khuyết tật và gia đình'),('Chăm tâm trí cơ bản','Người gặp khó khăn tâm lý'),
  ('Vận động an toàn','Người yếu sức'),('Nền tảng không cần điện','Nơi thiếu điện, nước, trường học'),
 ]
-OPEN_P = {'Lớn lên an toàn': '/khoa-hoc/lon-len-an-toan/', 'Hiểu mình': '/khoa-hoc/hieu-minh/', 'Tự học – tự quản': '/khoa-hoc/tu-hoc-tu-quan/', 'Vững nghề': '/khoa-hoc/vung-nghe/', '15 phút mỗi ngày': '/khoa-hoc/15-phut-moi-ngay/'}
+OPEN_P = {'Lớn lên an toàn': '/khoa-hoc/lon-len-an-toan/', 'Hiểu mình': '/khoa-hoc/hieu-minh/', 'Tự học – tự quản': '/khoa-hoc/tu-hoc-tu-quan/', 'Vững nghề': '/khoa-hoc/vung-nghe/', '15 phút mỗi ngày': '/khoa-hoc/15-phut-moi-ngay/', 'Tự tin – an toàn': '/khoa-hoc/tu-tin-an-toan/'}
 pc = ''.join((f'<a class="card" href="{OPEN_P[n]}"><span class="tag">Đang mở</span><h3>{n}</h3><p class="muted">{a}</p></a>' if n in OPEN_P else f'<div class="card"><span class="tag soon">Đang soạn</span><h3>{n}</h3><p class="muted">{a}</p></div>') for n,a in PERSONAL)
 page('/ca-nhan/', 'Cá nhân', 'Khóa tự học miễn phí theo từng đối tượng: thiếu niên, sinh viên, người lao động, người khuyết tật và nhiều nhóm khác.',
 f'''
@@ -214,6 +214,7 @@ Tài liệu của tổ chức khác thuộc quyền của họ; chúng tôi ch�
 
 <h2>Nhật ký sửa đổi</h2>
 <ul>
+<li>03/11/2026: Mở khóa Tự tin – an toàn: 10 bài cho bạn nữ từ 13 tuổi và phụ nữ, kèm 23 hình và Kế hoạch an toàn của tôi. Bản chưa dạy thử, chưa có chuyên gia duyệt.</li>
 <li>03/11/2026: Mở khóa 15 phút mỗi ngày: 20 bài cho người lao động từ 15 tuổi, kèm 42 hình và Sổ 15 phút. Bản chưa dạy thử, chưa có chuyên gia duyệt.</li>
 <li>03/11/2026: Mở khóa Vững nghề: 10 bài cho người học nghề 15–24 tuổi, kèm 22 hình và Sổ tay nghề của tôi. Bản chưa dạy thử, chưa có chuyên gia duyệt.</li>
 <li>03/11/2026: Mở khóa Tự học – tự quản: 10 bài cho học sinh lớp 12 và sinh viên, kèm 22 hình và Sổ tự quản học kỳ. Bản chưa dạy thử, chưa có chuyên gia duyệt.</li>
