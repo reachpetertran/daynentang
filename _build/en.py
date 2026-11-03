@@ -88,7 +88,7 @@ page('/en/', 'Day Nen Tang – foundations for life, free self-study – daynent
     Each lesson is based on evidence and can be used right away, even with no money and no teacher.</p>
     <div class="cta">
       <a class="btn primary" href="/en/family/">I am a parent</a>
-      <a class="btn" href="/en/courses/family-2-8/">Try a lesson</a>
+      <a class="btn" href="/en/personal/">I study on my own</a>
       <a class="btn warm" href="/en/get-help/">I need help now</a>
     </div>
   </div>
@@ -152,6 +152,34 @@ With young children, the parent guides and learns alongside the child.</p>
 <p class="small muted">All courses are free. Courses marked “Vietnamese only” open the Vietnamese page; your browser can translate it.
 Every course is still a trial version that we revise after real families use it.</p>
 ''', current='/en/family/', lang='en')
+
+
+# ======================= Cá nhân =======================
+PERS = [
+ ('Growing up safe', 'Ages 10–14, with an adult alongside', '/khoa-hoc/lon-len-an-toan/'),
+ ('Knowing myself', 'Ages 13–17, self-study', '/khoa-hoc/hieu-minh/'),
+ ('Self-study, self-management', 'Final-year secondary and university students', '/khoa-hoc/tu-hoc-tu-quan/'),
+ ('Solid in my trade', 'Vocational learners aged 15–24', '/khoa-hoc/vung-nghe/'),
+ ('15 minutes a day', 'Factory and shift workers', '/khoa-hoc/15-phut-moi-ngay/'),
+ ('Confident and safe', 'Girls and women', '/khoa-hoc/tu-tin-an-toan/'),
+ ('Independent, step by step', 'People with disabilities and their families', None),
+ ('Basic care for the mind', 'People facing emotional difficulties', None),
+ ('Safe movement', 'People with low strength or mobility', None),
+ ('Foundations without electricity', 'Places short of power, water or schools', None),
+]
+pc = ''.join(
+ (f'<a class="card" href="{h}" hreflang="vi"><span class="tag soon">Vietnamese only</span><h3>{n}</h3><p class="muted">{a}</p></a>' if h
+  else f'<div class="card"><span class="tag soon">In preparation</span><h3>{n}</h3><p class="muted">{a}</p></div>') for n, a, h in PERS)
+page('/en/personal/', 'Personal', 'Free self-study courses by audience: young people, students, workers, people with disabilities and other groups.',
+f'''
+<h1>Personal</h1>
+<p class="lead">Courses for people learning on their own, for different life situations. Six courses are open, in Vietnamese only for now;
+your browser’s Translate option can help. Several are written for readers under 18, and a trusted adult should read alongside them.</p>
+<div class="grid">{pc}</div>
+<p class="small muted">All open courses are trial versions, not yet tested with learners or reviewed by specialists. Vietnamese laws and phone numbers in these courses apply in Vietnam only.</p>
+<div class="box"><p>Want to go deeper on the mind (Stoicism, Buddhism, meditation, a disciplined way of life)? That will be on our sister site <strong>tamhonkhoe.com</strong> (in Vietnamese, coming soon).</p></div>
+{HELP_BOX_EN}
+''', current='/en/personal/', lang='en')
 
 # ======================= Cần giúp ngay =======================
 page('/en/get-help/', 'Get help now', 'Emergency and support phone numbers in Vietnam, and how to find a helpline in other countries.',
@@ -221,6 +249,7 @@ If you see a translation error, please tell us through the <a href="/chia-se/" h
 <li>The site loads no fonts or code from other websites.</li>
 <li>Tools on the site (if any) save data only on your device and send nothing anywhere.</li>
 <li>When you choose a language (Tiếng Việt or English), your browser remembers that choice on your device. The site does not send it anywhere.</li>
+<li>If your browser is not set to Vietnamese, the site asks Cloudflare one question: is this visit from Vietnam? The answer is only “yes” or “no”, used once to decide whether to suggest English. Nothing is stored.</li>
 <li>Our hosting provider (Cloudflare) may keep basic technical logs to run the service and block attacks.</li>
 </ul>
 <p>The sharing page stores only what you write and choose to show; it never stores IP addresses, emails or phone numbers.
@@ -233,7 +262,7 @@ Materials from other organisations belong to them; we only link to them.</p>
 
 <h2>Change log (English pages)</h2>
 <ul>
-<li>3 November 2026: First English pages: home, Family, About, Get help now, Evidence, and Week 1 of Family 2–8. The full change log is on the <a href="/gioi-thieu/" hreflang="vi">Vietnamese About page</a>.</li>
+<li>3 November 2026: First English pages: home, Family, Personal, About, Get help now, Evidence, and Week 1 of Family 2–8. The full change log is on the <a href="/gioi-thieu/" hreflang="vi">Vietnamese About page</a>.</li>
 </ul>
 ''', current='/en/about/', lang='en')
 
