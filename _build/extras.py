@@ -16,6 +16,7 @@ page('/cong-cu/', 'Công cụ', 'Công cụ in miễn phí cho gia đình: bản
 <a class="card" href="/cong-cu/phieu-ra-soat-nha/"><span class="tag">Có thể in</span><h3>Phiếu rà soát nhà</h3><p>An toàn từng phòng, phòng cháy, bảo trì. Cho khóa Nhà gọn, nhà an toàn.</p></a>
 <a class="card" href="/cong-cu/so-tay-cong-dong/"><span class="tag">Có thể in</span><h3>Sổ tay cộng đồng</h3><p>Phỏng vấn ông bà, người có thể nhờ, kế hoạch màn hình. Cho khóa Gia đình và cộng đồng.</p></a>
 <a class="card" href="/cong-cu/so-tay-vo-chong/"><span class="tag">Có thể in</span><h3>Sổ tay vợ chồng</h3><p>Mở lời nhẹ, tạm dừng, họp vợ chồng. Cho khóa Vợ chồng đồng lòng.</p></a>
+<a class="card" href="/cong-cu/ho-so-hieu-minh/"><span class="tag">Có thể in</span><h3>Hồ sơ hiểu mình</h3><p>Điểm mạnh, giá trị, cảm xúc, giấc ngủ, mục tiêu, người tin cậy. Cho khóa Hiểu mình (13–17).</p></a>
 <a class="card" href="/cong-cu/ban-do-an-toan/"><span class="tag">Có thể in</span><h3>Bản đồ an toàn của tôi</h3><p>5 người lớn tin cậy, mật mã gọi đón, số khẩn cấp. Cho khóa Lớn lên an toàn (10–14).</p></a>
 <a class="card" href="/cong-cu/thoa-thuan-gia-dinh/"><span class="tag">Có thể in</span><h3>Thỏa thuận gia đình</h3><p>Thỏa thuận, kế hoạch thiết bị, mật mã gọi đón. Cho khóa Gia đình có con 10–14.</p></a>
 <a class="card" href="/cong-cu/nhat-ky-giao-dap/"><span class="tag">Có thể in</span><h3>Nhật ký giao và đáp</h3><p>5 phút mỗi ngày, kế hoạch khi con khóc. Cho khóa Gia đình 0–2 tuổi.</p></a>
@@ -137,6 +138,13 @@ EV = [
  ('Chương trình phòng bắt nạt ở trường giảm cả hành vi bắt nạt và tình trạng bị bắt nạt (phân tích gộp cập nhật)','Đã xác nhận','https://ojp.gov/ncjrs/virtual-library/abstracts/evaluating-effectiveness-school-bullying-prevention-programs','Gaffney, Ttofi & Farrington 2019'),
  ('Bộ Công an cảnh báo 3 chiêu "bắt cóc online" nhắm vào học sinh, sinh viên: đe dọa giả danh, làm thân lâu, dụ bằng việc làm hay tiền','Đã xác nhận','https://voh.com.vn/phap-luat/cong-an-canh-bao-3-chieu-bat-coc-online-nham-vao-hoc-sinh-sinh-vien-625691.html','VOH, 12/10/2025'),
  ('Điều khoản cụ thể về mũ bảo hiểm cho trẻ em trong Luật TTATGTĐB 2024 và nghị định xử phạt','Cần kiểm chứng','','Chưa đọc được văn bản gốc'),
+ ('Tự nhận thức gồm hiểu cảm xúc, suy nghĩ, giá trị, điểm mạnh và giới hạn của mình','Đã xác nhận','https://casel.org/casel-sel-framework-11-2020/?view=1','CASEL 2020'),
+ ('Vùng trước trán hoàn thiện ở khoảng giữa đến cuối tuổi 20; melatonin tuổi teen tăng muộn hơn buổi tối','Đã xác nhận','https://www.nimh.nih.gov/health/publications/the-teen-brain-7-things-to-know','NIMH – The Teen Brain'),
+ ('Khoảng 1 trong 7 người 10–19 tuổi có rối loạn tâm thần; lo âu, trầm cảm hay gặp nhất','Đã xác nhận','https://www.who.int/news-room/fact-sheets/detail/mental-health-of-adolescents','WHO (1/9/2025)'),
+ ('Bài học tư duy phát triển dưới 1 giờ tăng điểm cho học sinh THPT học lực thấp hơn ở Mỹ; mức tăng nhỏ','Đã xác nhận','https://www.hks.harvard.edu/publications/national-experiment-reveals-where-growth-mindset-improves-achievement','Yeager et al. 2019, Nature'),
+ ('Viết mục tiêu, trở ngại và câu Nếu… thì… giúp 66 học sinh THPT làm nhiều bài luyện hơn nhóm chứng','Đã xác nhận','https://www.socmot.uni-konstanz.de/node/94','Duckworth et al. 2011'),
+ ('Thiếu niên Mỹ dùng mạng xã hội hơn 3 giờ/ngày có nguy cơ triệu chứng trầm cảm, lo âu gấp đôi (liên quan, chưa chứng minh nhân quả)','Đã xác nhận','https://www.gpb.org/news/2023/05/23/social-media-can-put-young-people-in-danger-us-surgeon-general-warns','Tổng Y sĩ Hoa Kỳ 2023 (NPR)'),
+ ('Bài viết "khẳng định giá trị" giúp học sinh học tốt hơn','Cần kiểm chứng','','Kết quả nghiên cứu không đồng nhất'),
  ('Mẹo "không lọt lõi giấy vệ sinh" để loại vật nhỏ','Đánh giá chuyên môn','',''),
  ('Lịch 12 tuần và các hoạt động của khóa Gia đình 2–8','Đánh giá chuyên môn','',''),
 ]
