@@ -144,3 +144,11 @@ blockquote.story{margin:12px 0;padding:14px 18px;border-left:4px solid var(--ora
 .figs img{display:block;width:100%;height:auto;border-radius:10px}
 .figs figcaption{font-size:14px;color:var(--muted);padding:6px 4px 2px;line-height:1.45}
 @media print{.figs{grid-template-columns:repeat(3,1fr);gap:8px}.figs figcaption{font-size:9pt}.figs figure{break-inside:avoid}}
+
+/* Song ngữ: dải gợi ý ngôn ngữ, nút chuyển */
+.lang-hint{background:var(--warn-bg);border-bottom:1px solid var(--warn-line);font-size:15px}
+.lang-hint p{margin:0;padding:8px 0}
+.linkish{background:none;border:0;padding:0;margin-left:6px;font:inherit;color:var(--link);text-decoration:underline;cursor:pointer}
+.nav a.lang{border:1px solid rgba(255,253,248,.55);border-radius:6px;padding:2px 8px}
+.nav a.lang:hover{border-color:var(--orange)}
+.vi-only{font-size:13px;color:var(--muted)}

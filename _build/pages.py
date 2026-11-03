@@ -184,6 +184,8 @@ Kết quả dạy thử trong một gia đình chưa phải bằng chứng khoa 
 <li>Trang không dùng cookie, không có công cụ theo dõi, không có quảng cáo.</li>
 <li>Trang không tải phông chữ hay mã từ bên ngoài.</li>
 <li>Các công cụ trên trang (nếu có) chỉ lưu dữ liệu trên máy của bạn, không gửi đi đâu.</li>
+<li>Khi bạn chọn ngôn ngữ (Tiếng Việt hoặc English), trình duyệt ghi nhớ lựa chọn đó trên máy bạn. Trang không gửi lựa chọn này đi đâu.</li>
+<li>Nếu trình duyệt không dùng tiếng Việt, trang hỏi Cloudflare một câu: lượt truy cập này có từ Việt Nam không? Câu trả lời chỉ là có hoặc không, dùng một lần để quyết định có gợi ý tiếng Anh hay không. Không lưu lại.</li>
 <li>Nhà cung cấp hạ tầng (Cloudflare) có thể ghi nhật ký kỹ thuật cơ bản để vận hành và chống tấn công.</li>
 </ul>
 
@@ -214,6 +216,7 @@ Tài liệu của tổ chức khác thuộc quyền của họ; chúng tôi ch�
 
 <h2>Nhật ký sửa đổi</h2>
 <ul>
+<li>03/11/2026: Thêm bản tiếng Anh cho trang chủ, Gia đình, Cá nhân, Giới thiệu, Cần giúp ngay, Bằng chứng và tuần 1 khóa Gia đình 2–8 tuổi. Chỉ khách truy cập từ nước ngoài, dùng trình duyệt không phải tiếng Việt, mới thấy dải gợi ý chuyển sang tiếng Anh. Trang luôn mở bằng tiếng Việt.</li>
 <li>03/11/2026: Mở khóa Tự tin – an toàn: 10 bài cho bạn nữ từ 13 tuổi và phụ nữ, kèm 23 hình và Kế hoạch an toàn của tôi. Bản chưa dạy thử, chưa có chuyên gia duyệt.</li>
 <li>03/11/2026: Mở khóa 15 phút mỗi ngày: 20 bài cho người lao động từ 15 tuổi, kèm 42 hình và Sổ 15 phút. Bản chưa dạy thử, chưa có chuyên gia duyệt.</li>
 <li>03/11/2026: Mở khóa Vững nghề: 10 bài cho người học nghề 15–24 tuổi, kèm 22 hình và Sổ tay nghề của tôi. Bản chưa dạy thử, chưa có chuyên gia duyệt.</li>
