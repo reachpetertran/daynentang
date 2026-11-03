@@ -17,6 +17,7 @@ page('/cong-cu/', 'Công cụ', 'Công cụ in miễn phí cho gia đình: bản
 <a class="card" href="/cong-cu/so-tay-cong-dong/"><span class="tag">Có thể in</span><h3>Sổ tay cộng đồng</h3><p>Phỏng vấn ông bà, người có thể nhờ, kế hoạch màn hình. Cho khóa Gia đình và cộng đồng.</p></a>
 <a class="card" href="/cong-cu/so-tay-vo-chong/"><span class="tag">Có thể in</span><h3>Sổ tay vợ chồng</h3><p>Mở lời nhẹ, tạm dừng, họp vợ chồng. Cho khóa Vợ chồng đồng lòng.</p></a>
 <a class="card" href="/cong-cu/so-15-phut/"><span class="tag">Có thể in</span><h3>Sổ 15 phút</h3><p>Kế hoạch Nếu… thì…, giấc ngủ, nước, an toàn, chia lương, người có thể nhờ, theo dõi 30 ngày. Cho khóa 15 phút mỗi ngày.</p></a>
+<a class="card" href="/cong-cu/so-tu-lap/"><span class="tag">Có thể in</span><h3>Sổ tự lập từng bước</h3><p>Mục tiêu, danh sách bước, bảng mức hỗ trợ, thẻ thông tin, lịch hình ảnh, phiếu hỏi hỗ trợ. Cho khóa Tự lập từng bước.</p></a>
 <a class="card" href="/cong-cu/ke-hoach-an-toan/"><span class="tag">Có thể in</span><h3>Kế hoạch an toàn của tôi</h3><p>Câu ranh giới, cách thoát ra, ghi lại quấy rối, mật mã gọi đón, dấu hiệu kiểm soát, lời mời việc làm, quỹ dự phòng, số khẩn cấp. Cho khóa Tự tin – an toàn.</p></a>
 <a class="card" href="/cong-cu/so-tay-nghe/"><span class="tag">Có thể in</span><h3>Sổ tay nghề của tôi</h3><p>Bậc thang kỹ năng, nhật ký luyện, rà soát an toàn, chia lương, hồ sơ kỹ năng. Cho khóa Vững nghề.</p></a>
 <a class="card" href="/cong-cu/so-tu-quan-hoc-ky/"><span class="tag">Có thể in</span><h3>Sổ tự quản học kỳ</h3><p>Mục tiêu, lịch tuần, thẻ ôn, phân công nhóm, ôn thi, tiền tháng. Cho khóa Tự học – tự quản.</p></a>
@@ -182,6 +183,12 @@ EV = [
  ('Khoảng 1 trong 3 phụ nữ (31,6%) trên thế giới từng bị bạo lực thể chất hoặc tình dục','Đã xác nhận','https://www.who.int/news-room/fact-sheets/detail/violence-against-women','WHO, 18/6/2026'),
  ('Luật Phòng, chống mua bán người 53/2024/QH15 hiệu lực 01/07/2025; Tổng đài 111 nhận tin báo mua bán người, 24 giờ','Đã xác nhận','https://baophapluat.vn/to-giac-bao-tin-ve-hanh-vi-mua-ban-nguoi-hay-goi-den-tong-dai-111.html','Báo Pháp luật Việt Nam, 2/7/2025'),
  ('Take It Down: miễn phí, cho ảnh chụp khi dưới 18 tuổi, ảnh không rời máy; từ 18 tuổi dùng StopNCII','Đã xác nhận','https://takeitdown.ncmec.org/','NCMEC'),
+ ('Phân tích nhiệm vụ, gợi ý theo mức, chờ trước khi gợi ý, hỗ trợ hình ảnh, tự quản lý nằm trong 28 phương pháp có bằng chứng (chủ yếu ở người tự kỷ)','Đã xác nhận','https://autismpdc.fpg.unc.edu/ebps/','NCAEP 2020'),
+ ('Người khuyết tật có nguy cơ bị bạo lực cao hơn người không khuyết tật (OR 1,50; 26 nghiên cứu quan sát, tương quan)','Đã xác nhận','https://pubmed.ncbi.nlm.nih.gov/22377290/','Hughes et al. 2012, The Lancet'),
+ ('Khoảng 6,11% người Việt Nam từ 2 tuổi có khuyết tật; tham gia lao động 23,9% so với 77,4%','Đã xác nhận','https://www.nso.gov.vn/tin-tuc-thong-ke/2024/11/thong-cao-bao-chi-ve-ket-qua-dieu-tra-nguoi-khuyet-tat-nam-2023/','Điều tra người khuyết tật 2023'),
+ ('Luật Người khuyết tật 2010: quyền sống độc lập, hòa nhập (Điều 4); hành vi bị cấm (Điều 14); Hội đồng xác định mức độ khuyết tật cấp xã (Điều 16)','Đã xác nhận','https://hethongphapluat.com/law-no-51-2010-qh12-of-june-17-2010-on-persons-with-disabilities/dieu-4','Luật 51/2010/QH12'),
+ ('Mức chuẩn trợ giúp xã hội 500.000 đồng/tháng từ 01/07/2024; hệ số theo mức độ khuyết tật chưa đọc văn bản gốc','Đã xác nhận','https://luatvietnam.vn/legal-updates/standard-social-assistance-level-of-up-to-vnd-500000-applied-from-july-1-2024-892-98399-article.html','Nghị định 76/2024/NĐ-CP'),
+ ('Té ngã: khoảng 842.000 người chết năm 2023; sửa nhà giảm té ngã khoảng 38% ở người cao tuổi nguy cơ cao','Đã xác nhận','https://www.who.int/news-room/fact-sheets/detail/falls','WHO, 21/10/2026'),
  ('Ba động tác thoát ra (giữ khoảng cách, thoát nắm cổ tay, hạ thấp người khi bị kéo) cho người tự học','Đánh giá chuyên môn','','Chưa có huấn luyện viên duyệt'),
 ]
 def _src(u,s): return f'<a href="{u}">{s}</a>' if u else (s or 'Thiết kế hoặc đánh giá của daynentang.com')
