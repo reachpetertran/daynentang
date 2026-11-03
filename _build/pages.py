@@ -116,12 +116,12 @@ Với trẻ nhỏ, bố mẹ là người hướng dẫn và đồng hành cùng
 
 # ---------------- Cá nhân ----------------
 PERSONAL = [
- ('Lớn lên an toàn','Bạn 10–14 tuổi, có người lớn đồng hành'),('Hiểu mình','Bạn 13–17 tuổi tự học'),('Tự học – tự quản','Sinh viên'),
+ ('Lớn lên an toàn','Bạn 10–14 tuổi, có người lớn đồng hành'),('Hiểu mình','Bạn 13–17 tuổi tự học'),('Tự học – tự quản','Học sinh lớp 12 và sinh viên'),
  ('Vững nghề','Học viên học nghề'),('15 phút mỗi ngày','Công nhân, lao động phổ thông'),('Tự tin – an toàn','Phụ nữ, trẻ em gái'),
  ('Tự lập từng bước','Người khuyết tật và gia đình'),('Chăm tâm trí cơ bản','Người gặp khó khăn tâm lý'),
  ('Vận động an toàn','Người yếu sức'),('Nền tảng không cần điện','Nơi thiếu điện, nước, trường học'),
 ]
-OPEN_P = {'Lớn lên an toàn': '/khoa-hoc/lon-len-an-toan/', 'Hiểu mình': '/khoa-hoc/hieu-minh/'}
+OPEN_P = {'Lớn lên an toàn': '/khoa-hoc/lon-len-an-toan/', 'Hiểu mình': '/khoa-hoc/hieu-minh/', 'Tự học – tự quản': '/khoa-hoc/tu-hoc-tu-quan/'}
 pc = ''.join((f'<a class="card" href="{OPEN_P[n]}"><span class="tag">Đang mở</span><h3>{n}</h3><p class="muted">{a}</p></a>' if n in OPEN_P else f'<div class="card"><span class="tag soon">Đang soạn</span><h3>{n}</h3><p class="muted">{a}</p></div>') for n,a in PERSONAL)
 page('/ca-nhan/', 'Cá nhân', 'Khóa tự học miễn phí theo từng đối tượng: thiếu niên, sinh viên, người lao động, người khuyết tật và nhiều nhóm khác.',
 f'''
@@ -214,6 +214,7 @@ Tài liệu của tổ chức khác thuộc quyền của họ; chúng tôi ch�
 
 <h2>Nhật ký sửa đổi</h2>
 <ul>
+<li>03/11/2026: Mở khóa Tự học – tự quản: 10 bài cho học sinh lớp 12 và sinh viên, kèm 22 hình và Sổ tự quản học kỳ. Bản chưa dạy thử, chưa có chuyên gia duyệt.</li>
 <li>03/11/2026: Mở khóa Hiểu mình (13–17): 8 bài cho bạn 13–17 tuổi tự học, kèm 19 hình và Hồ sơ hiểu mình. Bản chưa dạy thử, chưa có chuyên gia duyệt.</li>
 <li>03/11/2026: Mở khóa Cá nhân đầu tiên, Lớn lên an toàn (10–14): 8 bài cho bạn 10–14 tuổi tự đọc, kèm 20 hình và Bản đồ an toàn của tôi. Bản chưa dạy thử, chưa có chuyên gia duyệt.</li>
 <li>28/10/2026: Mở khóa Nhà gọn, nhà an toàn và khóa Gia đình và cộng đồng (mỗi khóa 4 tuần, bản chưa dạy thử) kèm 20 hình, Phiếu rà soát nhà và Sổ tay cộng đồng. Đủ 9 khóa Gia đình.</li>

@@ -16,6 +16,7 @@ page('/cong-cu/', 'Công cụ', 'Công cụ in miễn phí cho gia đình: bản
 <a class="card" href="/cong-cu/phieu-ra-soat-nha/"><span class="tag">Có thể in</span><h3>Phiếu rà soát nhà</h3><p>An toàn từng phòng, phòng cháy, bảo trì. Cho khóa Nhà gọn, nhà an toàn.</p></a>
 <a class="card" href="/cong-cu/so-tay-cong-dong/"><span class="tag">Có thể in</span><h3>Sổ tay cộng đồng</h3><p>Phỏng vấn ông bà, người có thể nhờ, kế hoạch màn hình. Cho khóa Gia đình và cộng đồng.</p></a>
 <a class="card" href="/cong-cu/so-tay-vo-chong/"><span class="tag">Có thể in</span><h3>Sổ tay vợ chồng</h3><p>Mở lời nhẹ, tạm dừng, họp vợ chồng. Cho khóa Vợ chồng đồng lòng.</p></a>
+<a class="card" href="/cong-cu/so-tu-quan-hoc-ky/"><span class="tag">Có thể in</span><h3>Sổ tự quản học kỳ</h3><p>Mục tiêu, lịch tuần, thẻ ôn, phân công nhóm, ôn thi, tiền tháng. Cho khóa Tự học – tự quản.</p></a>
 <a class="card" href="/cong-cu/ho-so-hieu-minh/"><span class="tag">Có thể in</span><h3>Hồ sơ hiểu mình</h3><p>Điểm mạnh, giá trị, cảm xúc, giấc ngủ, mục tiêu, người tin cậy. Cho khóa Hiểu mình (13–17).</p></a>
 <a class="card" href="/cong-cu/ban-do-an-toan/"><span class="tag">Có thể in</span><h3>Bản đồ an toàn của tôi</h3><p>5 người lớn tin cậy, mật mã gọi đón, số khẩn cấp. Cho khóa Lớn lên an toàn (10–14).</p></a>
 <a class="card" href="/cong-cu/thoa-thuan-gia-dinh/"><span class="tag">Có thể in</span><h3>Thỏa thuận gia đình</h3><p>Thỏa thuận, kế hoạch thiết bị, mật mã gọi đón. Cho khóa Gia đình có con 10–14.</p></a>
@@ -144,6 +145,18 @@ EV = [
  ('Bài học tư duy phát triển dưới 1 giờ tăng điểm cho học sinh THPT học lực thấp hơn ở Mỹ; mức tăng nhỏ','Đã xác nhận','https://www.hks.harvard.edu/publications/national-experiment-reveals-where-growth-mindset-improves-achievement','Yeager et al. 2019, Nature'),
  ('Viết mục tiêu, trở ngại và câu Nếu… thì… giúp 66 học sinh THPT làm nhiều bài luyện hơn nhóm chứng','Đã xác nhận','https://www.socmot.uni-konstanz.de/node/94','Duckworth et al. 2011'),
  ('Thiếu niên Mỹ dùng mạng xã hội hơn 3 giờ/ngày có nguy cơ triệu chứng trầm cảm, lo âu gấp đôi (liên quan, chưa chứng minh nhân quả)','Đã xác nhận','https://www.gpb.org/news/2023/05/23/social-media-can-put-young-people-in-danger-us-surgeon-general-warns','Tổng Y sĩ Hoa Kỳ 2023 (NPR)'),
+ ('Tự kiểm tra và ôn giãn cách được xếp mức hữu ích cao nhất; đọc lại, tô màu, tóm tắt xếp mức thấp (tổng quan 10 cách học)','Đã xác nhận','https://www.psychologicalscience.org/news/releases/which-study-strategies-make-the-grade.html','Dunlosky et al. 2013 (thông cáo APS)'),
+ ('Khoảng cách ôn tốt nhất tăng khi thời gian cần nhớ dài ra (317 thí nghiệm)','Đã xác nhận','https://pubmed.ncbi.nlm.nih.gov/16719566/','Cepeda et al. 2006'),
+ ('Dạy siêu nhận thức và tự điều chỉnh việc học: trung bình khoảng +7 tháng tiến bộ','Đã xác nhận','https://educationendowmentfoundation.org.uk/news/latest-updates-to-the-toolkit/','EEF Toolkit'),
+ ('Quản lý thời gian liên quan tích cực với kết quả học và rõ hơn với hài lòng cuộc sống (158 nghiên cứu, tương quan)','Đã xác nhận','https://sciencedaily.com/releases/2021/02/210204131413.htm','Aeon, Faber & Panaccio 2021'),
+ ('Sinh viên đoán làm luận văn khoảng 34 ngày, thực tế khoảng 55 ngày','Đã xác nhận','https://bear.warrington.ufl.edu/brenner/mar7588/Papers/buehler-et-al-1994.pdf','Buehler, Griffin & Ross 1994'),
+ ('Buổi học cho dùng thiết bị: điểm thi cuối kỳ thấp hơn ít nhất 5% (118 sinh viên)','Đã xác nhận','https://www.rutgers.edu/news/cellphone-distraction-classroom-can-lead-lower-grades-rutgers-study-finds','Glass & Kang (Rutgers 2018)'),
+ ('Học hợp tác: tác dụng mức trung bình lên kết quả học (59 nghiên cứu, ES = 0,54)','Đã xác nhận','https://www.clearinghouse.edu.tum.de/wp-content/uploads/2023/12/CHU_KR4_ENG_Kyndt_2013.pdf','Kyndt et al. 2013'),
+ ('72% của 1.408 học sinh nói tự kiểm tra giúp bớt lo trước bài kiểm tra (tự báo cáo)','Đã xác nhận','https://profiles.wustl.edu/en/publications/classroom-based-programs-of-retrieval-practice-reduce-middle-scho/','Agarwal et al. 2014'),
+ ('Người lớn 18–60 tuổi nên ngủ từ 7 giờ mỗi đêm','Đã xác nhận','https://www.aasm.org/resources/pdf/adultsleepdurationconsensus.pdf','AASM & SRS 2015'),
+ ('Người lớn 18–64 tuổi: 150–300 phút vận động vừa mỗi tuần, tập cơ ít nhất 2 ngày','Đã xác nhận','https://who.int/initiatives/behealthy/physical-activity','WHO'),
+ ('Mang vật dụng cấm vào phòng thi tốt nghiệp THPT bị đình chỉ thi (TT 24/2024/TT-BGDĐT, Điều 57)','Đã xác nhận','https://lsvn.vn/cac-hinh-thuc-xu-ly-vi-pham-quy-che-thi-tot-nghiep-thpt-thi-sinh-can-luu-y-a159467.html','Báo Luật sư Việt Nam, 26/6/2025'),
+ ('Văn bản sửa đổi quy chế thi tốt nghiệp THPT áp dụng cho năm 2027','Cần kiểm chứng','','Chưa tra được'),
  ('Bài viết "khẳng định giá trị" giúp học sinh học tốt hơn','Cần kiểm chứng','','Kết quả nghiên cứu không đồng nhất'),
  ('Mẹo "không lọt lõi giấy vệ sinh" để loại vật nhỏ','Đánh giá chuyên môn','',''),
  ('Lịch 12 tuần và các hoạt động của khóa Gia đình 2–8','Đánh giá chuyên môn','',''),
