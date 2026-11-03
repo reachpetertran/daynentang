@@ -16,6 +16,7 @@ page('/cong-cu/', 'Công cụ', 'Công cụ in miễn phí cho gia đình: bản
 <a class="card" href="/cong-cu/phieu-ra-soat-nha/"><span class="tag">Có thể in</span><h3>Phiếu rà soát nhà</h3><p>An toàn từng phòng, phòng cháy, bảo trì. Cho khóa Nhà gọn, nhà an toàn.</p></a>
 <a class="card" href="/cong-cu/so-tay-cong-dong/"><span class="tag">Có thể in</span><h3>Sổ tay cộng đồng</h3><p>Phỏng vấn ông bà, người có thể nhờ, kế hoạch màn hình. Cho khóa Gia đình và cộng đồng.</p></a>
 <a class="card" href="/cong-cu/so-tay-vo-chong/"><span class="tag">Có thể in</span><h3>Sổ tay vợ chồng</h3><p>Mở lời nhẹ, tạm dừng, họp vợ chồng. Cho khóa Vợ chồng đồng lòng.</p></a>
+<a class="card" href="/cong-cu/so-15-phut/"><span class="tag">Có thể in</span><h3>Sổ 15 phút</h3><p>Kế hoạch Nếu… thì…, giấc ngủ, nước, an toàn, chia lương, người có thể nhờ, theo dõi 30 ngày. Cho khóa 15 phút mỗi ngày.</p></a>
 <a class="card" href="/cong-cu/so-tay-nghe/"><span class="tag">Có thể in</span><h3>Sổ tay nghề của tôi</h3><p>Bậc thang kỹ năng, nhật ký luyện, rà soát an toàn, chia lương, hồ sơ kỹ năng. Cho khóa Vững nghề.</p></a>
 <a class="card" href="/cong-cu/so-tu-quan-hoc-ky/"><span class="tag">Có thể in</span><h3>Sổ tự quản học kỳ</h3><p>Mục tiêu, lịch tuần, thẻ ôn, phân công nhóm, ôn thi, tiền tháng. Cho khóa Tự học – tự quản.</p></a>
 <a class="card" href="/cong-cu/ho-so-hieu-minh/"><span class="tag">Có thể in</span><h3>Hồ sơ hiểu mình</h3><p>Điểm mạnh, giá trị, cảm xúc, giấc ngủ, mục tiêu, người tin cậy. Cho khóa Hiểu mình (13–17).</p></a>
@@ -168,6 +169,12 @@ EV = [
  ('Bài viết "khẳng định giá trị" giúp học sinh học tốt hơn','Cần kiểm chứng','','Kết quả nghiên cứu không đồng nhất'),
  ('Mẹo "không lọt lõi giấy vệ sinh" để loại vật nhỏ','Đánh giá chuyên môn','',''),
  ('Lịch 12 tuần và các hoạt động của khóa Gia đình 2–8','Đánh giá chuyên môn','',''),
+ ('Người làm ca nên ngủ nơi tối, yên, mát; tránh ăn nặng, rượu và chất kích thích trước khi ngủ','Đã xác nhận','https://cdc.gov/niosh/bulletin/2012/sleep-and-work.html','NIOSH – Sleep and Work (2012)'),
+ ('Năng suất lao động giảm 2–3% cho mỗi độ trên 20°C','Đã xác nhận','https://www.who.int/news/item/22-08-2025-who-wmo-issue-new-report-and-guidance-to-protect-workers-from-increasing-heat-stress','WHO và WMO, 22/8/2025'),
+ ('Làm vừa sức trong nóng vừa: uống khoảng 1 cốc mỗi 15–20 phút; sốc nhiệt là cấp cứu','Đã xác nhận','https://elcosh.org/document/1262/d001135/Protecting%2BWorkers%2Bfrom%2BHeat%2BIllness%253A%2BOSHANIOSH%2BInfosheet.html','OSHA/NIOSH'),
+ ('Nghỉ ngắn tăng sảng khoái (d = 0,36), giảm mệt (d = 0,35); hiệu suất chung chưa rõ (22 mẫu, 2.335 người)','Đã xác nhận','https://pubmed.ncbi.nlm.nih.gov/36044424/','Albulescu et al. 2022'),
+ ('Mỗi lần trả lương, chỗ làm phải đưa bảng kê lương, làm thêm giờ, làm đêm, khấu trừ','Đã xác nhận','https://thuvienphapluat.vn/lao-dong-tien-luong/phieu-luong-la-gi-cong-ty-tra-luong-phai-co-phieu-luong-co-dung-khong-41331.html','BLLĐ 2019, Điều 95 khoản 3'),
+ ('Quấy rối tình dục tại nơi làm việc là hành vi bị nghiêm cấm','Đã xác nhận','https://daibieunhandan.vn/nhung-hanh-vi-nao-bi-nghiem-cam-trong-linh-vuc-lao-dong-nam-2024-10338504.html','BLLĐ 2019, Điều 8'),
 ]
 def _src(u,s): return f'<a href="{u}">{s}</a>' if u else (s or 'Thiết kế hoặc đánh giá của daynentang.com')
 erows = ''.join(f'<tr><td>{c}</td><td><span class="label">[{l}]</span></td><td>{_src(u,s)}</td></tr>' for c,l,u,s in EV)
