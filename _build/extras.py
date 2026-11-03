@@ -16,6 +16,7 @@ page('/cong-cu/', 'Công cụ', 'Công cụ in miễn phí cho gia đình: bản
 <a class="card" href="/cong-cu/phieu-ra-soat-nha/"><span class="tag">Có thể in</span><h3>Phiếu rà soát nhà</h3><p>An toàn từng phòng, phòng cháy, bảo trì. Cho khóa Nhà gọn, nhà an toàn.</p></a>
 <a class="card" href="/cong-cu/so-tay-cong-dong/"><span class="tag">Có thể in</span><h3>Sổ tay cộng đồng</h3><p>Phỏng vấn ông bà, người có thể nhờ, kế hoạch màn hình. Cho khóa Gia đình và cộng đồng.</p></a>
 <a class="card" href="/cong-cu/so-tay-vo-chong/"><span class="tag">Có thể in</span><h3>Sổ tay vợ chồng</h3><p>Mở lời nhẹ, tạm dừng, họp vợ chồng. Cho khóa Vợ chồng đồng lòng.</p></a>
+<a class="card" href="/cong-cu/ban-do-an-toan/"><span class="tag">Có thể in</span><h3>Bản đồ an toàn của tôi</h3><p>5 người lớn tin cậy, mật mã gọi đón, số khẩn cấp. Cho khóa Lớn lên an toàn (10–14).</p></a>
 <a class="card" href="/cong-cu/thoa-thuan-gia-dinh/"><span class="tag">Có thể in</span><h3>Thỏa thuận gia đình</h3><p>Thỏa thuận, kế hoạch thiết bị, mật mã gọi đón. Cho khóa Gia đình có con 10–14.</p></a>
 <a class="card" href="/cong-cu/nhat-ky-giao-dap/"><span class="tag">Có thể in</span><h3>Nhật ký giao và đáp</h3><p>5 phút mỗi ngày, kế hoạch khi con khóc. Cho khóa Gia đình 0–2 tuổi.</p></a>
 <a class="card" href="/cong-cu/bang-viec-nha/"><span class="tag">Có thể in</span><h3>Bảng việc nhà</h3><p>Danh sách việc có phần nghĩ, Ai lo việc gì, bảng việc của con. Cho khóa Việc nhà chia đều.</p></a>
@@ -133,6 +134,9 @@ EV = [
  ('Kế hoạch màn hình gia đình: chỗ không màn hình, chọn nội dung, tắt tự phát, bố mẹ làm gương','Đã xác nhận','https://healthychildren.org/English/family-life/Media/Pages/How-to-Make-a-Family-Media-Use-Plan.aspx','AAP (cập nhật 1/2026)'),
  ('Chương trình dạy ở trường về phòng xâm hại tình dục trẻ em: 24 thử nghiệm, 5.802 trẻ; tăng hiểu biết, hành vi tự bảo vệ và việc kể ra; chưa rõ có giảm số vụ','Đã xác nhận','https://www.cochrane.org/news/teaching-children-schools-about-sexual-abuse-may-help-them-report-abuse','Walsh et al. 2015, Cochrane'),
  ('Dậy thì thường bắt đầu 8–13 tuổi ở bạn gái, 9–14 tuổi ở bạn trai; sớm hay muộn hơn cũng có thể bình thường','Đã xác nhận','https://kidshealth.org/NortonChildrens/en/parents/understanding-puberty.html?view=ptr','Nemours KidsHealth (duyệt 5/2022)'),
+ ('Chương trình phòng bắt nạt ở trường giảm cả hành vi bắt nạt và tình trạng bị bắt nạt (phân tích gộp cập nhật)','Đã xác nhận','https://ojp.gov/ncjrs/virtual-library/abstracts/evaluating-effectiveness-school-bullying-prevention-programs','Gaffney, Ttofi & Farrington 2019'),
+ ('Bộ Công an cảnh báo 3 chiêu "bắt cóc online" nhắm vào học sinh, sinh viên: đe dọa giả danh, làm thân lâu, dụ bằng việc làm hay tiền','Đã xác nhận','https://voh.com.vn/phap-luat/cong-an-canh-bao-3-chieu-bat-coc-online-nham-vao-hoc-sinh-sinh-vien-625691.html','VOH, 12/10/2025'),
+ ('Điều khoản cụ thể về mũ bảo hiểm cho trẻ em trong Luật TTATGTĐB 2024 và nghị định xử phạt','Cần kiểm chứng','','Chưa đọc được văn bản gốc'),
  ('Mẹo "không lọt lõi giấy vệ sinh" để loại vật nhỏ','Đánh giá chuyên môn','',''),
  ('Lịch 12 tuần và các hoạt động của khóa Gia đình 2–8','Đánh giá chuyên môn','',''),
 ]

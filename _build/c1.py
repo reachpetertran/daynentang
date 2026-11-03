@@ -29,19 +29,24 @@ TALK = ('Ai chạm vào bạn làm bạn khó chịu, đe dọa, hay bắt bạn
 L = {
  '1': (1, 'co-the-minh-dang-lon', 'Bài 1', 'Cơ thể mình đang lớn'),
 }
+ORDER = list(L)
+def link(k):
+    w, slug, code, title = L[k]; return (url(w, slug), f'{code} – {title}')
 PLAN = [
  (1, 'Cơ thể mình đang lớn', 'Bạn biết các thay đổi khi dậy thì và làm đủ 5 việc chăm cơ thể ít nhất 5/7 ngày.'),
  (2, 'Cơ thể của mình, ranh giới của mình', 'Bạn phân biệt được bí mật vui và bí mật phải kể; viết tên 5 người lớn tin cậy.'),
  (3, 'An toàn trên mạng', 'Bạn kiểm tra cài đặt riêng tư cùng người lớn và nói được 4 dấu hiệu người lạ nguy hiểm.'),
  (4, 'Nhận ra lừa đảo và dụ dỗ', 'Bạn nhận ra 5 dấu hiệu lừa đảo và dùng quy tắc Dừng – Hỏi – Kể.'),
- (5, 'Bạn bè và bắt nạt', 'Bạn có 3 câu nói để giúp bạn bị bắt nạt và biết báo cho ai.'),
- (6, 'Nói "không" mà vẫn giữ bạn', 'Bạn tập 3 cách từ chối và có thẻ mật mã gọi đón.'),
+ (5, 'Bạn bè và bắt nạt', 'Bạn có 3 câu nói của người giúp và tên 2 người lớn ở trường để báo.'),
+ (6, 'Nói "không" mà vẫn giữ bạn', 'Bạn tập 4 cách nói không và có câu mật mã gọi đón.'),
  (7, 'An toàn đường, nước, điện', 'Bạn có checklist ra khỏi nhà và nói được quy tắc an toàn khi ở gần nước.'),
  (8, 'Cảm xúc và khi nào cần giúp', 'Bạn hoàn thành Bản đồ an toàn của tôi và cất ở chỗ dễ tìm.'),
 ]
 
 def lesson(k, desc, sections, figs_after=3):
-    w, slug, code, title = L[k]
+    w, slug, code, title = L[k]; i = ORDER.index(k)
+    prev = link(ORDER[i-1]) if i else (U, 'Về trang khóa học')
+    nxt = link(ORDER[i+1]) if i < len(ORDER)-1 else (U, 'Về trang khóa học')
     meta = [f'Tuần {w}', 'Đọc 10 phút', 'Làm 10 phút', 'Nói với người lớn 5 phút']
     body = f'''<div class="lesson">
 <p class="eyebrow no-print"><a href="{U}">Lớn lên an toàn (10–14)</a> · Tuần {w}</p>
@@ -54,7 +59,7 @@ def lesson(k, desc, sections, figs_after=3):
 {''.join(sections[figs_after:])}
 {ADULT_ONLY}
 <p class="print-only small">daynentang.com · CC BY-NC-SA 4.0 · Cập nhật 03/11/2026</p>
-<nav class="lesson-nav no-print" aria-label="Bài trước, bài sau"><a href="{U}">← Về trang khóa học</a><a href="{U}#tam-tuan">Bài 2 đang soạn →</a></nav>
+<nav class="lesson-nav no-print" aria-label="Bài trước, bài sau"><a href="{prev[0]}">← {prev[1]}</a><a href="{nxt[0]}">{nxt[1]} →</a></nav>
 </div>'''
     page(url(w, slug), f'{code} – {title}', desc, body, current='/ca-nhan/')
 
@@ -109,6 +114,10 @@ lesson('1', 'Khóa Lớn lên an toàn, bài 1: dậy thì là gì, năm việc 
    lb('Đánh giá chuyên môn', 'Bảng 7 ngày, hộp câu hỏi và câu mở lời do daynentang.com soạn. Lời khuyên "không tự mua thuốc trên mạng" là lời khuyên an toàn chung.')]))
 ])
 
+# ======================= BÀI 2–8, CÔNG CỤ =======================
+import os
+exec(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'c1_more.py'), encoding='utf-8').read())
+
 # ======================= TRANG KHÓA =======================
 rows = ''
 for w, title, goal in PLAN:
@@ -118,7 +127,7 @@ for w, title, goal in PLAN:
 
 page(U, 'Lớn lên an toàn (10–14)', 'Khóa tự học miễn phí cho bạn 10–14 tuổi: cơ thể đang lớn, ranh giới, an toàn trên mạng, lừa đảo, bắt nạt, nói không, khi nào cần giúp.',
 f'''
-<p class="eyebrow">Cá nhân · Khóa C1 · Đang soạn</p>
+<p class="eyebrow">Cá nhân · Khóa C1 · Đang thử nghiệm</p>
 <h1>Lớn lên an toàn (10–14)</h1>
 <p class="lead">Bạn đang lớn nhanh. Khóa này giúp bạn hiểu cơ thể mình, nhận ra nguy hiểm, biết nói "không" và biết tìm ai khi cần.</p>
 {PRINT_ROW}
@@ -127,7 +136,7 @@ f'''
 <tr><th>Dành cho</th><td>Bạn 10–14 tuổi tự đọc, có một người lớn tin cậy đồng hành. Bố mẹ xem thêm khóa <a href="{G4}">Gia đình có con 10–14</a></td></tr>
 <tr><th>Thời lượng</th><td>8 tuần, mỗi tuần 1 bài 25 phút: đọc 10 phút, làm 10 phút, nói với người lớn 5 phút</td></tr>
 <tr><th>Cần có</th><td>Giấy, bút. Không cần điện thoại hay máy tính để học</td></tr>
-<tr><th>Tình trạng</th><td>Đang soạn: đã có bài 1, bản chưa dạy thử, chưa có chuyên gia duyệt</td></tr>
+<tr><th>Tình trạng</th><td>Đủ 8 bài, bản chưa dạy thử, chưa có chuyên gia duyệt. Nhà người soạn chưa có con ở tuổi này; rất cần góp ý của các gia đình và thầy cô</td></tr>
 </tbody></table></div>
 
 <div class="two">
@@ -143,6 +152,9 @@ f'''
 <thead><tr><th>Tuần</th><th>Bài</th><th>Mục tiêu đo được</th></tr></thead>
 <tbody>{rows}</tbody></table></div>
 
+<h2>Công cụ</h2>
+<ul><li><a href="{TOOL}">Bản đồ an toàn của tôi</a>: 5 người lớn tin cậy, quy tắc, mật mã gọi đón, số khẩn cấp, tự đánh giá.</li></ul>
+
 <h2>Cho người lớn đồng hành</h2>
 <ul>
 <li>Đọc bài trước con. Bài 2 về ranh giới cơ thể nên đọc cùng nhau.</li>
@@ -157,6 +169,8 @@ f'''
 <tr><td>{COCH}</td><td>Dạy trẻ về ranh giới cơ thể, bí mật phải kể, người lớn tin cậy</td><td><span class="label">[Đã xác nhận]</span> 24 thử nghiệm, 5.802 trẻ: trẻ hiểu biết hơn, có hành vi tự bảo vệ hơn, kể ra nhiều hơn; ít dấu hiệu gây lo lắng. Chưa rõ có giảm số vụ xâm hại không. Các chương trình làm ở trường</td></tr>
 <tr><td>{ITGSE}</td><td>Chủ đề cơ thể, dậy thì, an toàn theo độ tuổi</td><td><span class="label">[Đã xác nhận]</span> Hướng dẫn quốc tế của UNESCO, UNFPA, UNICEF, WHO và các tổ chức LHQ khác</td></tr>
 <tr><td>{SFP}</td><td>Kỹ năng từ chối áp lực bạn bè, cùng làm với bố mẹ</td><td><span class="label">[Đã xác nhận]</span> Mức 3 theo Foundations (đã dùng ở khóa Gia đình 10–14)</td></tr>
+<tr><td>{GAFF}</td><td>Bốn vai khi có bắt nạt, người đứng xem thành người giúp</td><td><span class="label">[Đã xác nhận]</span> Phân tích gộp: chương trình ở trường giảm bắt nạt và bị bắt nạt</td></tr>
+<tr><td>{VOH}</td><td>Các chiêu lừa đảo nhắm vào học sinh</td><td><span class="label">[Đã xác nhận]</span> Cảnh báo của cơ quan công an</td></tr>
 <tr><td>{KH}; {AASM}</td><td>Kiến thức dậy thì, vệ sinh, giấc ngủ</td><td><span class="label">[Đã xác nhận]</span> Tài liệu y khoa cho gia đình; đồng thuận chuyên gia</td></tr>
 </tbody></table></div>
 <div class="box warn">
