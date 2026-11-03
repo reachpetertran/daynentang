@@ -16,6 +16,7 @@ page('/cong-cu/', 'Công cụ', 'Công cụ in miễn phí cho gia đình: bản
 <a class="card" href="/cong-cu/phieu-ra-soat-nha/"><span class="tag">Có thể in</span><h3>Phiếu rà soát nhà</h3><p>An toàn từng phòng, phòng cháy, bảo trì. Cho khóa Nhà gọn, nhà an toàn.</p></a>
 <a class="card" href="/cong-cu/so-tay-cong-dong/"><span class="tag">Có thể in</span><h3>Sổ tay cộng đồng</h3><p>Phỏng vấn ông bà, người có thể nhờ, kế hoạch màn hình. Cho khóa Gia đình và cộng đồng.</p></a>
 <a class="card" href="/cong-cu/so-tay-vo-chong/"><span class="tag">Có thể in</span><h3>Sổ tay vợ chồng</h3><p>Mở lời nhẹ, tạm dừng, họp vợ chồng. Cho khóa Vợ chồng đồng lòng.</p></a>
+<a class="card" href="/cong-cu/so-tay-nghe/"><span class="tag">Có thể in</span><h3>Sổ tay nghề của tôi</h3><p>Bậc thang kỹ năng, nhật ký luyện, rà soát an toàn, chia lương, hồ sơ kỹ năng. Cho khóa Vững nghề.</p></a>
 <a class="card" href="/cong-cu/so-tu-quan-hoc-ky/"><span class="tag">Có thể in</span><h3>Sổ tự quản học kỳ</h3><p>Mục tiêu, lịch tuần, thẻ ôn, phân công nhóm, ôn thi, tiền tháng. Cho khóa Tự học – tự quản.</p></a>
 <a class="card" href="/cong-cu/ho-so-hieu-minh/"><span class="tag">Có thể in</span><h3>Hồ sơ hiểu mình</h3><p>Điểm mạnh, giá trị, cảm xúc, giấc ngủ, mục tiêu, người tin cậy. Cho khóa Hiểu mình (13–17).</p></a>
 <a class="card" href="/cong-cu/ban-do-an-toan/"><span class="tag">Có thể in</span><h3>Bản đồ an toàn của tôi</h3><p>5 người lớn tin cậy, mật mã gọi đón, số khẩn cấp. Cho khóa Lớn lên an toàn (10–14).</p></a>
@@ -156,6 +157,13 @@ EV = [
  ('Người lớn 18–60 tuổi nên ngủ từ 7 giờ mỗi đêm','Đã xác nhận','https://www.aasm.org/resources/pdf/adultsleepdurationconsensus.pdf','AASM & SRS 2015'),
  ('Người lớn 18–64 tuổi: 150–300 phút vận động vừa mỗi tuần, tập cơ ít nhất 2 ngày','Đã xác nhận','https://who.int/initiatives/behealthy/physical-activity','WHO'),
  ('Mang vật dụng cấm vào phòng thi tốt nghiệp THPT bị đình chỉ thi (TT 24/2024/TT-BGDĐT, Điều 57)','Đã xác nhận','https://lsvn.vn/cac-hinh-thuc-xu-ly-vi-pham-quy-che-thi-tot-nghiep-thpt-thi-sinh-can-luu-y-a159467.html','Báo Luật sư Việt Nam, 26/6/2025'),
+ ('Người lao động trẻ (15–24 tuổi) bị tai nạn lao động không chết người cao hơn tới 40% so với người trên 25 tuổi','Đã xác nhận','https://www.ilo.org/node/653131','ILO – Improving the Safety and Health of Young Workers'),
+ ('Luyện tập có chủ đích giải thích khoảng 26% chênh lệch thành tích ở trò chơi, 18% thể thao, dưới 1% nghề nghiệp (88 nghiên cứu)','Đã xác nhận','https://www.sciencedaily.com/releases/2014/07/140716123835.htm','Macnamara, Hambrick & Oswald 2014'),
+ ('Người lao động có quyền từ chối làm việc khi thấy rõ nguy cơ tai nạn nghiêm trọng, phải báo ngay người quản lý trực tiếp','Đã xác nhận','https://danchuphapluat.vn/quyen-tu-choi-lam-viec-khi-phat-hien-nguy-co-gay-chay-no-de-doa-tinh-mang-9563.html','Luật ATVSLĐ 2015, Điều 6 k1 điểm đ'),
+ ('Người 15 đến dưới 18 tuổi làm tối đa 8 giờ/ngày, 40 giờ/tuần; không làm việc trong danh mục cấm','Đã xác nhận','https://lsvn.vn/quy-dinh-ve-su-dung-lao-dong-la-nguoi-chua-thanh-nien1666196792-a125368.html','BLLĐ 2019 (Báo Luật sư Việt Nam)'),
+ ('Người sử dụng lao động không được giữ bản chính giấy tờ tùy thân, văn bằng, chứng chỉ của người lao động','Đã xác nhận','https://hethongphapluat.com/bo-luat-lao-dong-2019/khoan-1-dieu-17','BLLĐ 2019, Điều 17 k1'),
+ ('Một số công việc ảnh hưởng an toàn, sức khỏe bắt buộc có chứng chỉ kỹ năng nghề quốc gia (hiệu lực 01/01/2026)','Đã xác nhận','https://luatvietnam.vn/lao-dong-tien-luong/diem-moi-cua-luat-viec-lam-2025-562-102940-article.html','Luật Việc làm 74/2025/QH15, Điều 26'),
+ ('Nguyên văn Điều 61 BLLĐ 2019 về lương người học nghề; danh mục nghề bắt buộc chứng chỉ; giới hạn tiếng ồn theo quy chuẩn Việt Nam','Cần kiểm chứng','','Chưa đọc văn bản gốc'),
  ('Văn bản sửa đổi quy chế thi tốt nghiệp THPT áp dụng cho năm 2027','Cần kiểm chứng','','Chưa tra được'),
  ('Bài viết "khẳng định giá trị" giúp học sinh học tốt hơn','Cần kiểm chứng','','Kết quả nghiên cứu không đồng nhất'),
  ('Mẹo "không lọt lõi giấy vệ sinh" để loại vật nhỏ','Đánh giá chuyên môn','',''),
