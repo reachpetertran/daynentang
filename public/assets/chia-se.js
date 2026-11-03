@@ -94,7 +94,17 @@
     'g9-1': 'Gia đình và cộng đồng · Bài 1 Ông bà, chuyện gia đình',
     'g9-2': 'Gia đình và cộng đồng · Bài 2 Họ hàng, hàng xóm',
     'g9-3': 'Gia đình và cộng đồng · Bài 3 Kế hoạch màn hình',
-    'g9-4': 'Gia đình và cộng đồng · Bài 4 Giúp cộng đồng'
+    'g9-4': 'Gia đình và cộng đồng · Bài 4 Giúp cộng đồng',
+    'c9-1': 'Vận động an toàn · Bài 1 Bắt đầu an toàn',
+    'c9-2': 'Vận động an toàn · Bài 2 Ngồi ít lại',
+    'c9-3': 'Vận động an toàn · Bài 3 Thở và khởi động',
+    'c9-4': 'Vận động an toàn · Bài 4 Sức chân',
+    'c9-5': 'Vận động an toàn · Bài 5 Thăng bằng',
+    'c9-6': 'Vận động an toàn · Bài 6 Sức tay',
+    'c9-7': 'Vận động an toàn · Bài 7 Đi bộ tăng dần',
+    'c9-8': 'Vận động an toàn · Bài 8 Giãn cơ, khớp',
+    'c9-9': 'Vận động an toàn · Bài 9 Phòng té ngã',
+    'c9-10': 'Vận động an toàn · Bài 10 Kế hoạch tuần'
   };
   var KINDS = { 'kho-khan': 'Khó khăn', 'y-tuong': 'Ý tưởng sáng tạo', 'ket-qua': 'Kết quả', 'gop-y': 'Góp ý cho bài' };
 

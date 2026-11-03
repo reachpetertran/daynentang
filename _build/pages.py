@@ -121,7 +121,7 @@ PERSONAL = [
  ('Tự lập từng bước','Người khuyết tật và gia đình'),('Chăm tâm trí cơ bản','Người gặp khó khăn tâm lý'),
  ('Vận động an toàn','Người yếu sức'),('Nền tảng không cần điện','Nơi thiếu điện, nước, trường học'),
 ]
-OPEN_P = {'Lớn lên an toàn': '/khoa-hoc/lon-len-an-toan/', 'Hiểu mình': '/khoa-hoc/hieu-minh/', 'Tự học – tự quản': '/khoa-hoc/tu-hoc-tu-quan/', 'Vững nghề': '/khoa-hoc/vung-nghe/', '15 phút mỗi ngày': '/khoa-hoc/15-phut-moi-ngay/', 'Tự tin – an toàn': '/khoa-hoc/tu-tin-an-toan/', 'Tự lập từng bước': '/khoa-hoc/tu-lap-tung-buoc/', 'Chăm tâm trí cơ bản': '/khoa-hoc/cham-tam-tri-co-ban/'}
+OPEN_P = {'Lớn lên an toàn': '/khoa-hoc/lon-len-an-toan/', 'Hiểu mình': '/khoa-hoc/hieu-minh/', 'Tự học – tự quản': '/khoa-hoc/tu-hoc-tu-quan/', 'Vững nghề': '/khoa-hoc/vung-nghe/', '15 phút mỗi ngày': '/khoa-hoc/15-phut-moi-ngay/', 'Tự tin – an toàn': '/khoa-hoc/tu-tin-an-toan/', 'Tự lập từng bước': '/khoa-hoc/tu-lap-tung-buoc/', 'Chăm tâm trí cơ bản': '/khoa-hoc/cham-tam-tri-co-ban/', 'Vận động an toàn': '/khoa-hoc/van-dong-an-toan/'}
 pc = ''.join((f'<a class="card" href="{OPEN_P[n]}"><span class="tag">Đang mở</span><h3>{n}</h3><p class="muted">{a}</p></a>' if n in OPEN_P else f'<div class="card"><span class="tag soon">Đang soạn</span><h3>{n}</h3><p class="muted">{a}</p></div>') for n,a in PERSONAL)
 page('/ca-nhan/', 'Cá nhân', 'Khóa tự học miễn phí theo từng đối tượng: thiếu niên, sinh viên, người lao động, người khuyết tật và nhiều nhóm khác.',
 f'''
@@ -216,6 +216,7 @@ Tài liệu của tổ chức khác thuộc quyền của họ; chúng tôi ch�
 
 <h2>Nhật ký sửa đổi</h2>
 <ul>
+<li>03/11/2026: Mở khóa Vận động an toàn: 10 bài cho người cao tuổi, người mới ốm dậy, người có bệnh mạn tính đã ổn định và người ít vận động, mỗi động tác có 3 mức, kèm 25 hình và Sổ vận động an toàn. Bản chưa dạy thử, chưa có chuyên gia duyệt.</li>
 <li>03/11/2026: Mở khóa Chăm tâm trí cơ bản: 10 bài cho người từ 15 tuổi đang căng thẳng, buồn, lo kéo dài, kèm 22 hình và Sổ chăm tâm trí có Kế hoạch giữ vững. Mỗi bài có khối Cần giúp ngay ở đầu trang. Bản chưa dạy thử, chưa có chuyên gia duyệt.</li>
 <li>03/11/2026: Mở khóa Tự lập từng bước: 10 bài cho người khuyết tật từ 15 tuổi và người thân, có phần dễ đọc và bảng điều chỉnh theo dạng khuyết tật, kèm 22 hình và Sổ tự lập từng bước. Bản chưa dạy thử, chưa có chuyên gia duyệt.</li>
 <li>03/11/2026: Thêm bản tiếng Anh cho trang chủ, Gia đình, Cá nhân, Giới thiệu, Cần giúp ngay, Bằng chứng và tuần 1 khóa Gia đình 2–8 tuổi. Chỉ khách truy cập từ nước ngoài, dùng trình duyệt không phải tiếng Việt, mới thấy dải gợi ý chuyển sang tiếng Anh. Trang luôn mở bằng tiếng Việt.</li>
