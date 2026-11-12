@@ -1,0 +1,53 @@
+/* Khung app Dạy Nền Tảng: thanh trên, thanh tab dưới, cỡ chữ, màu nền */
+:root[data-theme="dark"]{
+  --bg:#141a24; --card:#1c2431; --ink:#ece7dd; --muted:#a9a397; --line:#2f3a4b;
+  --link:#8cc3ec; --warn-bg:#2b2117; --warn-line:#6b4a2c; --info-bg:#18291f; --info-line:#2f5a3e;
+}
+:root[data-theme="dark"] .eyebrow{color:var(--orange)}
+html[data-size="s"] body{font-size:15px}
+html[data-size="m"] body{font-size:17px}
+html[data-size="l"] body{font-size:20px}
+html[data-size="xl"] body{font-size:23px}
+
+body{padding-top:calc(56px + env(safe-area-inset-top));padding-bottom:calc(72px + env(safe-area-inset-bottom))}
+main{padding-top:18px}
+/* vùng đọc kiểu trang sách */
+main p, main li{font-family:Georgia,"Noto Serif","Times New Roman",serif}
+main .eyebrow, main .tag, main .btn, main th, main .small{font-family:system-ui,-apple-system,Roboto,sans-serif}
+
+.app-top{position:fixed;top:0;left:0;right:0;z-index:20;height:calc(56px + env(safe-area-inset-top));
+  padding:env(safe-area-inset-top) 12px 0;display:flex;align-items:center;gap:8px;background:#1b2a41;color:#fffdf8}
+.app-brand{display:flex;align-items:center;gap:8px;color:#fffdf8;text-decoration:none;font-weight:700;font-size:17px;margin-right:auto;min-height:48px}
+.app-brand img{border-radius:7px}
+.app-aa{min-width:48px;min-height:44px;border:1px solid #4a5d7e;border-radius:10px;background:transparent;color:#fffdf8;font-size:17px;font-weight:700}
+.app-help{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;border-radius:10px;background:#f47b2a;color:#1b1206;
+  font-weight:700;font-size:15px;text-decoration:none;white-space:nowrap}
+
+.app-panel{position:fixed;top:calc(60px + env(safe-area-inset-top));right:8px;left:8px;max-width:420px;margin-left:auto;z-index:21;
+  background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:14px;padding:12px 14px;box-shadow:0 8px 30px rgba(0,0,0,.25)}
+.app-panel p{margin:6px 0}
+.app-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+.app-row button{flex:1;min-height:48px;border:2px solid var(--line);border-radius:10px;background:transparent;color:var(--ink);font-size:16px}
+.app-row button[aria-pressed="true"]{border-color:#2f7d4a;background:var(--info-bg);font-weight:700}
+
+.app-tabs{position:fixed;bottom:0;left:0;right:0;z-index:20;display:flex;background:var(--card);border-top:1px solid var(--line);
+  padding-bottom:env(safe-area-inset-bottom)}
+.app-tabs a{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:64px;
+  color:var(--muted);text-decoration:none;font-size:13px;font-family:system-ui,-apple-system,Roboto,sans-serif}
+.app-tabs a[aria-current="page"]{color:#2f7d4a;font-weight:700}
+:root[data-theme="dark"] .app-tabs a[aria-current="page"]{color:#8fd3a6}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .app-tabs a[aria-current="page"]{color:#8fd3a6}}
+
+.app-actions{display:flex;gap:10px;flex-wrap:wrap;margin:26px 0 8px}
+.app-actions button{flex:1;min-height:48px;padding:10px 12px;border-radius:10px;border:2px solid #2f7d4a;background:transparent;color:var(--ink);font-size:16px;font-weight:600}
+.app-actions button[aria-pressed="true"]{background:#2f7d4a;color:#fff}
+.app-continue{display:block;margin:0 0 18px;padding:12px 14px;border-radius:12px;border:2px solid #2f7d4a;background:var(--info-bg);color:var(--ink);text-decoration:none}
+.app-continue small{display:block;color:var(--muted)}
+.app-list a{display:block;padding:12px 14px;margin:0 0 8px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink);text-decoration:none}
+
+.sec-green{color:#2f7a5e}.sec-orange{color:#a84a12}
+:root[data-theme="dark"] .sec-green{color:#8fd3a6}:root[data-theme="dark"] .sec-orange{color:#f0a877}
+.story-soon{opacity:.92}
+/* WebView không in được: ẩn nút In, ẩn dòng "Trang chị em" ở chân trang */
+button[onclick="window.print()"]{display:none}
+.site-foot{padding-bottom:8px}
