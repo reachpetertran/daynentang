@@ -51,3 +51,4 @@ main .eyebrow, main .tag, main .btn, main th, main .small{font-family:system-ui,
 /* WebView không in được: ẩn nút In, ẩn dòng "Trang chị em" ở chân trang */
 button[onclick="window.print()"]{display:none}
 .site-foot{padding-bottom:8px}
+.app-tel{display:inline-block;padding:6px 10px;border-radius:8px;background:#f47b2a;color:#1b1206;text-decoration:none;white-space:nowrap}

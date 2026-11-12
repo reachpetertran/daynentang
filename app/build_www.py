@@ -101,6 +101,13 @@ def transform(text: str, rel: str) -> str:
     )
     text = text.replace("</body>", f'{bottom}\n<script src="/app/app.js"></script>\n</body>')
     text = HREF.sub(fix_link, text)
+    if rel.endswith("can-giup-ngay/index.html"):
+        # Trong app: bấm vào số là gọi được, kể cả khi mất mạng
+        def tel(m):
+            parts = [x.strip() for x in m.group(1).split("/")]
+            links = " / ".join(f'<a class="app-tel" href="tel:{x.replace(" ", "")}">{x}</a>' for x in parts)
+            return f"<td><strong>{links}</strong>"
+        text = re.sub(r"<td><strong>([0-9 /]+)</strong>", tel, text)
     return text
 
 
