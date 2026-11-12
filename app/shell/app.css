@@ -1,54 +1,102 @@
-/* Khung app Dạy Nền Tảng: thanh trên, thanh tab dưới, cỡ chữ, màu nền */
+/* Khung app Dạy Nền Tảng: thanh trên, thanh tab dưới, cỡ chữ, màu nền, lộ trình */
+:root{--sat:max(env(safe-area-inset-top,0px),var(--safe-area-inset-top,0px));--sab:max(env(safe-area-inset-bottom,0px),var(--safe-area-inset-bottom,0px))}
 :root[data-theme="dark"]{
   --bg:#141a24; --card:#1c2431; --ink:#ece7dd; --muted:#a9a397; --line:#2f3a4b;
   --link:#8cc3ec; --warn-bg:#2b2117; --warn-line:#6b4a2c; --info-bg:#18291f; --info-line:#2f5a3e;
 }
 :root[data-theme="dark"] .eyebrow{color:var(--orange)}
+html{background:var(--bg);scroll-padding-top:calc(64px + var(--sat))}
 html[data-size="s"] body{font-size:15px}
 html[data-size="m"] body{font-size:17px}
 html[data-size="l"] body{font-size:20px}
 html[data-size="xl"] body{font-size:23px}
+*{-webkit-tap-highlight-color:transparent}
+a,button{touch-action:manipulation}
+/* chuyển trang mượt: mờ nhẹ phần nội dung, giữ nguyên thanh trên và thanh tab */
+@view-transition{navigation:auto}
+::view-transition-old(root),::view-transition-new(root){animation-duration:.16s}
+.app-top{view-transition-name:app-top}.app-tabs{view-transition-name:app-tabs}
+@media (prefers-reduced-motion:reduce){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}}
 
-body{padding-top:calc(56px + env(safe-area-inset-top));padding-bottom:calc(72px + env(safe-area-inset-bottom))}
-main{padding-top:18px}
+body{padding-top:calc(56px + var(--sat));padding-bottom:calc(68px + var(--sab));overscroll-behavior-y:none}
+main{padding-top:16px}
 /* vùng đọc kiểu trang sách */
 main p, main li{font-family:Georgia,"Noto Serif","Times New Roman",serif}
-main .eyebrow, main .tag, main .btn, main th, main .small{font-family:system-ui,-apple-system,Roboto,sans-serif}
+main .eyebrow, main .tag, main .btn, main th, main .small, .app-tools, .app-tools p{font-family:system-ui,-apple-system,Roboto,sans-serif}
+.card,.btn,.app-tabs a,.app-course,.app-continue,.app-list a{transition:transform .08s ease,background-color .12s ease}
+.card:active,.btn:active,.app-course:active,.app-continue:active,.app-list a:active{transform:scale(.985)}
+.app-tabs a:active{background:var(--info-bg)}
 
-.app-top{position:fixed;top:0;left:0;right:0;z-index:20;height:calc(56px + env(safe-area-inset-top));
-  padding:env(safe-area-inset-top) 12px 0;display:flex;align-items:center;gap:8px;background:#1b2a41;color:#fffdf8}
-.app-brand{display:flex;align-items:center;gap:8px;color:#fffdf8;text-decoration:none;font-weight:700;font-size:17px;margin-right:auto;min-height:48px}
-.app-brand img{border-radius:7px}
+.app-top{position:fixed;top:0;left:0;right:0;z-index:20;height:calc(56px + var(--sat));
+  padding:var(--sat) 12px 0;display:flex;align-items:center;gap:8px;background:#1b2a41;color:#fffdf8}
+.app-brand{display:flex;align-items:center;gap:8px;color:#fffdf8;text-decoration:none;font-weight:700;font-size:17px;margin-right:auto;min-height:48px;min-width:0}
+.app-brand span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.app-brand img{border-radius:7px;flex:none}
 .app-aa{min-width:48px;min-height:44px;border:1px solid #4a5d7e;border-radius:10px;background:transparent;color:#fffdf8;font-size:17px;font-weight:700}
 .app-help{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;border-radius:10px;background:#f47b2a;color:#1b1206;
   font-weight:700;font-size:15px;text-decoration:none;white-space:nowrap}
 
-.app-panel{position:fixed;top:calc(60px + env(safe-area-inset-top));right:8px;left:8px;max-width:420px;margin-left:auto;z-index:21;
-  background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:14px;padding:12px 14px;box-shadow:0 8px 30px rgba(0,0,0,.25)}
+.app-panel{position:fixed;top:calc(60px + var(--sat));right:8px;left:8px;max-width:420px;margin-left:auto;z-index:21;
+  background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:14px;padding:12px 14px;box-shadow:0 8px 30px rgba(0,0,0,.25);
+  font-family:system-ui,-apple-system,Roboto,sans-serif}
 .app-panel p{margin:6px 0}
 .app-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px}
-.app-row button{flex:1;min-height:48px;border:2px solid var(--line);border-radius:10px;background:transparent;color:var(--ink);font-size:16px}
-.app-row button[aria-pressed="true"]{border-color:#2f7d4a;background:var(--info-bg);font-weight:700}
+.app-row button,.app-row a{flex:1;min-height:48px;display:flex;align-items:center;justify-content:center;border:2px solid var(--line);border-radius:10px;
+  background:transparent;color:var(--ink);font-size:16px;text-decoration:none}
+.app-row button[aria-pressed="true"],.app-row a[aria-current="true"]{border-color:#2f7d4a;background:var(--info-bg);font-weight:700}
 
-.app-tabs{position:fixed;bottom:0;left:0;right:0;z-index:20;display:flex;background:var(--card);border-top:1px solid var(--line);
-  padding-bottom:env(safe-area-inset-bottom)}
-.app-tabs a{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:64px;
+.app-tabs{position:fixed;bottom:0;left:0;right:0;z-index:20;display:flex;background:var(--card);border-top:1px solid var(--line);padding-bottom:var(--sab)}
+.app-tabs a{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:60px;
   color:var(--muted);text-decoration:none;font-size:13px;font-family:system-ui,-apple-system,Roboto,sans-serif}
 .app-tabs a[aria-current="page"]{color:#2f7d4a;font-weight:700}
 :root[data-theme="dark"] .app-tabs a[aria-current="page"]{color:#8fd3a6}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .app-tabs a[aria-current="page"]{color:#8fd3a6}}
 
-.app-actions{display:flex;gap:10px;flex-wrap:wrap;margin:26px 0 8px}
+/* Lộ trình */
+.app-bar{display:block;height:8px;border-radius:8px;background:var(--line);overflow:hidden;margin:8px 0 6px}
+.app-bar i{display:block;height:100%;border-radius:8px;background:#2f7d4a}
+.app-course,.app-continue,.app-progress{display:block;margin:0 0 12px;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--ink);text-decoration:none;font-family:system-ui,-apple-system,Roboto,sans-serif}
+.app-continue{border:2px solid #2f7d4a;background:var(--info-bg)}
+.app-course small,.app-continue small,.app-list small,.app-crumb small{display:block;color:var(--muted);font-size:14px}
+.app-progress .btn{margin-top:6px}
+.app-crumb{display:block;text-decoration:none;margin:0 0 14px;font-family:system-ui,-apple-system,Roboto,sans-serif}
+.app-tools{margin-top:30px;padding-top:18px;border-top:1px solid var(--line)}
+.app-notes textarea{display:block;width:100%;margin:6px 0 2px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);font:inherit;font-size:16px}
+.app-actions{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 8px}
 .app-actions button{flex:1;min-height:48px;padding:10px 12px;border-radius:10px;border:2px solid #2f7d4a;background:transparent;color:var(--ink);font-size:16px;font-weight:600}
 .app-actions button[aria-pressed="true"]{background:#2f7d4a;color:#fff}
-.app-continue{display:block;margin:0 0 18px;padding:12px 14px;border-radius:12px;border:2px solid #2f7d4a;background:var(--info-bg);color:var(--ink);text-decoration:none}
-.app-continue small{display:block;color:var(--muted)}
-.app-list a{display:block;padding:12px 14px;margin:0 0 8px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink);text-decoration:none}
+.app-nav{display:flex;flex-direction:column;gap:10px;margin:12px 0}
+.app-nav .btn{text-align:center}
+.app-list a{display:block;padding:12px 14px;margin:0 0 8px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink);text-decoration:none;font-family:system-ui,-apple-system,Roboto,sans-serif}
+.app-search input{display:block;width:100%;min-height:48px;margin:4px 0 12px;padding:8px 12px;border:2px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink);font-size:17px}
+.app-week{display:flex;gap:6px}
+.app-week span{flex:1;text-align:center;font-size:13px;color:var(--muted);font-family:system-ui,-apple-system,Roboto,sans-serif}
+.app-week i{display:block;height:30px;border-radius:8px;background:var(--line);margin-bottom:4px}
+.app-week .on i{background:#2f7d4a}.app-week .today{font-weight:700;color:var(--ink)}
+.app-tick{color:#2f7d4a;font-weight:700}
+:root[data-theme="dark"] .app-tick{color:#8fd3a6}
+.app-wipe{color:var(--muted);font-size:15px;min-height:44px}
+.app-tel{display:inline-block;padding:6px 10px;border-radius:8px;background:#f47b2a;color:#1b1206;text-decoration:none;white-space:nowrap}
 
+/* Truyện */
 .sec-green{color:#2f7a5e}.sec-orange{color:#a84a12}
 :root[data-theme="dark"] .sec-green{color:#8fd3a6}:root[data-theme="dark"] .sec-orange{color:#f0a877}
-.story-soon{opacity:.92}
-/* WebView không in được: ẩn nút In, ẩn dòng "Trang chị em" ở chân trang */
+a.card.story-card{display:flex;gap:12px;align-items:center}
+.story-card img{width:72px;height:107px;object-fit:cover;border-radius:8px;flex:none}
+.story-card strong{display:block;font-size:18px;line-height:1.3;margin-top:4px}
+.story-by{font-style:italic;color:var(--muted)}
+.story-plate{margin:20px 0}
+.story-plate img{display:block;width:100%;height:auto;border-radius:12px;aspect-ratio:830/1230;background:var(--line)}
+.story-plate figcaption{font-size:14px;color:var(--muted);margin-top:6px;font-family:system-ui,-apple-system,Roboto,sans-serif}
+.story-text p{font-size:1.08em;line-height:1.75;margin:0 0 .9em;text-wrap:pretty}
+.story-text p.first::first-letter{font-size:1.5em;font-weight:700}
+.story-text p.sep{text-align:center;color:var(--muted);letter-spacing:.3em;margin:1.2em 0}
+.story-text p.bip{font-family:ui-monospace,Menlo,monospace;font-weight:700;text-align:center}
+.story-object .story-spot{max-width:160px;margin:0 auto 8px}
+.story-object .story-spot svg{width:100%;height:auto;display:block}
+.app-gate{position:fixed;inset:0;z-index:40;background:var(--bg);display:flex;align-items:center;justify-content:center;padding:24px}
+.app-gate>div{max-width:460px}
+
+/* WebView không in được: ẩn nút In */
 button[onclick="window.print()"]{display:none}
 .site-foot{padding-bottom:8px}
-.app-tel{display:inline-block;padding:6px 10px;border-radius:8px;background:#f47b2a;color:#1b1206;text-decoration:none;white-space:nowrap}

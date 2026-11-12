@@ -1,6 +1,6 @@
 {
   "appId": "com.daynentang.app",
-  "appName": "Kĩ Năng Nền Tảng",
+  "appName": "Dạy Nền Tảng",
   "webDir": "www",
   "android": { "allowMixedContent": false },
   "server": { "androidScheme": "https" }

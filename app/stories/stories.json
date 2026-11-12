@@ -1,0 +1,154 @@
+[
+ {
+  "id": "g1",
+  "title": "Tấm bìa trên cánh cửa bếp",
+  "country": "Philippines",
+  "age": 6,
+  "part": "xanh",
+  "slug": "gia-tri-nha-minh"
+ },
+ {
+  "id": "g2",
+  "title": "Chiếc túi đồ chơi ngày thứ Ba",
+  "country": "Jamaica",
+  "age": 6,
+  "part": "xanh",
+  "slug": "gia-dinh-0-2"
+ },
+ {
+  "id": "g3",
+  "title": "Chiếc can vàng biết cúi chào",
+  "country": "Ghana",
+  "age": 4,
+  "part": "xanh",
+  "slug": "gia-dinh-2-8"
+ },
+ {
+  "id": "g4",
+  "title": "Tin nhắn chỉ có một chữ",
+  "country": "Mỹ",
+  "age": 10,
+  "part": "xanh",
+  "slug": "gia-dinh-10-14"
+ },
+ {
+  "id": "g5",
+  "title": "Ấm trà lúc chín giờ",
+  "country": "Thổ Nhĩ Kỳ",
+  "age": 8,
+  "part": "xanh",
+  "slug": "vo-chong-dong-long"
+ },
+ {
+  "id": "g6",
+  "title": "Chiếc hộp ba ổ khóa",
+  "country": "Niger",
+  "age": 8,
+  "part": "xanh",
+  "slug": "tien-nha-minh"
+ },
+ {
+  "id": "g7",
+  "title": "Tờ giấy dài bằng cánh cửa",
+  "country": "Brazil",
+  "age": 6,
+  "part": "xanh",
+  "slug": "viec-nha-chia-deu"
+ },
+ {
+  "id": "g8",
+  "title": "Tiếng chuông lúc nửa đêm",
+  "country": "New Zealand",
+  "age": 5,
+  "part": "xanh",
+  "slug": "nha-gon-nha-an-toan"
+ },
+ {
+  "id": "g9",
+  "title": "Chiếc loa trong mưa",
+  "country": "Bangladesh",
+  "age": 8,
+  "part": "xanh",
+  "slug": "gia-dinh-va-cong-dong"
+ },
+ {
+  "id": "c1",
+  "title": "Năm mươi chiếc áo hồng",
+  "country": "Canada",
+  "age": 8,
+  "part": "xanh",
+  "slug": "lon-len-an-toan"
+ },
+ {
+  "id": "c2",
+  "title": "Cuốn sổ của người sửa đồng hồ",
+  "country": "Nhật Bản",
+  "age": 12,
+  "part": "xanh",
+  "slug": "hieu-minh"
+ },
+ {
+  "id": "c3",
+  "title": "Chiếc hộp giày dưới gầm giường",
+  "country": "Kenya",
+  "age": 12,
+  "part": "xanh",
+  "slug": "tu-hoc-tu-quan"
+ },
+ {
+  "id": "c4",
+  "title": "Tiếng tách của chiếc cờ lê",
+  "country": "Đức",
+  "age": 12,
+  "part": "xanh",
+  "slug": "vung-nghe"
+ },
+ {
+  "id": "c7",
+  "title": "Chiếc xe đạp đi thẳng",
+  "country": "Bhutan",
+  "age": 6,
+  "part": "xanh",
+  "slug": "tu-lap-tung-buoc"
+ },
+ {
+  "id": "c9",
+  "title": "Chiếc nút bấm cạnh giường",
+  "country": "Canada",
+  "age": 6,
+  "part": "xanh",
+  "slug": "van-dong-an-toan"
+ },
+ {
+  "id": "c10",
+  "title": "Ba thìa nước ở xóm Hy Vọng",
+  "country": "Sudan",
+  "age": 6,
+  "part": "xanh",
+  "slug": "nen-tang-khong-can-dien"
+ },
+ {
+  "id": "c5",
+  "title": "Vết nứt trên tầng ba",
+  "country": "Bangladesh",
+  "age": 15,
+  "part": "cam",
+  "slug": "15-phut-moi-ngay"
+ },
+ {
+  "id": "c6",
+  "title": "Người đàn bà ở trạm biên giới",
+  "country": "Nepal",
+  "age": 15,
+  "part": "cam",
+  "slug": "tu-tin-an-toan"
+ },
+ {
+  "id": "c8",
+  "title": "Chiếc ghế gỗ dưới gốc cây",
+  "country": "Zimbabwe",
+  "age": 15,
+  "part": "cam",
+  "slug": "cham-tam-tri-co-ban"
+ }
+]
