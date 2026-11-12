@@ -49,7 +49,7 @@ def chrome(rel: str):
     cur = tab_of(rel)
     top = (
         '<header class="app-top no-print"><a class="app-brand" href="/index.html">'
-        '<img src="/assets/logo/daynentang-icon.svg" alt="" width="32" height="32">Dạy Nền Tảng</a>'
+        '<img src="/assets/logo/daynentang-icon.svg" alt="" width="32" height="32">Kĩ Năng Nền Tảng</a>'
         '<button type="button" class="app-aa" id="app-aa" aria-label="Cỡ chữ và màu nền">Aa</button>'
         '<a class="app-help" href="/can-giup-ngay/index.html">Cần giúp ngay</a></header>'
         '<div class="app-panel no-print" id="app-panel" hidden>'
@@ -117,7 +117,7 @@ def page(title: str, body: str) -> str:
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{html.escape(title)} – Dạy Nền Tảng</title>
+<title>{html.escape(title)} – Kĩ Năng Nền Tảng</title>
 <meta name="theme-color" content="#1b2a41">
 <link rel="stylesheet" href="/assets/style.css">
 </head>
