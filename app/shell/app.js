@@ -9,7 +9,7 @@
     prog: 'lessons done', start: 'Start', goon: 'Continue', finished: 'Course finished. Well done.', now: 'Courses in progress',
     week: 'This week', days: 'days of learning', last: 'Continue reading', savedH: 'Saved pages', notesH: 'My notes',
     stories: 'Stories read', none: 'Nothing here yet.', wipe: 'Delete all my data on this phone', wipe2: 'Tap again to delete', noRes: 'No results.',
-    gateT: 'Before you read', gateB: '', gateOk: 'I understand, continue', gateNo: 'Go back', dn: ['M', 'T', 'W', 'T', 'F', 'S', 'S']
+    gateT: 'Before you read this story', gateB: 'This story is in the orange part, for readers aged 15 and over. It deals with accidents at work, human trafficking or mental distress. Do not read it to young children.', gateOk: 'I understand, continue', gateNo: 'Go back', dn: ['M', 'T', 'W', 'T', 'F', 'S', 'S']
   } : {
     save: 'Lưu bài này', saved: 'Đã lưu', done: 'Đánh dấu đã học xong', isdone: 'Đã học xong ✓', read: 'Đánh dấu đã đọc', isread: 'Đã đọc ✓',
     next: 'Bài tiếp theo', prev: 'Bài trước', back: 'Về trang khóa', lessonOf: 'Bài', of: 'trên', cont: 'Đọc tiếp',
@@ -62,6 +62,7 @@
 
   // ---------- Danh mục ----------
   var course = null, idx = -1, story = null;
+  var SL = D.stories.filter(function (s) { return (s[4] || 'vi') === (EN ? 'en' : 'vi'); });
   D.courses.forEach(function (c) {
     if (c.p === path) course = c;
     c.l.forEach(function (l, i) { if (l[0] === path) { course = c; idx = i; } });
@@ -85,7 +86,7 @@
   // ---------- Cổng cảnh báo cho truyện phần cam ----------
   if (story && story[2] === 'cam' && !st.gate[path]) {
     var g = el('div', 'app-gate', '<div role="dialog" aria-modal="true" aria-labelledby="app-gate-t"><h2 id="app-gate-t">' + L.gateT + '</h2><p>' + L.gateB +
-      '</p><button type="button" class="btn primary" id="app-gate-ok">' + L.gateOk + '</button> <a class="btn" href="/truyen/index.html">' + L.gateNo + '</a></div>');
+      '</p><button type="button" class="btn primary" id="app-gate-ok">' + L.gateOk + '</button> <a class="btn" href="' + (EN ? '/en/stories/index.html' : '/truyen/index.html') + '">' + L.gateNo + '</a></div>');
     document.body.appendChild(g);
     $('app-gate-ok').addEventListener('click', function () { st.gate[path] = 1; save(); g.remove(); });
   }
@@ -127,8 +128,8 @@
       if (idx >= 0 && idx < course.l.length - 1) h += '<a class="btn primary" href="' + href(course.l[idx + 1][0]) + '">' + L.next + ': ' + esc(course.l[idx + 1][1]) + ' →</a>';
       else if (idx >= 0) h += '<a class="btn primary" href="' + href(course.p) + '">' + L.back + '</a>';
       if (story) {
-        var i = D.stories.indexOf(story);
-        if (D.stories[i + 1]) h += '<a class="btn primary" href="' + href(D.stories[i + 1][0]) + '">' + esc(D.stories[i + 1][1]) + ' →</a>';
+        var i = SL.indexOf(story);
+        if (i >= 0 && SL[i + 1]) h += '<a class="btn primary" href="' + href(SL[i + 1][0]) + '">' + esc(SL[i + 1][1]) + ' →</a>';
       }
       nav.innerHTML = h;
     };
@@ -166,7 +167,7 @@
       items.push([c.p, c.t, 'Khóa', norm(c.t)]);
       c.l.forEach(function (l) { items.push([l[0], l[1], c.t, norm(l[1] + ' ' + c.t)]); });
     });
-    D.stories.forEach(function (s) { items.push([s[0], s[1], 'Truyện', norm(s[1])]); });
+    SL.forEach(function (s) { items.push([s[0], s[1], 'Truyện', norm(s[1])]); });
     q.addEventListener('input', function () {
       var words = norm(q.value).split(/\s+/).filter(Boolean);
       if (!words.length) { res.innerHTML = ''; return; }
@@ -177,7 +178,7 @@
 
   // ---------- Tab Truyện ----------
   var sp = $('app-story-progress');
-  if (sp) { var r = D.stories.filter(function (s) { return st.done[s[0]]; }).length; if (r) sp.innerHTML = '<div class="app-progress"><strong>' + L.stories + ': ' + r + '/' + D.stories.length + '</strong>' + bar(r, D.stories.length) + '</div>'; }
+  if (sp) { var r = SL.filter(function (s) { return st.done[s[0]]; }).length; if (r) sp.innerHTML = '<div class="app-progress"><strong>' + L.stories + ': ' + r + '/' + SL.length + '</strong>' + bar(r, SL.length) + '</div>'; }
 
   // ---------- Tab Của tôi ----------
   var mine = $('app-mine');
@@ -192,8 +193,8 @@
     if (st.last) h += '<h2>' + L.last + '</h2><a class="app-continue" href="' + href(st.last.p) + '"><strong>' + esc(st.last.t) + '</strong></a>';
     var all = D.courses.filter(function (c) { return count(c) > 0; });
     h += '<h2>' + L.now + '</h2>' + (all.length ? all.map(courseCard).join('') : '<p class="muted">' + L.none + '</p>');
-    var rs = D.stories.filter(function (s) { return st.done[s[0]]; }).length;
-    if (D.stories.length && !EN) h += '<h2>' + L.stories + '</h2><a class="app-course" href="/truyen/index.html"><strong>' + rs + '/' + D.stories.length + '</strong>' + bar(rs, D.stories.length) + '</a>';
+    var rs = SL.filter(function (s) { return st.done[s[0]]; }).length;
+    if (SL.length) h += '<h2>' + L.stories + '</h2><a class="app-course" href="' + (EN ? '/en/stories/index.html' : '/truyen/index.html') + '"><strong>' + rs + '/' + SL.length + '</strong>' + bar(rs, SL.length) + '</a>';
     var sk = Object.keys(st.saved);
     h += '<h2>' + L.savedH + '</h2>' + (sk.length ? '<div class="app-list">' + sk.map(function (k) { return '<a href="' + href(k) + '">' + esc(st.saved[k]) + '</a>'; }).join('') + '</div>' : '<p class="muted">' + L.none + '</p>');
     var nk = Object.keys(st.notes);

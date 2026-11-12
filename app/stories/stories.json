@@ -5,7 +5,9 @@
   "country": "Philippines",
   "age": 6,
   "part": "xanh",
-  "slug": "gia-tri-nha-minh"
+  "slug": "gia-tri-nha-minh",
+  "en_title": "The Cardboard on the Kitchen Door",
+  "en_country": "Philippines"
  },
  {
   "id": "g2",
@@ -13,7 +15,9 @@
   "country": "Jamaica",
   "age": 6,
   "part": "xanh",
-  "slug": "gia-dinh-0-2"
+  "slug": "gia-dinh-0-2",
+  "en_title": "The Toy Bag on Tuesdays",
+  "en_country": "Jamaica"
  },
  {
   "id": "g3",
@@ -21,7 +25,9 @@
   "country": "Ghana",
   "age": 4,
   "part": "xanh",
-  "slug": "gia-dinh-2-8"
+  "slug": "gia-dinh-2-8",
+  "en_title": "The Yellow Can That Takes a Bow",
+  "en_country": "Ghana"
  },
  {
   "id": "g4",
@@ -29,7 +35,9 @@
   "country": "Mỹ",
   "age": 10,
   "part": "xanh",
-  "slug": "gia-dinh-10-14"
+  "slug": "gia-dinh-10-14",
+  "en_title": "The One-Letter Message",
+  "en_country": "United States"
  },
  {
   "id": "g5",
@@ -37,7 +45,9 @@
   "country": "Thổ Nhĩ Kỳ",
   "age": 8,
   "part": "xanh",
-  "slug": "vo-chong-dong-long"
+  "slug": "vo-chong-dong-long",
+  "en_title": "The Teapot at Nine O'Clock",
+  "en_country": "Türkiye"
  },
  {
   "id": "g6",

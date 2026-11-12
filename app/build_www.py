@@ -32,18 +32,18 @@ ICONS = {
 TABS = {
     "vi": [("home", "Trang chủ", "/index.html"), ("book", "Truyện", "/truyen/index.html"),
            ("course", "Khóa học", "/khoa-hoc/index.html"), ("mine", "Của tôi", "/cua-toi/index.html")],
-    "en": [("home", "Home", "/en/index.html"), ("family", "Family", "/en/family/index.html"),
+    "en": [("home", "Home", "/en/index.html"), ("book", "Stories", "/en/stories/index.html"), ("family", "Family", "/en/family/index.html"),
            ("course", "Personal", "/en/personal/index.html"), ("mine", "My learning", "/en/mine/index.html")],
 }
 T = {
     "vi": dict(help="Cần giúp ngay", helpurl="/can-giup-ngay/index.html", home="/index.html", aa="Cỡ chữ, màu nền, ngôn ngữ",
                size="Cỡ chữ", sizes=["Nhỏ", "Vừa", "Lớn", "Rất lớn"], theme="Màu nền", themes=["Theo máy", "Sáng", "Tối"],
                lang="Ngôn ngữ", nav="Điều hướng chính",
-               note="Bản tiếng Anh hiện có các trang chính và vài bài đầu. Các bài khác vẫn là tiếng Việt."),
+               note="Bản tiếng Anh hiện có các trang chính, vài bài đầu và một số truyện. Phần còn lại vẫn là tiếng Việt."),
     "en": dict(help="Get help", helpurl="/en/get-help/index.html", home="/en/index.html", aa="Text size, theme, language",
                size="Text size", sizes=["Small", "Medium", "Large", "Extra large"], theme="Theme", themes=["System", "Light", "Dark"],
                lang="Language", nav="Main navigation",
-               note="English covers the main pages and the first lessons so far. Other lessons open in Vietnamese."),
+               note="English covers the main pages, the first lessons and some stories so far. The rest opens in Vietnamese."),
 }
 
 # Chạy trước khi vẽ trang: áp cỡ chữ và màu nền đã chọn, tránh nháy màn hình
@@ -53,7 +53,7 @@ PRE = ("<script>try{var s=JSON.parse(localStorage.getItem('dnt.v1'))||{},d=docum
 
 def tab_of(rel: str) -> str:
     if rel.startswith("en/"):
-        for key, pre in (("family", "en/family/"), ("course", "en/personal/"), ("mine", "en/mine/"), ("family", "en/courses/family")):
+        for key, pre in (("book", "en/stories/"), ("family", "en/family/"), ("course", "en/personal/"), ("mine", "en/mine/"), ("family", "en/courses/family")):
             if rel.startswith(pre):
                 return key
         return "home" if rel == "en/index.html" else ""
@@ -99,6 +99,8 @@ def chrome(rel: str, alt: str):
     return top, f'<nav class="app-tabs no-print" aria-label="{t["nav"]}">{items}</nav>'
 
 
+ALT_EXTRA = {"cua-toi/index.html": "/en/mine/index.html", "en/mine/index.html": "/cua-toi/index.html",
+             "truyen/index.html": "/en/stories/index.html", "en/stories/index.html": "/truyen/index.html"}
 HREF = re.compile(r'(href|action)="([^"]*)"')
 ALT = re.compile(r'<link rel="alternate" hreflang="(vi|en)" href="https://daynentang\.com(/[^"]*)">')
 
@@ -125,10 +127,7 @@ def transform(text: str, rel: str) -> str:
     for hl, path in ALT.findall(text):
         if hl != lang and (SRC / path.strip("/") / "index.html").exists():
             alt = to_index(path)
-    if rel == "cua-toi/index.html":
-        alt = "/en/mine/index.html"
-    if rel == "en/mine/index.html":
-        alt = "/cua-toi/index.html"
+    alt = ALT_EXTRA.get(rel, alt)
     top, bottom = chrome(rel, alt)
     text = re.sub(r'<header class="site-head">.*?</header>', lambda m: top, text, flags=re.S)
     text = re.sub(r'<div class="lang-hint.*?</div></div>\s*', "", text, count=1, flags=re.S)
@@ -253,9 +252,30 @@ def extra_pages(stories):
     for lang, rel in (("vi", "cua-toi/index.html"), ("en", "en/mine/index.html")):
         eb, h1, lead = MINE[lang]
         pages[rel] = page(h1, f'<p class="eyebrow">{eb}</p>\n<h1>{h1}</h1>\n<p class="lead">{lead}</p>\n<div id="app-mine"></div>\n', lang)
+    en_cards = []
     for s in stories:
         frag = (STORIES_DIR / f'{s["id"]}.html').read_text(encoding="utf-8")
         pages[f'truyen/{s["id"]}/index.html'] = page(s["title"], frag)
+        img = f'<img src="/truyen/tranh/{s["id"]}.webp" alt="" width="72" height="107" loading="lazy">'
+        part = "Orange · from age 15" if s["part"] == "cam" else f'From age {s["age"]}'
+        ef = STORIES_DIR / f'{s["id"]}.en.html'
+        if ef.exists():
+            pages[f'en/stories/{s["id"]}/index.html'] = page(s["en_title"], ef.read_text(encoding="utf-8"), "en")
+            ALT_EXTRA[f'truyen/{s["id"]}/index.html'] = f'/en/stories/{s["id"]}/index.html'
+            ALT_EXTRA[f'en/stories/{s["id"]}/index.html'] = f'/truyen/{s["id"]}/index.html'
+            en_cards.append(f'<a class="card story-card" href="/en/stories/{s["id"]}/">{img}<span><span class="tag">{part} · {html.escape(s["en_country"])} · Course {s["id"].upper()}</span>'
+                            f'<strong>{html.escape(s["en_title"])}</strong></span></a>')
+        else:
+            en_cards.append(f'<a class="card story-card" href="/truyen/{s["id"]}/" lang="vi">{img}<span><span class="tag" lang="en">{part} · Vietnamese only for now</span>'
+                            f'<strong>{html.escape(s["title"])}</strong></span></a>')
+    n_en = sum(1 for s in stories if "en_title" in s)
+    pages["en/stories/index.html"] = page("Stories", f"""<p class="eyebrow">Stories</p>
+<h1>Stories to read together</h1>
+<p class="lead">Nineteen stories from around the world. Each has one small object and goes with one course. {n_en} of {len(stories)} are in English so far.</p>
+<div id="app-story-progress"></div>
+{chr(10).join(en_cards)}
+<p class="small muted">Text and illustrations were made with AI assistance. Illustrations are not portraits of real people.</p>
+""", "en")
     return pages
 
 
@@ -288,7 +308,8 @@ def main():
     courses = course_index(SRC / "khoa-hoc", "/khoa-hoc/", lambda slug: "G" if slug in fam else "C")
     if (SRC / "en" / "courses").exists():
         courses += course_index(SRC / "en" / "courses", "/en/courses/", lambda slug: "E")
-    data = dict(courses=courses, stories=[[f'/truyen/{s["id"]}/', s["title"], s["part"], s["slug"]] for s in stories])
+    data = dict(courses=courses, stories=[[f'/truyen/{s["id"]}/', s["title"], s["part"], s["slug"], "vi"] for s in stories]
+                + [[f'/en/stories/{s["id"]}/', s["en_title"], s["part"], s["slug"], "en"] for s in stories if "en_title" in s])
     (OUT / "app").mkdir(exist_ok=True)
     (OUT / "app" / "index.js").write_text("window.DNT=" + json.dumps(data, ensure_ascii=False, separators=(",", ":")) + ";", encoding="utf-8")
     for name in ("app.css", "app.js"):
